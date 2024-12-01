@@ -1,5 +1,8 @@
-import src.schedulus as schedulus
+from schedulus import SchedulusV2
 
-s = schedulus.Schedulus(32, 'easy', '../data/output/test.out')
-s.read_jobs('../data/input/test.swf')
-s.run('fcfs')
+s = SchedulusV2(
+    '../data/input/event_log.csv',
+    '../data/input/job_log.csv',
+    '../data/input/system.json')
+
+s.simulate()
