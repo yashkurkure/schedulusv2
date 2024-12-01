@@ -65,22 +65,24 @@ class Allocator:
         return [n for n in self.nodes if n.state == NodeState.OFFLINE]
 
 
-    def allocate(self, job_id, num_nodes) -> list[Node] | None:
+    def allocate(self, job_id, resources) -> list[int] | None:
         """
         Allocates a num_nodes amount of nodes to some job_id.
+        Returns the ids of the resources allocated.
         """
-        avaliable_nodes = self.get_available()
 
-        if len(avaliable_nodes) > num_nodes:
+        avaliable_nodes = self.get_available()
+        
+        if resources > len(avaliable_nodes):
             return None
         
-        alloc_nodes = random.sample(avaliable_nodes, num_nodes)
+        alloc_nodes = random.sample(avaliable_nodes, resources)
 
         for n in alloc_nodes:
             n.state = NodeState.BUSY
             n.job_id = job_id
 
-        return alloc_nodes
+        return [n.id for n in alloc_nodes]
 
     def deallocate(self, job_id) -> None:
         """
