@@ -2,7 +2,6 @@ import simulus
 import time
 import re
 import sys
-from loguru import logger
 from datetime import datetime
 from functools import cmp_to_key
 from statistics import mean
@@ -24,34 +23,35 @@ class Schedulus:
         self.sim      = simulus.simulator()
 
 
-    def __log(self, submitted, started, finished):
-        current_utilization = (self.cluster.total-self.cluster.idle) / self.cluster.total
-        if self.sim.now not in self.stats:
-            self.stats[self.sim.now] = {'utilization': current_utilization,
-                                        'num_running_jobs': len(self.running)}
-        elif current_utilization > self.stats[self.sim.now]['utilization']:
-            self.stats[self.sim.now]['utilization'] = current_utilization
-        if len(self.jobs) <= 100:
-            logger.debug('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
-            logger.debug('Time: ' + str(self.sim.now))
-            logger.debug('Utilization: ' + str(current_utilization))
-            logger.debug('------------------------------')
-            logger.debug('Wait: ' + str(self.waiting))
-            logger.debug('Run: ' + str(self.running))
-            logger.debug('Schedule: ' + str(self.schedule))
-            logger.debug('------------------------------')
-            logger.debug('Total: ' + str(self.cluster.total) + ' Idle: ' + str(self.cluster.idle))
-            logger.debug('------------------------------')
-            if submitted:
-                logger.debug('[Submit] ' + str(submitted))
-            if started:
-                logger.debug('[Start] ' + str(started))
-            if finished:
-                logger.debug('[Finish] ' + str(finished))
-            logger.debug('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
+    # def __log(self, submitted, started, finished):
+    #     current_utilization = (self.cluster.total-self.cluster.idle) / self.cluster.total
+    #     if self.sim.now not in self.stats:
+    #         self.stats[self.sim.now] = {'utilization': current_utilization,
+    #                                     'num_running_jobs': len(self.running)}
+    #     elif current_utilization > self.stats[self.sim.now]['utilization']:
+    #         self.stats[self.sim.now]['utilization'] = current_utilization
+    #     if len(self.jobs) <= 100:
+    #         print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+    #         print('Time: ' + str(self.sim.now))
+    #         print('Utilization: ' + str(current_utilization))
+    #         print('------------------------------')
+    #         print('Wait: ' + str(self.waiting))
+    #         print('Run: ' + str(self.running))
+    #         print('Schedule: ' + str(self.schedule))
+    #         print('------------------------------')
+    #         print('Total: ' + str(self.cluster.total) + ' Idle: ' + str(self.cluster.idle))
+    #         print('------------------------------')
+    #         if submitted:
+    #             print('[Submit] ' + str(submitted))
+    #         if started:
+    #             print('[Start] ' + str(started))
+    #         if finished:
+    #             print('[Finish] ' + str(finished))
+    #         print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
 
 
     def __process_submit(self, job_id):
+        print(f'{int(self.sim.now)},Q,{job_id}')
         submitted = []
         started = []
 
@@ -71,10 +71,11 @@ class Schedulus:
             elif self.backfill != 'none':
                 started.extend(self.__backfill(s_job.id))
 
-            self.__log(submitted, started, [])
+            # self.__log(submitted, started, [])
 
 
     def __process_end(self, job_id):
+        print(f'{int(self.sim.now)},E,{job_id}')
         started = []
         finished = []
 
@@ -96,7 +97,6 @@ class Schedulus:
         if do_backfill:
             started.extend(self.__backfill(self.jobs[self.schedule[0]].id))
 
-        self.__log([], started, finished)
 
 
     # https://www.cse.huji.ac.il/~perf/ex11.html
@@ -139,6 +139,7 @@ class Schedulus:
 
 
     def __initiate_job(self, job_id):
+        print(f'{int(self.sim.now)},R,{job_id}')
         job = self.jobs[job_id]
 
         job.start(self.sim.now)
@@ -184,33 +185,9 @@ class Schedulus:
 
 
     def run(self, type):
-        logger.remove()
-        logger.add('data/output/file_{time}.log', format='{message}', level='DEBUG')
-
-        logger.debug('OUTPUT FILE')
-        logger.debug(f'\nPath: {self.path}')
-        logger.debug(f'Type: {type}')
-        logger.debug(f'Backfill: {self.backfill}\n')
 
         for job in self.jobs.values():
             self.sim.sched(self.__process_submit, job.id, until=job.submit_time)
             # self.sim.process(self.__process_submit, job, until=job.submit_time, prio=job.id)
 
         self.sim.run()
-
-        bounded_slowdowns = []
-        tot_wait_time = 0
-        tot_num_running_jobs = 0
-
-        for job in self.jobs.values():
-            if hasattr(job, 'end'):
-                bounded_slowdown = max((job.wait+(job.end-job.start_time)) / max((job.end-job.start_time), 10), 1)
-                bounded_slowdowns.append(bounded_slowdown)
-            tot_wait_time += job.wait
-
-        for stats in self.stats.values():
-            tot_num_running_jobs += stats['num_running_jobs']
-
-        logger.debug('Average bounded slowdown = ' + str(mean(bounded_slowdowns)))
-        logger.debug('Average wait time = ' + str(tot_wait_time/len(self.jobs)))
-        logger.debug('Average number of running jobs = ' + str(tot_num_running_jobs/len(self.stats)))
