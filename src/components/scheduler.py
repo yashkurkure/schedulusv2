@@ -18,35 +18,41 @@ class Job:
     # These stay the same
     id: int
     name: str
-    nodes: int
+    resources: int
     walltime: int
 
     # These may change
-    state: JobState
-    node_ids: list[int]
-
+    state: JobState = JobState.WAITING
+    node_ids: list[int] = None
 
 
 class Scheduler:
 
-    def __init__(self, allocator: Allocator):
-        self.queue = []
-        self.running = []
+    def __init__(self, schedulus, allocator: Allocator):
+        self.schedulus = schedulus
+
+        self._queue = []
+        self._running = []
         pass
     
 
-    def events():
+    def queue(self, job: Job):
         """
         Returns list of events that must be processed by the simulator.
         """
+        self._queue.append(job)
+        self._schedule()
 
-    def _schedule():
+    def _schedule(self):
         """
         Goes over the queue and tries to schedule jobs.
         """
+        # print('Running scheduling cycle..')
+
+        # print('Leaving scheduling cycle..')
         pass
 
-    def _backfill_easy():
+    def _backfill_easy(self):
         """
         Tries to backfill jobs without delaying the 1st job in the queue.
         """

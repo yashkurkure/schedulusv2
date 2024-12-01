@@ -8,7 +8,7 @@ class DfFileds:
 
     @dataclass(frozen=True)
     class Job:
-        JOB_ID: str = "id"
+        ID: str = "id"
         SUBMIT_TS: str = "submit"
         WAIT_T: str = "wait"
         RUN_T: str = "run"

@@ -25,7 +25,8 @@ class Node:
 
 
 class Allocator:
-    def __init__(self, num_nodes):
+    def __init__(self, schedulus, num_nodes):
+        self.schedulus = schedulus
 
         self.nodes: list[Node] = []
 

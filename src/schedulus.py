@@ -60,14 +60,27 @@ class SchedulusV2:
         self.system_config: SystemConfig = read_system_config(path_system_config)
 
         # Initialize components
-        self.allocator = Allocator(self.system_config.nodes)
-        self.scheduler = Scheduler(self.allocator)
+        self.allocator = Allocator(self, self.system_config.nodes)
+        self.scheduler = Scheduler(self, self.allocator)
 
 
     def handle_scheduler_event(self, e: SchedulerEvent):
         print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
         if e.type == EventType.Sched.SUBMIT:
-            pass
+
+            # Get the job data
+            job_data = self.df_jobs[self.df_jobs[DfFileds.Job.ID] == e.job_id]
+
+            # Queue the job 
+            self.scheduler.queue(
+                Job(
+                    id=e.job_id,
+                    name=f'job.{e.job_id}',
+                    resources=job_data[DfFileds.Job.REQ_PROC],
+                    walltime=job_data[DfFileds.Job.REQ_T]
+                )
+            )
+
         elif e.type == EventType.Sched.START:
             pass
         elif e.type == EventType.Sched.END:
