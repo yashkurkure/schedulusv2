@@ -97,6 +97,7 @@ class SchedulusV2:
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
 
         elif e.type == EventType.Sched.END:
+            self.scheduler.end(e.job_id)
             pass
         else:
             raise NotImplementedError(f'Event {e.type} not implemented!')
