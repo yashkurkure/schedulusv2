@@ -182,7 +182,7 @@ class Scheduler:
 
         # Now given this map reserve resources for the top job
         top_job = self._queue[0]
-        # print(f'\tTop job: {top_job.id} with resource requirement of {top_job.resources}')
+        # print(f'\tTop job: {top_job.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
         trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources, top_job.walltime)
 
         # print('\tTRM After top job:')
@@ -193,13 +193,18 @@ class Scheduler:
         # Check if any job in the queue can be allocated using these resources now
         backfill_jobs: list[Job] = []
         for j in self._queue[1:]:
-            # print(f'\t\t Trying job: {j.id} with resource requirement of {j.resources}')
+            # print(f'\t\t Trying job: {j.id} with resource requirement of {j.resources} for time {j.walltime}')
 
             can_backfill = True
 
             # This loop checks if the job can be backfilled
             # If not it sets can_backfill to False
             for t in trm:
+
+                # Dont check beyond the walltime of the job
+                if t > self.schedulus.now() + j.walltime:
+                    break
+
                 resources = trm[t]
                 # Not enough resources
                 if len(resources) < j.resources:
@@ -216,7 +221,7 @@ class Scheduler:
         # print('\tEligible:')
         # print(f'\t\t{[j.id for j in backfill_jobs]}')
 
-        # print('Backfill:', [j.id for j in backfill_jobs])
+        print('Backfill:', [j.id for j in backfill_jobs])
         for job in backfill_jobs:
             # Try allocating resources
             resources = self.allocator.allocate(job.id, job.resources)
