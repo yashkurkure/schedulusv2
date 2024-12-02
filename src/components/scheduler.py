@@ -133,7 +133,7 @@ class Scheduler:
 
         # Attempt to backfill if jobs are still in queue
         # NOTE: We backfill around the top 1 job, so the queue must have 2 jobs
-        if len(self._queue) > 1:
+        if len(self._queue) > 0:
             self._backfill_easy()
 
         # print('Leaving scheduling cycle..')
@@ -175,7 +175,6 @@ class Scheduler:
         """
 
         # print('#### BACKFILL ####')
-
         trm = self._build_time_resource_map()
         # print('\tTRM Initial:')
         # for t in trm:
@@ -183,6 +182,7 @@ class Scheduler:
 
         # Now given this map reserve resources for the top job
         top_job = self._queue[0]
+        # print(f'\tTop job: {top_job.id} with resource requirement of {top_job.resources}')
         trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources, top_job.walltime)
 
         # print('\tTRM After top job:')
@@ -216,7 +216,7 @@ class Scheduler:
         # print('\tEligible:')
         # print(f'\t\t{[j.id for j in backfill_jobs]}')
 
-
+        # print('Backfill:', [j.id for j in backfill_jobs])
         for job in backfill_jobs:
             # Try allocating resources
             resources = self.allocator.allocate(job.id, job.resources)

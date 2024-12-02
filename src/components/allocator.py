@@ -115,7 +115,7 @@ class Allocator:
             resource_pool = [self.get_resource(resource_id) for resource_id in trm[t]]
         
             # Once reourrces are available break
-            if len(resource_pool) > resources:
+            if len(resource_pool) >= resources:
                 reservation_time = t
                 break
 

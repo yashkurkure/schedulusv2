@@ -82,7 +82,10 @@ def read_event_data(path) -> pd.DataFrame:
     Reads event data
     """
     # TODO: validate the event data
-    return pd.read_csv(path, names=event_data_columns)
+    df = pd.read_csv(path, names=event_data_columns)
+    # df_t0 = df['timestamp'].iloc[0]
+    # df['timestamp'] = df['timestamp'] - df_t0
+    return df
 
 def read_system_config(path) -> SystemConfig:
     """

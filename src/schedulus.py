@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 import pandas as pd
 import simulus
-from src.components.scheduler import *
-from src.components.allocator import *
+from components.scheduler import *
+from components.allocator import *
 from input_read import \
 read_event_data, \
 read_job_data, \
