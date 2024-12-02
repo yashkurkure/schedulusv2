@@ -51,7 +51,7 @@ class AllocatorEvent(Event):
     node_ids = list[int]
 
 
-class SchedulusV2:
+class Simulator:
     def __init__(self, path_event_log, path_job_log, path_system_config):
 
         

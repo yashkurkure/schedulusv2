@@ -1,6 +1,6 @@
-from schedulus import SchedulusV2
+from simulator import Simulator
 
-s = SchedulusV2(
+s = Simulator(
     '../data/input/event_log.csv',
     '../data/input/job_log.csv',
     '../data/input/system.json')
