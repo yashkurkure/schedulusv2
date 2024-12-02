@@ -131,6 +131,10 @@ class Scheduler:
         # print('Leaving scheduling cycle..')
         pass
 
+    def _build_time_resource_map(self):
+        # TODO
+        pass
+
     def _backfill_easy(self):
         """
         Tries to backfill jobs without delaying the 1st job in the queue.
