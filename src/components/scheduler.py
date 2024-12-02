@@ -221,7 +221,7 @@ class Scheduler:
         # print('\tEligible:')
         # print(f'\t\t{[j.id for j in backfill_jobs]}')
 
-        print('Backfill:', [j.id for j in backfill_jobs])
+        # print('Backfill:', [j.id for j in backfill_jobs])
         for job in backfill_jobs:
             # Try allocating resources
             resources = self.allocator.allocate(job.id, job.resources)

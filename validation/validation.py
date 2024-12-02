@@ -79,7 +79,7 @@ cqsim2_d['delta'] = cqsim2_d['delta']/3600
 plt.figure(figsize=(10, 6))  # Adjust figure size if needed
 
 sns.scatterplot(x='id', y='delta', data=pbs1_d, color='blue', label=r'x = PBS1, y = PBS2')
-# sns.scatterplot(x='id', y='delta', data=cqsim_d, color='red', label=r'x = CQSim, y = PBS2')
+sns.scatterplot(x='id', y='delta', data=cqsim_d, color='red', label=r'x = CQSim, y = PBS2')
 # sns.scatterplot(x='id', y='delta', data=schedulus_d, color='yellow', label=r'x = Schedulus, y = PBS2')
 sns.scatterplot(x='id', y='delta', data=cqsim2_d, color='green', label=r'x = CQSimV2, y = PBS2')
 
@@ -95,7 +95,7 @@ plt.savefig('delta_start.png')
 plt.figure(figsize=(10, 6))
 
 sns.kdeplot(pbs1_d['delta'], color='blue', label=r'x = PBS1, y = PBS2')
-# sns.kdeplot(cqsim_d['delta'], color='red', label=r'x = CQSim, y = PBS2')
+sns.kdeplot(cqsim_d['delta'], color='red', label=r'x = CQSim, y = PBS2')
 # sns.kdeplot(schedulus_d['delta'], color='yellow', label=r'x = Schedulus, y = PBS2')
 sns.kdeplot(cqsim2_d['delta'], color='green', label=r'x = CQSimV2, y = PBS2')
 
