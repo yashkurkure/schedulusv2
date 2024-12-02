@@ -172,17 +172,17 @@ class Scheduler:
         print('#### BACKFILL ####')
 
         trm = self._build_time_resource_map()
-        # print('\tTRM Initial:')
-        # for t in trm:
-        #     print(f'\t\t{t}, {trm[t]}')
+        print('\tTRM Initial:')
+        for t in trm:
+            print(f'\t\t{t}, {trm[t]}')
 
         # Now given this map reserve resources for the top job
         top_job = self._queue[0]
-        trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources)
+        trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources, top_job.walltime)
 
-        # print('\tTRM After top job:')
-        # for t in trm:
-        #     print(f'\t\t{t}, {trm[t]}')
+        print('\tTRM After top job:')
+        for t in trm:
+            print(f'\t\t{t}, {trm[t]}')
 
         # Check if any job in the queue can be allocated using these resources now
         backfill_jobs: list[Job] = []
@@ -210,6 +210,7 @@ class Scheduler:
         print('\tEligible:')
         print(f'\t\t{[j.id for j in backfill_jobs]}')
 
+        print(f'\tResources available now: {self.allocator.get_available()}')
 
         for job in backfill_jobs:
             # Try allocating resources

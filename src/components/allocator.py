@@ -104,15 +104,15 @@ class Allocator:
             n.job_id = -1
 
 
-    def reserve_future(self, time_resource_map, job_id, resources) -> dict[int, int]:
+    def reserve_future(self, trm, job_id, resources, walltime) -> dict[int, int]:
         print(f'\tReserve top job, {job_id}:')
 
         reservation_time = -1
         # Iterate over the times when resources are getting freed up
-        for t in time_resource_map:
+        for t in trm:
 
             # Get the total resources available at this time
-            resource_pool = [self.get_resource(resource_id) for resource_id in time_resource_map[t]]
+            resource_pool = [self.get_resource(resource_id) for resource_id in trm[t]]
         
             # Once reourrces are available break
             if len(resource_pool) > resources:
@@ -120,21 +120,28 @@ class Allocator:
                 break
 
         # For the found reservation time get resources to reserve
-        reserved_resources = random.sample(time_resource_map[reservation_time], resources)
+        # NOTE: Cannot remove randome ones because we want max of the same nodes to be free at all times
+        # reserved_resources = random.sample(time_resource_map[reservation_time], resources)
+        # NOTE: Instead remove from the end of the list
+        reserved_resources = trm[reservation_time][-resources:]
+        end_time = reservation_time + walltime
+
+
+
         print(f'\t\tReservation time: {reservation_time}')
         print(f'\t\tReserved resources: {reserved_resources}')
 
         # Remove those resources from the time resource map
-        for t in time_resource_map:
+        for t in trm:
             # print(f'\t\tFor time: {t}')
-            if reservation_time <= t:
+            if reservation_time <= t and end_time >= t:
                 # print(f'\t\t\tResources: {time_resource_map[t]}')
                 for r in reserved_resources:
                     # print(f'\t\t\t\tRemoving: {r}')
-                    time_resource_map[t].remove(r)
+                    trm[t].remove(r)
 
         # Return the updated time resource map
-        return time_resource_map
+        return trm
     
     def reserve_now(self, trm, job_id, resources, end) -> dict[int, int]:
         print(f'\tReserve now, {job_id} with resources {resources}:')
