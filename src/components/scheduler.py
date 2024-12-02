@@ -142,16 +142,21 @@ class Scheduler:
         # at each time entry in the map
         time_resource_map = {}
         # Add the resources available now to the time resource map
-        time_resource_map[self.schedulus.sim.now] = [resource.id for resource in self.allocator.get_available()]
-        cumulative = time_resource_map[self.schedulus.sim.now]
+        cumulative = [resource.id for resource in self.allocator.get_available()]
+        time_resource_map[self.schedulus.sim.now] = cumulative[:]
+        # For each job add resources being freed up at it's end time
+        print(f'Cumulative({len(cumulative)}):', cumulative)
+
         for j in self._running:
-            
             end_time = self.schedulus.sim.now + j.walltime
+            print()
+            print(f'End time: {end_time}')
             resource_ids = j.resource_ids
+            print(f'Freed up({len(resource_ids)}):', resource_ids)
+            cumulative += resource_ids[:]
+            print(f'Cumulative({len(cumulative)}):', cumulative)
 
-            cumulative += resource_ids
-
-            time_resource_map[end_time] = cumulative
+            time_resource_map[end_time] = cumulative[:]
 
 
         print('\tTRM Initial:')
