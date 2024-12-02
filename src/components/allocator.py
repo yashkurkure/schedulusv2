@@ -105,7 +105,7 @@ class Allocator:
 
 
     def reserve_future(self, trm, job_id, resources, walltime) -> dict[int, int]:
-        print(f'\tReserve top job, {job_id}:')
+        # print(f'\tReserve top job, {job_id}:')
 
         reservation_time = -1
         # Iterate over the times when resources are getting freed up
@@ -128,8 +128,8 @@ class Allocator:
 
 
 
-        print(f'\t\tReservation time: {reservation_time}')
-        print(f'\t\tReserved resources: {reserved_resources}')
+        # print(f'\t\tReservation time: {reservation_time}')
+        # print(f'\t\tReserved resources: {reserved_resources}')
 
         # Remove those resources from the time resource map
         for t in trm:
@@ -144,7 +144,7 @@ class Allocator:
         return trm
     
     def reserve_now(self, trm, job_id, resources, end) -> dict[int, int]:
-        print(f'\tReserve now, {job_id} with resources {resources}:')
+        # print(f'\tReserve now, {job_id} with resources {resources}:')
         # print(f'\t\tUsing TRM:')
         # for t in trm:
         #     print(f'\t\t\t{t}: {trm[t]}')

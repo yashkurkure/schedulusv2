@@ -18,4923 +18,748 @@
 1732981095,R,9
 1732981100,Q,10
 1732981105,Q,11
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981155
-		Reserved resources: [1, 9, 0, 17]
-	Eligible:
-		[]
-#############
 1732981110,Q,12
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981155
-		Reserved resources: [1, 9, 0, 17]
-	Reserve now, 12 with resources 2:
-	Eligible:
-		[12]
 1732981110,R,12
-#############
 1732981115,Q,13
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981120,Q,14
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981125,Q,15
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981130,Q,16
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981135,Q,17
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981140,Q,18
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981145,Q,19
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981150,Q,20
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981235
-		Reserved resources: [0, 17, 16, 21]
-	Eligible:
-		[]
-#############
 1732981155,Q,21
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 10:
-		Reservation time: 1732981260
-		Reserved resources: [28, 30, 25, 5]
-	Eligible:
-		[]
-#############
 1732981158,E,9
 1732981158,R,10
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981160,Q,22
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981165,Q,23
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981170,Q,24
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981175,Q,25
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981180,Q,26
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981185,Q,27
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981190,Q,28
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981195,Q,29
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981200,Q,30
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981205,Q,31
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981210,Q,32
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981215,Q,33
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981217,E,3
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Reserve now, 13 with resources 2:
-	Eligible:
-		[13]
 1732981217,R,13
-#############
 1732981220,Q,34
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981221,E,1
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Reserve now, 14 with resources 2:
-	Eligible:
-		[14]
 1732981221,R,14
-#############
 1732981225,Q,35
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981230,Q,36
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981235,Q,37
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Eligible:
-		[]
-#############
 1732981238,E,6
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981480
-		Reserved resources: [22, 31, 13, 7, 2, 29, 8, 12]
-	Reserve now, 15 with resources 2:
-	Eligible:
-		[15]
 1732981238,R,15
-#############
 1732981240,Q,38
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981245,Q,39
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981250,Q,40
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981255,Q,41
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981260,Q,42
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981265,Q,43
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981270,Q,44
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981275,Q,45
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981280,Q,46
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981285,Q,47
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981290,Q,48
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981295,Q,49
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981300,Q,50
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981305,Q,51
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981310,Q,52
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981315,Q,53
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981320,Q,54
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981325,Q,55
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981330,Q,56
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981335,Q,57
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981340,Q,58
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981345,Q,59
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981350,Q,60
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981355,Q,61
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981360,Q,62
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981365,Q,63
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981370,Q,64
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981375,Q,65
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981380,Q,66
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981385,Q,67
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981390,Q,68
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981395,Q,69
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981400,Q,70
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981405,Q,71
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981410,Q,72
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981415,Q,73
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981420,Q,74
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981425,Q,75
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981430,Q,76
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981435,Q,77
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 11:
-		Reservation time: 1732981517
-		Reserved resources: [13, 7, 2, 29, 8, 12, 28, 30]
-	Eligible:
-		[]
-#############
 1732981437,E,2
 1732981437,R,11
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981441,Q,78
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981446,Q,79
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981451,Q,80
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981456,Q,81
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981461,Q,82
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981466,Q,83
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981471,Q,84
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981476,Q,85
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981481,Q,86
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981485,E,12
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Reserve now, 21 with resources 2:
-	Eligible:
-		[21]
 1732981485,R,21
-#############
 1732981486,Q,87
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981490,E,13
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Reserve now, 22 with resources 2:
-	Eligible:
-		[22]
 1732981490,R,22
-#############
 1732981491,Q,88
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981496,Q,89
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981501,Q,90
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981506,Q,91
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981511,Q,92
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981516,Q,93
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981521,Q,94
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981526,Q,95
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981531,Q,96
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981536,Q,97
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981541,Q,98
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981546,Q,99
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981551,Q,100
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981556,Q,101
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981561,Q,102
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981566,Q,103
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981571,Q,104
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981576,Q,105
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981581,Q,106
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981586,Q,107
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981591,Q,108
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981596,Q,109
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981601,Q,110
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981606,Q,111
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981611,Q,112
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981616,Q,113
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981621,Q,114
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981622,E,8
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Reserve now, 23 with resources 1:
-	Reserve now, 36 with resources 1:
-	Eligible:
-		[23, 36]
 1732981622,R,23
 1732981622,R,36
-#############
 1732981626,Q,115
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981631,Q,116
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 16:
-		Reservation time: 1732981685
-		Reserved resources: [24, 14, 19, 4]
-	Eligible:
-		[]
-#############
 1732981633,E,7
 1732981633,R,16
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732981821
-		Reserved resources: [18, 20, 24, 11, 23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 16, 21]
-	Reserve now, 45 with resources 1:
-	Eligible:
-		[45]
 1732981633,R,45
-#############
 1732981636,Q,117
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732981970
-		Reserved resources: [18, 24, 11, 23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 16, 21, 6]
-	Reserve now, 53 with resources 1:
-	Reserve now, 57 with resources 1:
-	Eligible:
-		[53, 57]
 1732981636,R,53
 1732981636,R,57
-#############
 1732981641,Q,118
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732981975
-		Reserved resources: [11, 23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27]
-	Reserve now, 59 with resources 1:
-	Eligible:
-		[59]
 1732981641,R,59
-#############
 1732981646,Q,119
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Eligible:
-		[]
-#############
 1732981651,Q,120
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Eligible:
-		[]
-#############
 1732981656,Q,121
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Eligible:
-		[]
-#############
 1732981661,Q,122
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Eligible:
-		[]
-#############
 1732981666,Q,123
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Eligible:
-		[]
-#############
 1732981668,E,21
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982056
-		Reserved resources: [23, 10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18]
-	Reserve now, 72 with resources 1:
-	Eligible:
-		[72]
 1732981668,R,72
-#############
 1732981671,Q,124
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982088
-		Reserved resources: [10, 26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18, 23]
-	Reserve now, 83 with resources 1:
-	Eligible:
-		[83]
 1732981671,R,83
-#############
 1732981676,Q,125
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982091
-		Reserved resources: [26, 14, 19, 1, 17, 9, 0, 3, 24, 16, 21, 6, 27, 18, 23, 11]
-	Eligible:
-		[]
-#############
 1732981679,E,10
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982091
-		Reserved resources: [1, 9, 17, 10, 26, 14, 19, 3, 24, 16, 21, 6, 27, 18, 23, 11]
-	Reserve now, 84 with resources 1:
-	Reserve now, 90 with resources 1:
-	Eligible:
-		[84, 90]
 1732981679,R,84
 1732981679,R,90
-#############
 1732981681,Q,126
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982138
-		Reserved resources: [10, 26, 14, 19, 3, 24, 16, 21, 6, 27, 0, 18, 23, 11, 5, 25]
-	Reserve now, 37 with resources 2:
-	Eligible:
-		[37]
 1732981681,R,37
-#############
 1732981684,E,16
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982138
-		Reserved resources: [19, 26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25]
-	Reserve now, 49 with resources 2:
-	Reserve now, 56 with resources 2:
-	Eligible:
-		[49, 56]
 1732981684,R,49
 1732981684,R,56
-#############
 1732981686,Q,127
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981691,Q,128
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981696,Q,129
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981701,Q,130
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981706,Q,131
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981711,Q,132
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981716,Q,133
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981721,Q,134
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981726,Q,135
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 3, 24, 16, 21, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981728,E,14
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [21, 14, 26, 3, 24, 6, 27, 0, 17, 9, 18, 23, 11, 5, 25, 15]
-	Reserve now, 94 with resources 1:
-	Reserve now, 98 with resources 1:
-	Eligible:
-		[94, 98]
 1732981728,R,94
 1732981728,R,98
-#############
 1732981731,Q,136
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 21, 3, 24, 6, 27, 0, 17, 9, 16, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981736,E,49
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [26, 21, 3, 24, 6, 27, 0, 17, 9, 16, 18, 23, 11, 5, 25, 15]
-	Reserve now, 104 with resources 1:
-	Reserve now, 105 with resources 1:
-	Eligible:
-		[104, 105]
 1732981736,R,104
 1732981736,R,105
-#############
 1732981736,Q,137
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981741,Q,138
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981746,Q,139
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981751,Q,140
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981756,Q,141
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981761,Q,142
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981766,Q,143
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981771,Q,144
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981776,Q,145
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981781,Q,146
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981786,Q,147
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [3, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Eligible:
-		[]
-#############
 1732981790,E,23
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982222
-		Reserved resources: [21, 24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15]
-	Reserve now, 111 with resources 1:
-	Eligible:
-		[111]
 1732981790,R,111
-#############
 1732981791,Q,148
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982233
-		Reserved resources: [24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15, 20]
-	Eligible:
-		[]
-#############
 1732981791,E,98
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982233
-		Reserved resources: [24, 14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15, 20]
-	Reserve now, 112 with resources 1:
-	Eligible:
-		[112]
 1732981791,R,112
-#############
 1732981796,Q,149
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [14, 6, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15, 20, 4]
-	Eligible:
-		[]
-#############
 1732981799,E,4
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [24, 14, 27, 0, 17, 9, 16, 26, 18, 23, 11, 5, 25, 15, 20, 4]
-	Reserve now, 113 with resources 1:
-	Eligible:
-		[113]
 1732981799,R,113
-#############
 1732981801,Q,150
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [14, 27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 20, 4]
-	Eligible:
-		[]
-#############
 1732981804,E,53
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [14, 27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 20, 4]
-	Reserve now, 132 with resources 1:
-	Eligible:
-		[132]
 1732981804,R,132
-#############
 1732981806,Q,151
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981811,Q,152
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981816,Q,153
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981821,Q,154
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981826,Q,155
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981831,Q,156
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981836,Q,157
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981841,Q,158
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981846,Q,159
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981851,Q,160
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981856,Q,161
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981862,Q,162
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981867,Q,163
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [27, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Eligible:
-		[]
-#############
 1732981867,E,5
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982241
-		Reserved resources: [14, 0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4]
-	Reserve now, 133 with resources 1:
-	Eligible:
-		[133]
 1732981867,R,133
-#############
 1732981872,Q,164
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981877,Q,165
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981882,Q,166
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981887,Q,167
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981892,Q,168
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981897,Q,169
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981897,E,104
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Reserve now, 136 with resources 1:
-	Eligible:
-		[136]
 1732981897,R,136
-#############
 1732981902,Q,170
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981907,Q,171
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981912,Q,172
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981917,Q,173
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981922,Q,174
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981927,Q,175
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981932,Q,176
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [0, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Eligible:
-		[]
-#############
 1732981935,E,84
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982279
-		Reserved resources: [14, 17, 9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1]
-	Reserve now, 140 with resources 1:
-	Eligible:
-		[140]
 1732981935,R,140
-#############
 1732981937,Q,177
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Eligible:
-		[]
-#############
 1732981942,Q,178
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Eligible:
-		[]
-#############
 1732981947,Q,179
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Eligible:
-		[]
-#############
 1732981952,Q,180
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Eligible:
-		[]
-#############
 1732981957,Q,181
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Eligible:
-		[]
-#############
 1732981957,E,136
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [9, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Reserve now, 144 with resources 1:
-	Eligible:
-		[144]
 1732981957,R,144
-#############
 1732981957,E,37
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982284
-		Reserved resources: [17, 16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10]
-	Reserve now, 158 with resources 1:
-	Eligible:
-		[158]
 1732981957,R,158
-#############
 1732981962,Q,182
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [16, 26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 1, 19, 10, 27]
-	Reserve now, 159 with resources 1:
-	Eligible:
-		[159]
 1732981962,R,159
-#############
 1732981967,Q,183
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 9, 1, 19, 10, 27]
-	Eligible:
-		[]
-#############
 1732981972,Q,184
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 9, 1, 19, 10, 27]
-	Eligible:
-		[]
-#############
 1732981977,Q,185
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 9, 1, 19, 10, 27]
-	Eligible:
-		[]
-#############
 1732981982,Q,186
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [26, 18, 23, 11, 6, 5, 25, 15, 24, 20, 4, 9, 1, 19, 10, 27]
-	Eligible:
-		[]
-#############
 1732981987,E,15
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982287
-		Reserved resources: [25, 16, 26, 18, 23, 11, 6, 15, 24, 20, 4, 9, 1, 19, 10, 27]
-	Reserve now, 171 with resources 1:
-	Reserve now, 177 with resources 1:
-	Eligible:
-		[171, 177]
 1732981987,R,171
 1732981987,R,177
-#############
 1732981987,Q,187
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732981992,Q,188
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732981997,Q,189
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732981999,E,105
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 182 with resources 1:
-	Eligible:
-		[182]
 1732981999,R,182
-#############
 1732982002,Q,190
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982007,Q,191
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982012,Q,192
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982015,E,57
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 183 with resources 1:
-	Eligible:
-		[183]
 1732982015,R,183
-#############
 1732982017,Q,193
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982018,E,72
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 186 with resources 1:
-	Eligible:
-		[186]
 1732982018,R,186
-#############
 1732982019,E,94
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [24, 20, 4, 9, 1, 19, 10, 27, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 187 with resources 1:
-	Eligible:
-		[187]
 1732982019,R,187
-#############
 1732982022,Q,194
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982027,Q,195
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982032,Q,196
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982037,Q,197
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982041,E,171
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982042,Q,198
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 198 with resources 1:
-	Eligible:
-		[198]
 1732982042,R,198
-#############
 1732982044,E,113
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982047,Q,199
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982052,Q,200
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982054,E,83
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 61 with resources 2:
-	Eligible:
-		[61]
 1732982054,R,61
-#############
 1732982057,Q,201
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982062,Q,202
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982067,Q,203
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982072,Q,204
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982074,E,183
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [20, 4, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 202 with resources 1:
-	Eligible:
-		[202]
 1732982074,R,202
-#############
 1732982077,Q,205
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982082,Q,206
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982087,Q,207
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982092,Q,208
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982097,Q,209
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982102,Q,210
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982107,Q,211
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982112,Q,212
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982117,Q,213
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982122,Q,214
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982127,Q,215
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982132,E,45
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 203 with resources 1:
-	Eligible:
-		[203]
 1732982132,R,203
-#############
 1732982132,Q,216
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982137,Q,217
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982142,Q,218
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982147,Q,219
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982152,Q,220
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982157,Q,221
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982162,Q,222
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982167,Q,223
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [4, 18, 9, 1, 19, 10, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Eligible:
-		[]
-#############
 1732982168,E,56
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [5, 24, 4, 18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 69 with resources 2:
-	Eligible:
-		[69]
 1732982168,R,69
-#############
 1732982169,E,59
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982337
-		Reserved resources: [15, 5, 24, 18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12]
-	Reserve now, 216 with resources 1:
-	Eligible:
-		[216]
 1732982169,R,216
-#############
 1732982172,Q,224
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982355
-		Reserved resources: [5, 24, 18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0]
-	Eligible:
-		[]
-#############
 1732982175,E,132
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982355
-		Reserved resources: [15, 5, 18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0]
-	Reserve now, 218 with resources 1:
-	Eligible:
-		[218]
 1732982175,R,218
-#############
 1732982177,Q,225
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982182,Q,226
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982187,Q,227
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982192,Q,228
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982196,E,198
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Reserve now, 220 with resources 1:
-	Eligible:
-		[220]
 1732982196,R,220
-#############
 1732982197,Q,229
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [5, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982202,Q,230
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [5, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982207,Q,231
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [5, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982212,Q,232
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [5, 9, 1, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982213,E,90
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [18, 5, 9, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Reserve now, 228 with resources 1:
-	Eligible:
-		[228]
 1732982213,R,228
-#############
 1732982213,E,159
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [15, 18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Eligible:
-		[]
-#############
 1732982217,Q,233
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982390
-		Reserved resources: [15, 18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28]
-	Reserve now, 233 with resources 1:
-	Eligible:
-		[233]
 1732982217,R,233
-#############
 1732982218,E,36
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982222,Q,234
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982227,Q,235
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982231,E,202
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982232,Q,236
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 5, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982235,E,133
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 27, 5, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982237,Q,237
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 27, 5, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982242,Q,238
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 27, 5, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982247,Q,239
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 27, 5, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982252,Q,240
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [18, 27, 5, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982252,E,220
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [15, 18, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982257,Q,241
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [15, 18, 27, 16, 22, 29, 13, 7, 2, 31, 8, 12, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982261,E,11
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 13, 15, 18, 22, 27, 29, 31, 16, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982262,Q,242
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 13, 15, 18, 22, 27, 29, 31, 16, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982267,Q,243
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 13, 15, 18, 22, 27, 29, 31, 16, 0, 30, 28, 21]
-	Reserve now, 243 with resources 1:
-	Eligible:
-		[243]
 1732982267,R,243
-#############
 1732982272,E,187
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 15, 16, 18, 22, 27, 29, 31, 13, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982272,Q,244
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 15, 16, 18, 22, 27, 29, 31, 13, 0, 30, 28, 21]
-	Eligible:
-		[]
-#############
 1732982277,Q,245
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982391
-		Reserved resources: [5, 7, 8, 12, 15, 16, 18, 22, 27, 29, 31, 13, 0, 30, 28, 21]
-	Reserve now, 245 with resources 1:
-	Eligible:
-		[245]
 1732982277,R,245
-#############
 1732982282,Q,246
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982419
-		Reserved resources: [5, 7, 8, 12, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26]
-	Eligible:
-		[]
-#############
 1732982288,Q,247
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982419
-		Reserved resources: [5, 7, 8, 12, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26]
-	Reserve now, 247 with resources 1:
-	Eligible:
-		[247]
 1732982288,R,247
-#############
 1732982293,Q,248
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982298,Q,249
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982303,Q,250
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982308,Q,251
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982313,Q,252
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982318,Q,253
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 16, 18, 22, 27, 29, 13, 0, 30, 28, 21, 26, 23]
-	Reserve now, 253 with resources 1:
-	Eligible:
-		[253]
 1732982318,R,253
-#############
 1732982323,Q,254
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 15, 18, 22, 27, 29, 13, 0, 16, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982323,E,243
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 13, 15, 18, 22, 27, 29, 0, 16, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982328,Q,255
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 13, 15, 18, 22, 27, 29, 0, 16, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982333,Q,256
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 13, 15, 18, 22, 27, 29, 0, 16, 30, 28, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982334,E,22
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 13, 15, 18, 22, 27, 28, 29, 30, 0, 16, 21, 26, 23]
-	Eligible:
-		[]
-#############
 1732982338,E,112
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [5, 7, 8, 13, 15, 18, 21, 22, 27, 28, 29, 30, 0, 16, 26, 23]
-	Eligible:
-		[]
-#############
 1732982339,E,140
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [2, 5, 7, 8, 13, 15, 18, 21, 22, 27, 28, 29, 30, 16, 26, 23]
-	Eligible:
-		[]
-#############
 1732982369,E,253
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 17:
-		Reservation time: 1732982438
-		Reserved resources: [2, 5, 7, 8, 13, 15, 16, 18, 21, 22, 27, 28, 29, 30, 26, 23]
-	Eligible:
-		[]
-#############
 1732982385,E,186
 1732982385,R,17
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 18:
-		Reservation time: 1732982445
-		Reserved resources: [27, 5, 23, 2, 7, 28, 13, 15, 8, 29, 30, 21, 18, 0, 16, 22]
-	Eligible:
-		[]
-#############
 1732982393,E,182
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 18:
-		Reservation time: 1732982445
-		Reserved resources: [27, 5, 23, 2, 7, 28, 13, 15, 8, 29, 30, 21, 18, 0, 16, 22]
-	Eligible:
-		[]
-#############
 1732982428,E,245
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 18:
-		Reservation time: 1732982445
-		Reserved resources: [27, 5, 23, 2, 7, 28, 13, 15, 8, 29, 30, 21, 18, 0, 16, 22]
-	Reserve now, 78 with resources 2:
-	Eligible:
-		[78]
 1732982428,R,78
-#############
 1732982429,E,216
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 18:
-		Reservation time: 1732982445
-		Reserved resources: [27, 5, 23, 2, 7, 28, 13, 15, 8, 29, 30, 21, 18, 0, 16, 22]
-	Eligible:
-		[]
-#############
 1732982437,E,17
 1732982437,R,18
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 19:
-		Reservation time: 1732982654
-		Reserved resources: [1, 9, 6, 11]
-	Eligible:
-		[]
-#############
 1732982450,E,247
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 19:
-		Reservation time: 1732982654
-		Reserved resources: [1, 9, 6, 11]
-	Reserve now, 79 with resources 2:
-	Eligible:
-		[79]
 1732982450,R,79
-#############
 1732982480,E,228
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 19:
-		Reservation time: 1732982690
-		Reserved resources: [9, 6, 11, 3]
-	Eligible:
-		[]
-#############
 1732982519,E,233
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 19:
-		Reservation time: 1732982690
-		Reserved resources: [9, 6, 11, 3]
-	Eligible:
-		[]
-#############
 1732982625,E,61
 1732982625,R,19
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 20:
-		Reservation time: 1732982857
-		Reserved resources: [10, 24, 14, 17]
-	Eligible:
-		[]
-#############
 1732982682,E,111
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 20:
-		Reservation time: 1732982857
-		Reserved resources: [10, 24, 14, 17]
-	Eligible:
-		[]
-#############
 1732982689,E,218
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 20:
-		Reservation time: 1732982857
-		Reserved resources: [19, 10, 14, 17]
-	Reserve now, 87 with resources 2:
-	Eligible:
-		[87]
 1732982689,R,87
-#############
 1732982692,E,158
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 20:
-		Reservation time: 1732982887
-		Reserved resources: [19, 10, 14, 25]
-	Eligible:
-		[]
-#############
 1732982704,E,69
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 20:
-		Reservation time: 1732982887
-		Reserved resources: [17, 19, 14, 25]
-	Eligible:
-		[]
-#############
 1732982818,E,177
 1732982818,R,20
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 24:
-		Reservation time: 1732982925
-		Reserved resources: [1, 6, 11, 9]
-	Eligible:
-		[]
-#############
 1732982851,E,144
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 24:
-		Reservation time: 1732982925
-		Reserved resources: [1, 6, 11, 9]
-	Eligible:
-		[]
-#############
 1732982920,E,19
 1732982920,R,24
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 25:
-		Reservation time: 1732983337
-		Reserved resources: [5, 23, 4, 28, 16, 27, 7, 15]
-	Eligible:
-		[]
-#############
 1732982952,E,203
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 25:
-		Reservation time: 1732983337
-		Reserved resources: [5, 23, 4, 28, 16, 27, 7, 15]
-	Reserve now, 91 with resources 2:
-	Eligible:
-		[91]
 1732982952,R,91
-#############
 1732982987,E,79
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 25:
-		Reservation time: 1732983337
-		Reserved resources: [5, 23, 4, 28, 16, 27, 7, 15]
-	Reserve now, 120 with resources 2:
-	Eligible:
-		[120]
 1732982987,R,120
-#############
 1732983199,E,18
 1732983199,R,25
 1732983199,R,27
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983340
-		Reserved resources: [21, 29, 31, 26, 9, 6, 1, 11]
-	Reserve now, 134 with resources 2:
-	Reserve now, 138 with resources 2:
-	Eligible:
-		[134, 138]
 1732983199,R,134
 1732983199,R,138
-#############
 1732983257,E,78
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983372
-		Reserved resources: [5, 29, 9, 6, 1, 11, 14, 20]
-	Reserve now, 139 with resources 2:
-	Eligible:
-		[139]
 1732983257,R,139
-#############
 1732983257,E,134
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983499
-		Reserved resources: [1, 11, 14, 20, 13, 7, 27, 28]
-	Reserve now, 143 with resources 2:
-	Eligible:
-		[143]
 1732983257,R,143
-#############
 1732983279,E,24
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983499
-		Reserved resources: [9, 11, 14, 20, 13, 7, 27, 28]
-	Reserve now, 145 with resources 2:
-	Eligible:
-		[145]
 1732983279,R,145
-#############
 1732983297,E,91
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983589
-		Reserved resources: [14, 20, 13, 7, 27, 28, 24, 3]
-	Reserve now, 146 with resources 2:
-	Reserve now, 148 with resources 2:
-	Eligible:
-		[146, 148]
 1732983297,R,146
 1732983297,R,148
-#############
 1732983350,E,146
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983589
-		Reserved resources: [20, 1, 13, 7, 27, 28, 24, 3]
-	Reserve now, 149 with resources 2:
-	Eligible:
-		[149]
 1732983350,R,149
-#############
 1732983354,E,148
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983619
-		Reserved resources: [13, 7, 27, 28, 24, 3, 21, 2]
-	Reserve now, 151 with resources 2:
-	Eligible:
-		[151]
 1732983354,R,151
-#############
 1732983472,E,27
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983718
-		Reserved resources: [24, 3, 21, 2, 25, 19, 17, 10]
-	Reserve now, 34 with resources 4:
-	Eligible:
-		[34]
 1732983472,R,34
-#############
 1732983512,E,87
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983799
-		Reserved resources: [4, 15, 23, 18, 30, 8, 16, 0]
-	Reserve now, 152 with resources 2:
-	Eligible:
-		[152]
 1732983512,R,152
-#############
 1732983595,E,138
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983799
-		Reserved resources: [4, 15, 23, 18, 30, 8, 16, 0]
-	Reserve now, 155 with resources 2:
-	Eligible:
-		[155]
 1732983595,R,155
-#############
 1732983655,E,155
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 26:
-		Reservation time: 1732983799
-		Reserved resources: [4, 15, 23, 18, 30, 8, 16, 0]
-	Reserve now, 173 with resources 2:
-	Eligible:
-		[173]
 1732983655,R,173
-#############
 1732983685,E,25
 1732983685,R,26
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983887
-		Reserved resources: [25, 19, 17, 10, 5, 29, 22, 12]
-	Eligible:
-		[]
-#############
 1732983689,E,152
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983887
-		Reserved resources: [25, 19, 17, 10, 5, 29, 22, 12]
-	Reserve now, 174 with resources 2:
-	Eligible:
-		[174]
 1732983689,R,174
-#############
 1732983706,E,20
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983892
-		Reserved resources: [5, 29, 22, 12, 27, 7, 28, 13]
-	Reserve now, 38 with resources 4:
-	Eligible:
-		[38]
 1732983706,R,38
-#############
 1732983764,E,38
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983892
-		Reserved resources: [5, 29, 22, 12, 27, 7, 28, 13]
-	Reserve now, 40 with resources 4:
-	Eligible:
-		[40]
 1732983764,R,40
-#############
 1732983846,E,34
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983950
-		Reserved resources: [27, 28, 5, 29, 22, 12, 9, 14]
-	Reserve now, 176 with resources 2:
-	Eligible:
-		[176]
 1732983846,R,176
-#############
 1732983853,E,143
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983955
-		Reserved resources: [27, 29, 22, 12, 9, 14, 2, 21]
-	Reserve now, 179 with resources 2:
-	Reserve now, 192 with resources 2:
-	Eligible:
-		[179, 192]
 1732983853,R,179
 1732983853,R,192
-#############
 1732983856,E,120
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 195 with resources 2:
-	Eligible:
-		[195]
 1732983856,R,195
-#############
 1732983876,E,149
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 196 with resources 2:
-	Eligible:
-		[196]
 1732983876,R,196
-#############
 1732983911,E,179
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 197 with resources 2:
-	Eligible:
-		[197]
 1732983911,R,197
-#############
 1732983942,E,174
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 201 with resources 2:
-	Eligible:
-		[201]
 1732983942,R,201
-#############
 1732983947,E,173
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 206 with resources 2:
-	Eligible:
-		[206]
 1732983947,R,206
-#############
 1732983963,E,197
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 28:
-		Reservation time: 1732983985
-		Reserved resources: [0, 30, 18, 8, 16, 4, 15, 23]
-	Reserve now, 208 with resources 2:
-	Eligible:
-		[208]
 1732983963,R,208
-#############
 1732983985,E,26
 1732983985,R,28
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984179
-		Reserved resources: [7, 29, 21, 2, 26, 31, 6, 11]
-	Eligible:
-		[]
-#############
 1732984015,E,176
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984179
-		Reserved resources: [7, 29, 21, 2, 26, 31, 6, 11]
-	Reserve now, 214 with resources 2:
-	Eligible:
-		[214]
 1732984015,R,214
-#############
 1732984020,E,192
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984254
-		Reserved resources: [21, 2, 26, 31, 6, 11, 20, 1]
-	Reserve now, 215 with resources 2:
-	Eligible:
-		[215]
 1732984020,R,215
-#############
 1732984112,E,139
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984315
-		Reserved resources: [21, 2, 6, 11, 20, 1, 28, 13]
-	Reserve now, 217 with resources 2:
-	Eligible:
-		[217]
 1732984112,R,217
-#############
 1732984117,E,206
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984383
-		Reserved resources: [6, 11, 20, 1, 28, 13, 27, 5]
-	Reserve now, 222 with resources 2:
-	Eligible:
-		[222]
 1732984117,R,222
-#############
 1732984179,E,145
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984383
-		Reserved resources: [20, 1, 2, 21, 28, 13, 27, 5]
-	Reserve now, 225 with resources 2:
-	Eligible:
-		[225]
 1732984179,R,225
-#############
 1732984255,E,151
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984440
-		Reserved resources: [2, 21, 28, 13, 27, 5, 29, 7]
-	Reserve now, 227 with resources 2:
-	Eligible:
-		[227]
 1732984255,R,227
-#############
 1732984277,E,214
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984542
-		Reserved resources: [2, 21, 27, 5, 29, 7, 24, 3]
-	Reserve now, 239 with resources 2:
-	Eligible:
-		[239]
 1732984277,R,239
-#############
 1732984280,E,222
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984577
-		Reserved resources: [27, 5, 29, 7, 24, 3, 13, 28]
-	Reserve now, 242 with resources 2:
-	Eligible:
-		[242]
 1732984280,R,242
-#############
 1732984332,E,242
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984577
-		Reserved resources: [27, 5, 29, 7, 24, 3, 13, 28]
-	Reserve now, 244 with resources 2:
-	Eligible:
-		[244]
 1732984332,R,244
-#############
 1732984338,E,208
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984585
-		Reserved resources: [16, 15, 4, 8, 30, 18, 23, 0]
-	Eligible:
-		[]
-#############
 1732984436,E,215
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984585
-		Reserved resources: [16, 15, 4, 8, 30, 18, 23, 0]
-	Reserve now, 41 with resources 4:
-	Eligible:
-		[41]
 1732984436,R,41
-#############
 1732984493,E,40
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984585
-		Reserved resources: [16, 15, 4, 8, 30, 18, 23, 0]
-	Reserve now, 42 with resources 4:
-	Eligible:
-		[42]
 1732984493,R,42
-#############
 1732984529,E,201
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 29:
-		Reservation time: 1732984585
-		Reserved resources: [16, 15, 4, 8, 30, 18, 23, 0]
-	Eligible:
-		[]
-#############
 1732984531,E,28
 1732984531,R,29
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 30:
-		Reservation time: 1732984712
-		Reserved resources: [13, 28, 6, 11, 21, 2, 31, 26]
-	Eligible:
-		[]
-#############
 1732984552,E,239
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 30:
-		Reservation time: 1732984712
-		Reserved resources: [28, 30, 6, 11, 21, 2, 31, 26]
-	Eligible:
-		[]
-#############
 1732984568,E,225
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 30:
-		Reservation time: 1732984712
-		Reserved resources: [11, 13, 28, 30, 21, 2, 31, 26]
-	Eligible:
-		[]
-#############
 1732984635,E,244
 1732984635,R,30
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 31:
-		Reservation time: 1732984951
-		Reserved resources: [12, 22, 9, 14, 10, 19, 25, 17, 4, 8, 23, 18, 24, 16, 15, 3]
-	Eligible:
-		[]
-#############
 1732984643,E,217
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 31:
-		Reservation time: 1732984951
-		Reserved resources: [12, 22, 9, 14, 10, 19, 25, 17, 4, 8, 23, 18, 24, 16, 15, 3]
-	Eligible:
-		[]
-#############
 1732984713,E,195
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 31:
-		Reservation time: 1732984951
-		Reserved resources: [26, 31, 9, 14, 10, 19, 25, 17, 4, 8, 23, 18, 24, 16, 15, 3]
-	Eligible:
-		[]
-#############
 1732984734,E,196
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 31:
-		Reservation time: 1732984951
-		Reserved resources: [14, 22, 26, 31, 10, 19, 25, 17, 4, 8, 23, 18, 24, 16, 15, 3]
-	Eligible:
-		[]
-#############
 1732984893,E,42
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 31:
-		Reservation time: 1732984951
-		Reserved resources: [12, 14, 17, 19, 22, 25, 26, 31, 4, 8, 23, 18, 24, 16, 15, 3]
-	Eligible:
-		[]
-#############
 1732984939,E,29
 1732984939,R,31
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 32:
-		Reservation time: 1732984999
-		Reserved resources: [8, 23, 22, 17, 18, 26, 16, 24, 4, 31, 3, 25, 12, 19, 15, 10]
-	Eligible:
-		[]
-#############
 1732984994,E,41
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 32:
-		Reservation time: 1732984999
-		Reserved resources: [8, 23, 22, 17, 18, 26, 16, 24, 4, 31, 3, 25, 12, 19, 15, 10]
-	Reserve now, 46 with resources 4:
-	Eligible:
-		[46]
 1732984994,R,46
-#############
 1732985000,E,31
 1732985000,R,32
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 33:
-		Reservation time: 1732985300
-		Reserved resources: [5, 27, 3, 15, 24, 22, 31, 8, 19, 23, 10, 17, 26, 25, 12, 4]
-	Eligible:
-		[]
-#############
 1732985053,E,227
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 33:
-		Reservation time: 1732985300
-		Reserved resources: [5, 27, 3, 15, 24, 22, 31, 8, 19, 23, 10, 17, 26, 25, 12, 4]
-	Reserve now, 50 with resources 4:
-	Eligible:
-		[50]
 1732985053,R,50
-#############
 1732985284,E,32
 1732985284,R,33
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 35:
-		Reservation time: 1732985464
-		Reserved resources: [4, 3, 10, 31, 23, 12, 15, 17, 5, 22, 25, 19, 24, 26, 8, 27]
-	Eligible:
-		[]
-#############
 1732985412,E,46
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 35:
-		Reservation time: 1732985464
-		Reserved resources: [4, 3, 10, 31, 23, 12, 15, 17, 5, 22, 25, 19, 24, 26, 8, 27]
-	Reserve now, 54 with resources 4:
-	Eligible:
-		[54]
 1732985412,R,54
-#############
 1732985425,E,30
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 35:
-		Reservation time: 1732985464
-		Reserved resources: [4, 3, 10, 31, 23, 12, 15, 17, 5, 22, 25, 19, 24, 26, 8, 27]
-	Reserve now, 39 with resources 8:
-	Eligible:
-		[39]
 1732985425,R,39
-#############
 1732985463,E,33
 1732985463,R,35
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 43:
-		Reservation time: 1732986063
-		Reserved resources: [10, 4, 22, 19, 25, 27, 5, 3, 12, 26, 31, 8, 17, 15, 24, 23]
-	Eligible:
-		[]
-#############
 1732985553,E,50
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 43:
-		Reservation time: 1732986063
-		Reserved resources: [10, 4, 22, 19, 25, 27, 5, 3, 12, 26, 31, 8, 17, 15, 24, 23]
-	Reserve now, 60 with resources 4:
-	Eligible:
-		[60]
 1732985553,R,60
-#############
 1732985808,E,39
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 43:
-		Reservation time: 1732986063
-		Reserved resources: [10, 4, 22, 19, 25, 27, 5, 3, 12, 26, 31, 8, 17, 15, 24, 23]
-	Reserve now, 44 with resources 8:
-	Eligible:
-		[44]
 1732985808,R,44
-#############
 1732985848,E,60
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 43:
-		Reservation time: 1732986063
-		Reserved resources: [10, 4, 22, 19, 25, 27, 5, 3, 12, 26, 31, 8, 17, 15, 24, 23]
-	Reserve now, 64 with resources 4:
-	Eligible:
-		[64]
 1732985848,R,64
-#############
 1732985927,E,54
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 43:
-		Reservation time: 1732986063
-		Reserved resources: [10, 4, 22, 19, 25, 27, 5, 3, 12, 26, 31, 8, 17, 15, 24, 23]
-	Reserve now, 67 with resources 4:
-	Eligible:
-		[67]
 1732985927,R,67
-#############
 1732986053,E,35
 1732986053,R,43
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Eligible:
-		[]
-#############
 1732986103,E,44
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Reserve now, 48 with resources 8:
-	Eligible:
-		[48]
 1732986103,R,48
-#############
 1732986148,E,64
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Reserve now, 68 with resources 4:
-	Eligible:
-		[68]
 1732986148,R,68
-#############
 1732986215,E,67
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Reserve now, 74 with resources 4:
-	Eligible:
-		[74]
 1732986215,R,74
-#############
 1732986266,E,74
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Reserve now, 77 with resources 4:
-	Eligible:
-		[77]
 1732986266,R,77
-#############
 1732986446,E,77
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 47:
-		Reservation time: 1732986653
-		Reserved resources: [23, 15, 3, 5, 4, 10, 8, 22, 12, 26, 19, 27, 24, 17, 31, 25]
-	Reserve now, 93 with resources 4:
-	Eligible:
-		[93]
 1732986446,R,93
-#############
 1732986605,E,43
 1732986605,R,47
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 51:
-		Reservation time: 1732986746
-		Reserved resources: [6, 30, 13, 0, 14, 9, 7, 29]
-	Eligible:
-		[]
-#############
 1732986609,E,48
 1732986609,R,51
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 52:
-		Reservation time: 1732986905
-		Reserved resources: [22, 31, 17, 5, 12, 15, 3, 4]
-	Eligible:
-		[]
-#############
 1732986713,E,93
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 52:
-		Reservation time: 1732986905
-		Reserved resources: [22, 31, 17, 5, 12, 15, 3, 4]
-	Reserve now, 95 with resources 4:
-	Eligible:
-		[95]
 1732986713,R,95
-#############
 1732986878,E,47
 1732986878,R,52
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 55:
-		Reservation time: 1732986893
-		Reserved resources: [22, 26, 27, 31, 9, 29, 7, 14]
-	Reserve now, 96 with resources 4:
-	Eligible:
-		[96]
 1732986878,R,96
-#############
 1732986884,E,95
 1732986884,R,55
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987184
-		Reserved resources: [24, 12, 25, 5, 19, 23, 10, 4, 29, 9, 7, 27, 14, 31, 17, 15]
-	Eligible:
-		[]
-#############
 1732986929,E,68
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987184
-		Reserved resources: [24, 12, 25, 5, 19, 23, 10, 4, 29, 9, 7, 27, 14, 31, 17, 15]
-	Reserve now, 107 with resources 4:
-	Eligible:
-		[107]
 1732986929,R,107
-#############
 1732987117,E,51
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987184
-		Reserved resources: [24, 12, 25, 5, 19, 23, 10, 4, 29, 9, 7, 27, 14, 31, 17, 15]
-	Reserve now, 62 with resources 8:
-	Eligible:
-		[62]
 1732987117,R,62
-#############
 1732987129,E,52
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987229
-		Reserved resources: [19, 23, 24, 25, 29, 9, 7, 27, 14, 31, 17, 15, 20, 1, 18, 16]
-	Reserve now, 108 with resources 4:
-	Reserve now, 109 with resources 4:
-	Eligible:
-		[108, 109]
 1732987129,R,108
 1732987129,R,109
-#############
 1732987150,E,55
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987298
-		Reserved resources: [17, 27, 29, 31, 23, 25, 10, 24, 20, 1, 18, 16, 26, 3, 22, 8]
-	Reserve now, 114 with resources 4:
-	Eligible:
-		[114]
 1732987150,R,114
-#############
 1732987178,E,107
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987309
-		Reserved resources: [18, 20, 27, 31, 23, 25, 10, 24, 26, 3, 22, 8, 12, 19, 5, 4]
-	Reserve now, 117 with resources 4:
-	Eligible:
-		[117]
 1732987178,R,117
-#############
 1732987180,E,108
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987717
-		Reserved resources: [26, 3, 22, 8, 12, 19, 5, 4, 30, 0, 28, 13, 6, 2, 11, 21]
-	Reserve now, 66 with resources 8:
-	Eligible:
-		[66]
 1732987180,R,66
-#############
 1732987235,E,96
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987750
-		Reserved resources: [12, 19, 5, 4, 30, 0, 28, 13, 6, 2, 11, 21, 29, 14, 9, 15]
-	Reserve now, 119 with resources 4:
-	Eligible:
-		[119]
 1732987235,R,119
-#############
 1732987278,E,109
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987750
-		Reserved resources: [22, 26, 3, 8, 30, 0, 28, 13, 6, 2, 11, 21, 29, 14, 9, 15]
-	Reserve now, 121 with resources 4:
-	Eligible:
-		[121]
 1732987278,R,121
-#############
 1732987297,E,119
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732987878
-		Reserved resources: [30, 0, 28, 13, 6, 2, 11, 21, 29, 14, 9, 15, 4, 19, 12, 5]
-	Reserve now, 124 with resources 4:
-	Eligible:
-		[124]
 1732987297,R,124
-#############
 1732987614,E,62
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988078
-		Reserved resources: [13, 21, 28, 30, 29, 14, 9, 15, 4, 19, 12, 5, 7, 31, 18, 16]
-	Reserve now, 127 with resources 4:
-	Reserve now, 147 with resources 4:
-	Eligible:
-		[127, 147]
 1732987614,R,127
 1732987614,R,147
-#############
 1732987744,E,114
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988078
-		Reserved resources: [4, 19, 12, 5, 6, 2, 0, 30, 21, 28, 11, 13, 7, 31, 18, 16]
-	Reserve now, 154 with resources 4:
-	Eligible:
-		[154]
 1732987744,R,154
-#############
 1732987858,E,121
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988080
-		Reserved resources: [21, 28, 11, 13, 7, 31, 18, 16, 23, 27, 17, 24, 10, 20, 25, 1]
-	Reserve now, 157 with resources 4:
-	Eligible:
-		[157]
 1732987858,R,157
-#############
 1732987978,E,147
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988080
-		Reserved resources: [6, 2, 0, 30, 7, 31, 18, 16, 23, 27, 17, 24, 10, 20, 25, 1]
-	Reserve now, 160 with resources 4:
-	Eligible:
-		[160]
 1732987978,R,160
-#############
 1732987999,E,127
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988164
-		Reserved resources: [7, 31, 18, 16, 23, 27, 17, 24, 10, 20, 25, 1, 15, 9, 29, 14]
-	Reserve now, 162 with resources 4:
-	Eligible:
-		[162]
 1732987999,R,162
-#############
 1732988016,E,117
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988164
-		Reserved resources: [0, 6, 2, 30, 23, 27, 17, 24, 10, 20, 25, 1, 15, 9, 29, 14]
-	Reserve now, 164 with resources 4:
-	Eligible:
-		[164]
 1732988016,R,164
-#############
 1732988050,E,162
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988164
-		Reserved resources: [18, 16, 7, 31, 23, 27, 17, 24, 10, 20, 25, 1, 15, 9, 29, 14]
-	Reserve now, 166 with resources 4:
-	Eligible:
-		[166]
 1732988050,R,166
-#############
 1732988070,E,66
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988197
-		Reserved resources: [23, 24, 25, 27, 18, 16, 7, 31, 15, 9, 29, 14, 8, 22, 3, 26]
-	Reserve now, 167 with resources 4:
-	Reserve now, 168 with resources 4:
-	Eligible:
-		[167, 168]
 1732988070,R,167
 1732988070,R,168
-#############
 1732988074,E,164
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988278
-		Reserved resources: [15, 9, 29, 14, 8, 22, 3, 26, 19, 5, 4, 12, 13, 28, 11, 21]
-	Reserve now, 175 with resources 4:
-	Eligible:
-		[175]
 1732988074,R,175
-#############
 1732988105,E,154
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988278
-		Reserved resources: [18, 31, 7, 16, 8, 22, 3, 26, 19, 5, 4, 12, 13, 28, 11, 21]
-	Reserve now, 181 with resources 4:
-	Eligible:
-		[181]
 1732988105,R,181
-#############
 1732988129,E,167
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988278
-		Reserved resources: [18, 31, 7, 16, 8, 22, 3, 26, 19, 5, 4, 12, 13, 28, 11, 21]
-	Reserve now, 184 with resources 4:
-	Eligible:
-		[184]
 1732988129,R,184
-#############
 1732988135,E,175
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988429
-		Reserved resources: [8, 22, 3, 26, 19, 5, 4, 12, 13, 28, 11, 21, 27, 20, 25, 1]
-	Reserve now, 185 with resources 4:
-	Eligible:
-		[185]
 1732988135,R,185
-#############
 1732988183,E,124
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988435
-		Reserved resources: [19, 5, 4, 12, 13, 28, 11, 21, 27, 20, 25, 1, 31, 16, 7, 18]
-	Reserve now, 189 with resources 4:
-	Eligible:
-		[189]
 1732988183,R,189
-#############
 1732988234,E,157
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988470
-		Reserved resources: [13, 28, 11, 21, 27, 20, 25, 1, 31, 16, 7, 18, 0, 2, 6, 30]
-	Reserve now, 191 with resources 4:
-	Eligible:
-		[191]
 1732988234,R,191
-#############
 1732988238,E,160
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988483
-		Reserved resources: [27, 20, 25, 1, 31, 16, 7, 18, 0, 2, 6, 30, 3, 8, 22, 26]
-	Reserve now, 193 with resources 4:
-	Eligible:
-		[193]
 1732988238,R,193
-#############
 1732988383,E,185
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988525
-		Reserved resources: [27, 20, 25, 1, 0, 2, 6, 30, 3, 8, 22, 26, 15, 29, 14, 9]
-	Reserve now, 205 with resources 4:
-	Eligible:
-		[205]
 1732988383,R,205
-#############
 1732988427,E,184
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988534
-		Reserved resources: [0, 2, 6, 30, 3, 8, 22, 26, 15, 29, 14, 9, 12, 5, 4, 19]
-	Reserve now, 207 with resources 4:
-	Eligible:
-		[207]
 1732988427,R,207
-#############
 1732988443,E,189
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988563
-		Reserved resources: [0, 2, 6, 30, 15, 29, 14, 9, 12, 5, 4, 19, 7, 31, 18, 16]
-	Reserve now, 210 with resources 4:
-	Eligible:
-		[210]
 1732988443,R,210
-#############
 1732988451,E,166
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988970
-		Reserved resources: [15, 29, 14, 9, 12, 5, 4, 19, 7, 31, 18, 16, 17, 24, 23, 10]
-	Reserve now, 213 with resources 4:
-	Eligible:
-		[213]
 1732988451,R,213
-#############
 1732988477,E,191
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732988970
-		Reserved resources: [15, 29, 14, 9, 7, 31, 18, 16, 6, 2, 0, 30, 17, 24, 23, 10]
-	Reserve now, 221 with resources 4:
-	Eligible:
-		[221]
 1732988477,R,221
-#############
 1732988494,E,181
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [7, 31, 18, 16, 6, 2, 0, 30, 17, 24, 23, 10, 19, 12, 4, 5]
-	Reserve now, 224 with resources 4:
-	Eligible:
-		[224]
 1732988494,R,224
-#############
 1732988555,E,205
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [29, 15, 14, 9, 6, 2, 0, 30, 17, 24, 23, 10, 19, 12, 4, 5]
-	Reserve now, 226 with resources 4:
-	Eligible:
-		[226]
 1732988555,R,226
-#############
 1732988642,E,224
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [6, 2, 0, 30, 17, 24, 23, 10, 18, 16, 7, 31, 19, 12, 4, 5]
-	Reserve now, 231 with resources 4:
-	Eligible:
-		[231]
 1732988642,R,231
-#############
 1732988702,E,231
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [6, 2, 0, 30, 17, 24, 23, 10, 18, 16, 7, 31, 19, 12, 4, 5]
-	Reserve now, 234 with resources 4:
-	Eligible:
-		[234]
 1732988702,R,234
-#############
 1732988730,E,213
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [29, 14, 15, 9, 17, 24, 23, 10, 18, 16, 7, 31, 19, 12, 4, 5]
-	Reserve now, 236 with resources 4:
-	Eligible:
-		[236]
 1732988730,R,236
-#############
 1732988763,E,234
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989077
-		Reserved resources: [6, 2, 30, 0, 17, 24, 23, 10, 18, 16, 7, 31, 19, 12, 4, 5]
-	Reserve now, 240 with resources 4:
-	Eligible:
-		[240]
 1732988763,R,240
-#############
 1732988784,E,236
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989138
-		Reserved resources: [17, 24, 23, 10, 18, 16, 7, 31, 19, 12, 4, 5, 13, 21, 11, 28]
-	Reserve now, 241 with resources 4:
-	Eligible:
-		[241]
 1732988784,R,241
-#############
 1732988914,E,168
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989138
-		Reserved resources: [18, 16, 7, 31, 19, 12, 4, 5, 2, 30, 0, 6, 13, 21, 11, 28]
-	Reserve now, 248 with resources 4:
-	Eligible:
-		[248]
 1732988914,R,248
-#############
 1732988945,E,226
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989183
-		Reserved resources: [19, 12, 4, 5, 2, 30, 0, 6, 13, 21, 11, 28, 14, 9, 29, 15]
-	Reserve now, 251 with resources 4:
-	Eligible:
-		[251]
 1732988945,R,251
-#############
 1732989027,E,221
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989327
-		Reserved resources: [2, 30, 0, 6, 13, 21, 11, 28, 14, 9, 29, 15, 1, 25, 20, 27]
-	Reserve now, 252 with resources 4:
-	Eligible:
-		[252]
 1732989027,R,252
-#############
 1732989072,E,193
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989343
-		Reserved resources: [2, 30, 0, 6, 14, 9, 29, 15, 1, 25, 20, 27, 22, 3, 8, 26]
-	Reserve now, 254 with resources 4:
-	Eligible:
-		[254]
 1732989072,R,254
-#############
 1732989077,E,241
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989343
-		Reserved resources: [14, 9, 29, 15, 13, 28, 21, 11, 1, 25, 20, 27, 22, 3, 8, 26]
-	Reserve now, 255 with resources 4:
-	Eligible:
-		[255]
 1732989077,R,255
-#############
 1732989104,E,240
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989343
-		Reserved resources: [2, 0, 30, 6, 13, 28, 21, 11, 1, 25, 20, 27, 22, 3, 8, 26]
-	Eligible:
-		[]
-#############
 1732989129,E,255
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989343
-		Reserved resources: [14, 15, 29, 30, 13, 28, 21, 11, 1, 25, 20, 27, 22, 3, 8, 26]
-	Eligible:
-		[]
-#############
 1732989223,E,254
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 58:
-		Reservation time: 1732989343
-		Reserved resources: [11, 13, 14, 15, 21, 28, 29, 30, 1, 25, 20, 27, 22, 3, 8, 26]
-	Eligible:
-		[]
-#############
 1732989236,E,207
 1732989236,R,58
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 63:
-		Reservation time: 1732989343
-		Reserved resources: [15, 25, 6, 29, 21, 28, 14, 20, 27, 0, 13, 11, 22, 3, 8, 26]
-	Eligible:
-		[]
-#############
 1732989251,E,210
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 63:
-		Reservation time: 1732989296
-		Reserved resources: [30, 2, 1, 9, 15, 25, 6, 29, 21, 28, 14, 20, 27, 0, 13, 11]
-	Eligible:
-		[]
-#############
 1732989292,E,58
 1732989292,R,63
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 65:
-		Reservation time: 1732989712
-		Reserved resources: [25, 0, 13, 2, 22, 15, 21, 28, 3, 14, 30, 20, 8, 1, 27, 26]
-	Eligible:
-		[]
-#############
 1732989496,E,248
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 65:
-		Reservation time: 1732989712
-		Reserved resources: [25, 0, 13, 2, 22, 15, 21, 28, 3, 14, 30, 20, 8, 1, 27, 26]
-	Reserve now, 75 with resources 8:
-	Eligible:
-		[75]
 1732989496,R,75
-#############
 1732989691,E,63
 1732989691,R,65
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 70:
-		Reservation time: 1732990291
-		Reserved resources: [3, 1, 25, 21, 30, 22, 0, 8, 20, 15, 2, 14, 28, 26, 27, 13]
-	Eligible:
-		[]
-#############
 1732989814,E,251
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 70:
-		Reservation time: 1732990291
-		Reserved resources: [3, 1, 25, 21, 30, 22, 0, 8, 20, 15, 2, 14, 28, 26, 27, 13]
-	Eligible:
-		[]
-#############
 1732989828,E,252
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 70:
-		Reservation time: 1732990291
-		Reserved resources: [3, 1, 25, 21, 30, 22, 0, 8, 20, 15, 2, 14, 28, 26, 27, 13]
-	Reserve now, 76 with resources 8:
-	Eligible:
-		[76]
 1732989828,R,76
-#############
 1732990073,E,76
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 70:
-		Reservation time: 1732990291
-		Reserved resources: [3, 1, 25, 21, 30, 22, 0, 8, 20, 15, 2, 14, 28, 26, 27, 13]
-	Reserve now, 80 with resources 8:
-	Eligible:
-		[80]
 1732990073,R,80
-#############
 1732990214,E,65
 1732990214,R,70
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 71:
-		Reservation time: 1732990396
-		Reserved resources: [20, 3, 25, 30, 0, 26, 22, 2, 9, 29, 23, 24, 17, 6, 10, 11]
-	Eligible:
-		[]
-#############
 1732990307,E,75
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 71:
-		Reservation time: 1732990394
-		Reserved resources: [27, 15, 1, 13, 21, 28, 14, 8, 20, 3, 25, 30, 0, 26, 22, 2]
-	Reserve now, 81 with resources 8:
-	Eligible:
-		[81]
 1732990307,R,81
-#############
 1732990395,E,70
 1732990395,R,71
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 73:
-		Reservation time: 1732990995
-		Reserved resources: [1, 14, 8, 21, 22, 15, 3, 30, 26, 13, 0, 25, 28, 27, 20, 2]
-	Eligible:
-		[]
-#############
 1732990495,E,80
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 73:
-		Reservation time: 1732990995
-		Reserved resources: [1, 14, 8, 21, 22, 15, 3, 30, 26, 13, 0, 25, 28, 27, 20, 2]
-	Reserve now, 85 with resources 8:
-	Eligible:
-		[85]
 1732990495,R,85
-#############
 1732990949,E,71
 1732990949,R,73
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 82:
-		Reservation time: 1732991549
-		Reserved resources: [28, 14, 21, 8, 25, 2, 26, 13, 27, 22, 0, 20, 30, 1, 15, 3]
-	Eligible:
-		[]
-#############
 1732991116,E,81
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 82:
-		Reservation time: 1732991549
-		Reserved resources: [28, 14, 21, 8, 25, 2, 26, 13, 27, 22, 0, 20, 30, 1, 15, 3]
-	Reserve now, 86 with resources 8:
-	Eligible:
-		[86]
 1732991116,R,86
-#############
 1732991325,E,85
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 82:
-		Reservation time: 1732991549
-		Reserved resources: [28, 14, 21, 8, 25, 2, 26, 13, 27, 22, 0, 20, 30, 1, 15, 3]
-	Reserve now, 88 with resources 8:
-	Eligible:
-		[88]
 1732991325,R,88
-#############
 1732991475,E,88
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 82:
-		Reservation time: 1732991549
-		Reserved resources: [28, 14, 21, 8, 25, 2, 26, 13, 27, 22, 0, 20, 30, 1, 15, 3]
-	Reserve now, 92 with resources 8:
-	Eligible:
-		[92]
 1732991475,R,92
-#############
 1732991481,E,86
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 82:
-		Reservation time: 1732991549
-		Reserved resources: [28, 14, 21, 8, 25, 2, 26, 13, 27, 22, 0, 20, 30, 1, 15, 3]
-	Reserve now, 99 with resources 8:
-	Eligible:
-		[99]
 1732991481,R,99
-#############
 1732991496,E,73
 1732991496,R,82
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Eligible:
-		[]
-#############
 1732991651,E,92
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Reserve now, 101 with resources 8:
-	Eligible:
-		[101]
 1732991651,R,101
-#############
 1732991889,E,99
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Reserve now, 103 with resources 8:
-	Eligible:
-		[103]
 1732991889,R,103
-#############
 1732991914,E,101
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Reserve now, 106 with resources 8:
-	Eligible:
-		[106]
 1732991914,R,106
-#############
 1732992161,E,103
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Reserve now, 110 with resources 8:
-	Eligible:
-		[110]
 1732992161,R,110
-#############
 1732992309,E,110
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 89:
-		Reservation time: 1732992396
-		Reserved resources: [27, 8, 20, 21, 13, 26, 15, 25, 1, 28, 0, 2, 14, 30, 22, 3]
-	Reserve now, 128 with resources 8:
-	Eligible:
-		[128]
 1732992309,R,128
-#############
 1732992345,E,82
 1732992345,R,89
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 97:
-		Reservation time: 1732992814
-		Reserved resources: [27, 22, 26, 13, 14, 8, 2, 1, 16, 5, 4, 7, 18, 31, 19, 12]
-	Eligible:
-		[]
-#############
 1732992611,E,89
 1732992611,R,97
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 100:
-		Reservation time: 1732993211
-		Reserved resources: [15, 22, 27, 14, 30, 21, 25, 8, 1, 0, 26, 3, 28, 2, 13, 20]
-	Eligible:
-		[]
-#############
 1732992657,E,106
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 100:
-		Reservation time: 1732993211
-		Reserved resources: [15, 22, 27, 14, 30, 21, 25, 8, 1, 0, 26, 3, 28, 2, 13, 20]
-	Reserve now, 129 with resources 8:
-	Eligible:
-		[129]
 1732992657,R,129
-#############
 1732992863,E,128
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 100:
-		Reservation time: 1732993211
-		Reserved resources: [15, 22, 27, 14, 30, 21, 25, 8, 1, 0, 26, 3, 28, 2, 13, 20]
-	Reserve now, 130 with resources 8:
-	Eligible:
-		[130]
 1732992863,R,130
-#############
 1732993012,E,129
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 100:
-		Reservation time: 1732993211
-		Reserved resources: [15, 22, 27, 14, 30, 21, 25, 8, 1, 0, 26, 3, 28, 2, 13, 20]
-	Reserve now, 131 with resources 8:
-	Eligible:
-		[131]
 1732993012,R,131
-#############
 1732993132,E,97
 1732993132,R,100
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 102:
-		Reservation time: 1732993552
-		Reserved resources: [30, 21, 20, 15, 2, 26, 3, 13, 22, 25, 28, 1, 14, 8, 0, 27]
-	Eligible:
-		[]
-#############
 1732993169,E,131
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 102:
-		Reservation time: 1732993552
-		Reserved resources: [30, 21, 20, 15, 2, 26, 3, 13, 22, 25, 28, 1, 14, 8, 0, 27]
-	Reserve now, 135 with resources 8:
-	Eligible:
-		[135]
 1732993169,R,135
-#############
 1732993222,E,135
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 102:
-		Reservation time: 1732993552
-		Reserved resources: [30, 21, 20, 15, 2, 26, 3, 13, 22, 25, 28, 1, 14, 8, 0, 27]
-	Reserve now, 137 with resources 8:
-	Eligible:
-		[137]
 1732993222,R,137
-#############
 1732993539,E,100
 1732993539,R,102
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 115:
-		Reservation time: 1732994139
-		Reserved resources: [26, 8, 27, 20, 3, 1, 15, 28, 14, 25, 0, 21, 2, 22, 30, 13]
-	Eligible:
-		[]
-#############
 1732993642,E,130
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 115:
-		Reservation time: 1732994139
-		Reserved resources: [26, 8, 27, 20, 3, 1, 15, 28, 14, 25, 0, 21, 2, 22, 30, 13]
-	Reserve now, 150 with resources 8:
-	Eligible:
-		[150]
 1732993642,R,150
-#############
 1732993819,E,137
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 115:
-		Reservation time: 1732994139
-		Reserved resources: [26, 8, 27, 20, 3, 1, 15, 28, 14, 25, 0, 21, 2, 22, 30, 13]
-	Reserve now, 153 with resources 8:
-	Eligible:
-		[153]
 1732993819,R,153
-#############
 1732994104,E,153
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 115:
-		Reservation time: 1732994139
-		Reserved resources: [26, 8, 27, 20, 3, 1, 15, 28, 14, 25, 0, 21, 2, 22, 30, 13]
-	Reserve now, 156 with resources 8:
-	Eligible:
-		[156]
 1732994104,R,156
-#############
 1732994128,E,102
 1732994128,R,115
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 116:
-		Reservation time: 1732994242
-		Reserved resources: [27, 30, 25, 15, 3, 14, 0, 20, 23, 9, 24, 6, 11, 10, 17, 29]
-	Eligible:
-		[]
-#############
 1732994183,E,115
 1732994183,R,116
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 118:
-		Reservation time: 1732994603
-		Reserved resources: [0, 21, 2, 13, 20, 22, 28, 26, 1, 25, 14, 27, 30, 15, 8, 3]
-	Eligible:
-		[]
-#############
 1732994186,E,150
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 118:
-		Reservation time: 1732994603
-		Reserved resources: [0, 21, 2, 13, 20, 22, 28, 26, 1, 25, 14, 27, 30, 15, 8, 3]
-	Reserve now, 165 with resources 8:
-	Eligible:
-		[165]
 1732994186,R,165
-#############
 1732994249,E,165
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 118:
-		Reservation time: 1732994603
-		Reserved resources: [0, 21, 2, 13, 20, 22, 28, 26, 1, 25, 14, 27, 30, 15, 8, 3]
-	Reserve now, 169 with resources 8:
-	Eligible:
-		[169]
 1732994249,R,169
-#############
 1732994517,E,169
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 118:
-		Reservation time: 1732994603
-		Reserved resources: [0, 21, 2, 13, 20, 22, 28, 26, 1, 25, 14, 27, 30, 15, 8, 3]
-	Reserve now, 170 with resources 8:
-	Eligible:
-		[170]
 1732994517,R,170
-#############
 1732994563,E,116
 1732994563,R,118
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 122:
-		Reservation time: 1732995004
-		Reserved resources: [28, 27, 22, 3, 30, 2, 21, 0, 16, 31, 5, 19, 18, 7, 4, 12]
-	Eligible:
-		[]
-#############
 1732994730,E,118
 1732994730,R,122
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 123:
-		Reservation time: 1732995004
-		Reserved resources: [1, 3, 2, 21, 30, 0, 27, 15, 16, 31, 5, 19, 18, 7, 4, 12]
-	Eligible:
-		[]
-#############
 1732994783,E,122
 1732994783,R,123
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 125:
-		Reservation time: 1732995683
-		Reserved resources: [22, 1, 25, 28, 27, 26, 20, 21, 0, 15, 2, 8, 3, 14, 30, 13]
-	Eligible:
-		[]
-#############
 1732994868,E,156
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 125:
-		Reservation time: 1732995683
-		Reserved resources: [22, 1, 25, 28, 27, 26, 20, 21, 0, 15, 2, 8, 3, 14, 30, 13]
-	Reserve now, 178 with resources 8:
-	Eligible:
-		[178]
 1732994868,R,178
-#############
 1732995092,E,170
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 125:
-		Reservation time: 1732995683
-		Reserved resources: [22, 1, 25, 28, 27, 26, 20, 21, 0, 15, 2, 8, 3, 14, 30, 13]
-	Reserve now, 180 with resources 8:
-	Eligible:
-		[180]
 1732995092,R,180
-#############
 1732995244,E,180
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 125:
-		Reservation time: 1732995683
-		Reserved resources: [22, 1, 25, 28, 27, 26, 20, 21, 0, 15, 2, 8, 3, 14, 30, 13]
-	Reserve now, 190 with resources 8:
-	Eligible:
-		[190]
 1732995244,R,190
-#############
 1732995533,E,123
 1732995533,R,125
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 126:
-		Reservation time: 1732996433
-		Reserved resources: [21, 26, 22, 15, 2, 8, 30, 28, 27, 25, 0, 20, 1, 14, 3, 13]
-	Eligible:
-		[]
-#############
 1732995768,E,178
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 126:
-		Reservation time: 1732996433
-		Reserved resources: [21, 26, 22, 15, 2, 8, 30, 28, 27, 25, 0, 20, 1, 14, 3, 13]
-	Reserve now, 199 with resources 8:
-	Eligible:
-		[199]
 1732995768,R,199
-#############
 1732995819,E,190
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 126:
-		Reservation time: 1732996433
-		Reserved resources: [21, 26, 22, 15, 2, 8, 30, 28, 27, 25, 0, 20, 1, 14, 3, 13]
-	Reserve now, 209 with resources 8:
-	Eligible:
-		[209]
 1732995819,R,209
-#############
 1732995822,E,199
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 126:
-		Reservation time: 1732996433
-		Reserved resources: [21, 26, 22, 15, 2, 8, 30, 28, 27, 25, 0, 20, 1, 14, 3, 13]
-	Reserve now, 212 with resources 8:
-	Eligible:
-		[212]
 1732995822,R,212
-#############
 1732996085,E,212
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 126:
-		Reservation time: 1732996433
-		Reserved resources: [21, 26, 22, 15, 2, 8, 30, 28, 27, 25, 0, 20, 1, 14, 3, 13]
-	Reserve now, 229 with resources 8:
-	Eligible:
-		[229]
 1732996085,R,229
-#############
 1732996404,E,125
 1732996404,R,126
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 141:
-		Reservation time: 1732996719
-		Reserved resources: [20, 27, 8, 2, 22, 15, 21, 25, 29, 6, 10, 17, 11, 24, 23, 9]
-	Eligible:
-		[]
-#############
 1732996570,E,126
 1732996570,R,141
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 142:
-		Reservation time: 1732996719
-		Reserved resources: [28, 15, 0, 14, 27, 25, 2, 26, 29, 6, 10, 17, 11, 24, 23, 9]
-	Eligible:
-		[]
-#############
 1732996632,E,141
 1732996632,R,142
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 161:
-		Reservation time: 1732996932
-		Reserved resources: [28, 1, 27, 22, 25, 8, 20, 26, 30, 0, 2, 15, 13, 21, 14, 3]
-	Eligible:
-		[]
-#############
 1732996694,E,209
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 161:
-		Reservation time: 1732996932
-		Reserved resources: [28, 1, 27, 22, 25, 8, 20, 26, 30, 0, 2, 15, 13, 21, 14, 3]
-	Reserve now, 232 with resources 8:
-	Eligible:
-		[232]
 1732996694,R,232
-#############
 1732996849,E,229
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 161:
-		Reservation time: 1732996932
-		Reserved resources: [28, 1, 27, 22, 25, 8, 20, 26, 30, 0, 2, 15, 13, 21, 14, 3]
-	Reserve now, 235 with resources 8:
-	Eligible:
-		[235]
 1732996849,R,235
-#############
 1732996864,E,232
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 161:
-		Reservation time: 1732996932
-		Reserved resources: [28, 1, 27, 22, 25, 8, 20, 26, 30, 0, 2, 15, 13, 21, 14, 3]
-	Reserve now, 237 with resources 8:
-	Eligible:
-		[237]
 1732996864,R,237
-#############
 1732996881,E,142
 1732996881,R,161
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 163:
-		Reservation time: 1732997781
-		Reserved resources: [28, 15, 0, 21, 20, 26, 27, 22, 3, 14, 30, 1, 25, 13, 8, 2]
-	Eligible:
-		[]
-#############
 1732997015,E,235
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 163:
-		Reservation time: 1732997781
-		Reserved resources: [28, 15, 0, 21, 20, 26, 27, 22, 3, 14, 30, 1, 25, 13, 8, 2]
-	Reserve now, 238 with resources 8:
-	Eligible:
-		[238]
 1732997015,R,238
-#############
 1732997309,E,238
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 163:
-		Reservation time: 1732997781
-		Reserved resources: [28, 15, 0, 21, 20, 26, 27, 22, 3, 14, 30, 1, 25, 13, 8, 2]
-	Reserve now, 249 with resources 8:
-	Eligible:
-		[249]
 1732997309,R,249
-#############
 1732997427,E,237
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 163:
-		Reservation time: 1732997781
-		Reserved resources: [28, 15, 0, 21, 20, 26, 27, 22, 3, 14, 30, 1, 25, 13, 8, 2]
-	Reserve now, 256 with resources 8:
-	Eligible:
-		[256]
 1732997427,R,256
-#############
 1732997714,E,249
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 163:
-		Reservation time: 1732997781
-		Reserved resources: [28, 15, 0, 21, 20, 26, 27, 22, 3, 14, 30, 1, 25, 13, 8, 2]
-	Eligible:
-		[]
-#############
 1732997760,E,161
 1732997760,R,163
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 172:
-		Reservation time: 1732998360
-		Reserved resources: [19, 0, 3, 8, 28, 5, 4, 16, 18, 14, 7, 21, 12, 15, 20, 2]
-	Eligible:
-		[]
-#############
 1732997793,E,256
 1732997793,R,172
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 188:
-		Reservation time: 1732998360
-		Reserved resources: [19, 0, 3, 8, 28, 5, 4, 16, 18, 14, 7, 21, 12, 15, 20, 2]
-	Eligible:
-		[]
-#############
 1732997971,E,172
 1732997971,R,188
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 194:
-		Reservation time: 1732998571
-		Reserved resources: [13, 30, 24, 11, 26, 29, 10, 22, 23, 25, 31, 1, 17, 27, 9, 6]
-	Eligible:
-		[]
-#############
 1732998283,E,163
 1732998283,R,194
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 200:
-		Reservation time: 1732999183
-		Reserved resources: [18, 15, 5, 3, 4, 2, 12, 28, 8, 7, 16, 20, 19, 14, 21, 0]
-	Eligible:
-		[]
-#############
 1732998533,E,188
 1732998533,R,200
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 204:
-		Reservation time: 1732999433
-		Reserved resources: [29, 30, 27, 31, 13, 11, 6, 10, 24, 17, 22, 1, 9, 23, 25, 26]
-	Eligible:
-		[]
-#############
 1732999036,E,194
 1732999036,R,204
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 211:
-		Reservation time: 1732999433
-		Reserved resources: [29, 30, 27, 31, 13, 11, 6, 10, 24, 17, 22, 1, 9, 23, 25, 26]
-	Eligible:
-		[]
-#############
 1732999289,E,204
 1732999289,R,211
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 219:
-		Reservation time: 1732999433
-		Reserved resources: [29, 30, 27, 31, 13, 11, 6, 10, 24, 17, 22, 1, 9, 23, 25, 26]
-	Eligible:
-		[]
-#############
 1732999346,E,211
 1732999346,R,219
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 223:
-		Reservation time: 1732999766
-		Reserved resources: [21, 28, 20, 8, 0, 15, 16, 4, 18, 2, 14, 5, 3, 19, 12, 7]
-	Eligible:
-		[]
-#############
 1732999350,E,200
 1732999350,R,223
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 230:
-		Reservation time: 1732999766
-		Reserved resources: [21, 28, 20, 8, 0, 15, 16, 4, 18, 2, 14, 5, 3, 19, 12, 7]
-	Eligible:
-		[]
-#############
 1732999407,E,223
 1732999407,R,230
-#### BACKFILL ####
-Building time resrouce map:
-	Reserve top job, 246:
-		Reservation time: 1732999766
-		Reserved resources: [21, 28, 20, 8, 0, 15, 16, 4, 18, 2, 14, 5, 3, 19, 12, 7]
-	Eligible:
-		[]
-#############
 1732999669,E,230
 1732999669,R,246
 1732999692,E,219

@@ -140,7 +140,7 @@ class Scheduler:
         pass
 
     def _build_time_resource_map(self):
-        print('Building time resrouce map:')
+        # print('Building time resrouce map:')
 
         # Sort the jobs by their end times
         running_jobs = sorted(self._running, key=lambda x: x.res_run_ts + x.walltime)
@@ -174,7 +174,7 @@ class Scheduler:
         Tries to backfill jobs without delaying the 1st job in the queue.
         """
 
-        print('#### BACKFILL ####')
+        # print('#### BACKFILL ####')
 
         trm = self._build_time_resource_map()
         # print('\tTRM Initial:')
@@ -213,8 +213,8 @@ class Scheduler:
                 # Update the time resource map
                 trm = self.allocator.reserve_now(trm, j.id, j.resources, self.schedulus.sim.now + j.walltime)
 
-        print('\tEligible:')
-        print(f'\t\t{[j.id for j in backfill_jobs]}')
+        # print('\tEligible:')
+        # print(f'\t\t{[j.id for j in backfill_jobs]}')
 
 
         for job in backfill_jobs:
@@ -233,4 +233,4 @@ class Scheduler:
             # Run the job
             self.schedulus.create_run_event(job.id)
 
-        print('#############')
+        # print('#############')
