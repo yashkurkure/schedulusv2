@@ -140,7 +140,6 @@ class Scheduler:
         # Build a map of time to resource ids
         # This map indicates the resources being freed up 
         # at each time entry in the map
-        print('\tTRM:')
         time_resource_map = {}
         # Add the resources available now to the time resource map
         time_resource_map[self.schedulus.sim.now] = [resource.id for resource in self.allocator.get_available()]
@@ -154,11 +153,18 @@ class Scheduler:
 
             time_resource_map[end_time] = cumulative
 
-            print(f'\t\t{j.id}, {end_time}, {time_resource_map[end_time]}')
+
+        print('\tTRM Initial:')
+        for t in time_resource_map:
+            print(f'\t\t{t}, {time_resource_map[t]}')
 
         # Now given this map reserve resources for the top job
         top_job = self._queue[0]
         time_resource_map = self.allocator.reserve_future( time_resource_map, top_job.id, top_job.resources)
+
+        print('\tTRM After top job:')
+        for t in time_resource_map:
+            print(f'\t\t{t}, {time_resource_map[t]}')
 
         # Check if any job in the queue can be allocated using these resources now
         backfill_job_ids = []
