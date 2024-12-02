@@ -59,29 +59,29 @@ cqsim_r.to_csv('parsed_cqsim.csv',  index=False)
 cqsim2_r.to_csv('parsed_cqsim2.csv',  index=False)
 
 # Calcluate the delta between run events w.r.t to pbs2
-pbs2_d = pd.merge(pbs2_r, pbs1_r, on='id')
+pbs2_d = pd.merge(pbs1_r, pbs2_r, on='id')
 pbs2_d['delta'] = pbs2_d['time_x'] - pbs2_d['time_y']
 pbs2_d['delta'] = pbs2_d['delta']/3600
 
-cqsim_d = pd.merge(cqsim_r, pbs1_r, on='id')
+cqsim_d = pd.merge(cqsim_r, pbs2_r, on='id')
 cqsim_d['delta'] = cqsim_d['time_x'] - cqsim_d['time_y']
 cqsim_d['delta'] = cqsim_d['delta']/3600
 
-schedulus_d = pd.merge(schedulus_r, pbs1_r, on='id')
+schedulus_d = pd.merge(schedulus_r, pbs2_r, on='id')
 schedulus_d['delta'] = schedulus_d['time_x'] - schedulus_d['time_y']
 schedulus_d['delta'] = schedulus_d['delta']/3600
 
-cqsim2_d = pd.merge(cqsim2_r, pbs1_r, on='id')
+cqsim2_d = pd.merge(cqsim2_r, pbs2_r, on='id')
 cqsim2_d['delta'] = cqsim2_d['time_x'] - cqsim2_d['time_y']
 cqsim2_d['delta'] = cqsim2_d['delta']/3600
 
 # Create a new field to differentiate the data
 plt.figure(figsize=(20, 6))  # Adjust figure size if needed
 
-sns.scatterplot(x='id', y='delta', data=pbs2_d, color='blue', label=r'x = PBS2, y = PBS1')
-sns.scatterplot(x='id', y='delta', data=cqsim_d, color='black', label=r'x = CQSim, y = PBS1')
-sns.scatterplot(x='id', y='delta', data=schedulus_d, color='green', label=r'x = Schedulus, y = PBS1')
-sns.scatterplot(x='id', y='delta', data=cqsim2_d, color='red', label=r'x = CQSimV2, y = PBS1')
+sns.scatterplot(x='id', y='delta', data=pbs2_d, color='blue', label=r'x = PBS1, y = PBS2')
+sns.scatterplot(x='id', y='delta', data=cqsim_d, color='black', label=r'x = CQSim, y = PBS2')
+sns.scatterplot(x='id', y='delta', data=schedulus_d, color='green', label=r'x = Schedulus, y = PBS2')
+sns.scatterplot(x='id', y='delta', data=cqsim2_d, color='red', label=r'x = CQSimV2, y = PBS2')
 
 plt.xlabel('Job ID', fontsize=16)
 plt.ylabel(r'$\Delta$ T$_{start}$ (Hrs)', fontsize=16)
@@ -94,10 +94,10 @@ plt.savefig('delta_start.png')
 
 plt.figure(figsize=(20, 6))
 
-sns.kdeplot(pbs2_d['delta'], color='blue', label=r'x = PBS2, y = PBS1')
-sns.kdeplot(cqsim_d['delta'], color='black', label=r'x = CQSim, y = PBS1')
-sns.kdeplot(schedulus_d['delta'], color='green', label=r'x = Schedulus, y = PBS1')
-sns.kdeplot(cqsim2_d['delta'], color='red', label=r'x = CQSimV2, y = PBS1')
+sns.kdeplot(pbs2_d['delta'], color='blue', label=r'x = PBS1, y = PBS2')
+sns.kdeplot(cqsim_d['delta'], color='black', label=r'x = CQSim, y = PBS2')
+sns.kdeplot(schedulus_d['delta'], color='green', label=r'x = Schedulus, y = PBS2')
+sns.kdeplot(cqsim2_d['delta'], color='red', label=r'x = CQSimV2, y = PBS2')
 
 
 plt.xlabel(r'$\Delta$ T$_{start}$ (Hrs)', fontsize=16)
