@@ -53,7 +53,7 @@ class AllocatorEvent(Event):
 
 class Simulator:
     def __init__(self, path_event_log, path_job_log, path_system_config):
-
+        self.sim = None
         
         self.df_events: pd.DataFrame = read_event_data(path_event_log)
         self.df_jobs: pd.DataFrame = read_job_data(path_job_log)
@@ -115,10 +115,21 @@ class Simulator:
             pass
         else:
             raise NotImplementedError(f'Event {e.type} not implemented!')
+    
+    def create_run_event(self, job_id):
+        # print(f'Creating run event for: {job_id}')
+        e = SchedulerEvent(
+            time=self.sim.now,
+            type=EventType.Sched.START,
+            job_id=job_id
+        )
+        self.sim.sched(
+            self.handle_scheduler_event,
+            e, 
+            until=e.time
+        )
         
-
-    def simulate(self):
-
+    def initialize(self):
         start_time: int = -1
         submit_events: list[SchedulerEvent] = []
 
@@ -147,15 +158,17 @@ class Simulator:
         for e in submit_events:
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
 
+
+
+    def simulate(self):
+        
+        # Initialize
+        self.initialize()
+
         # Run the simulation
         self.sim.run()
 
-
-    def create_run_event(self, job_id):
-        self.handle_scheduler_event(
-                SchedulerEvent(
-                    time=self.sim.now,
-                    type=EventType.Sched.START,
-                    job_id=job_id
-                )
-            )
+    def step(self):
+        if not self.sim:
+            self.initialize()
+        self.sim.step()

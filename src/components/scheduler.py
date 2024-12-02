@@ -39,6 +39,10 @@ class Scheduler:
         self._queue: list[Job] = []
         self._running: list[Job] = []
         self._finished: list[Job] = []
+
+        # Keeps track of pending run events
+        self._pending_run: list[int] = []
+
         pass
     
 
@@ -115,6 +119,10 @@ class Scheduler:
         # print('Running scheduling cycle..')
         # Try and schedule jobs in the head of the queue
         for job in self._queue:
+
+            # If a job has a pending run event, dont consider it for sched cycle
+            if job.id in self._pending_run:
+                continue
             
             # Try allocating resources
             resources = self.allocator.allocate(job.id, job.resources)
@@ -128,6 +136,7 @@ class Scheduler:
             job.resource_ids = resources
 
             # Run the job
+            self._pending_run.append(job.id)
             self.schedulus.create_run_event(job.id)
 
 
@@ -195,6 +204,11 @@ class Scheduler:
         for j in self._queue[1:]:
             # print(f'\t\t Trying job: {j.id} with resource requirement of {j.resources} for time {j.walltime}')
 
+            # If a job has a pending run event, dont consider it for backfill
+            if j.id in self._pending_run:
+                continue
+
+
             can_backfill = True
 
             # This loop checks if the job can be backfilled
@@ -236,6 +250,7 @@ class Scheduler:
             job.resource_ids = resources
 
             # Run the job
+            self._pending_run.append(job.id)
             self.schedulus.create_run_event(job.id)
 
         # print('#############')
