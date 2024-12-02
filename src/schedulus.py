@@ -64,6 +64,10 @@ class SchedulusV2:
         self.scheduler = Scheduler(self)
 
 
+    def now(self):
+        return self.sim.now
+
+
     def handle_scheduler_event(self, e: SchedulerEvent):
         print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
         

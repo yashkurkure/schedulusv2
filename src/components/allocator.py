@@ -117,34 +117,42 @@ class Allocator:
             # Once reourrces are available break
             if len(resource_pool) > resources:
                 reservation_time = t
-                print(f'\t\t{job_id}, {reservation_time}')
                 break
 
         # For the found reservation time get resources to reserve
         reserved_resources = random.sample(time_resource_map[reservation_time], resources)
+        print(f'\t\tReservation time: {reservation_time}')
+        print(f'\t\tReserved resources: {reserved_resources}')
 
         # Remove those resources from the time resource map
-        for r in reserved_resources:
-            time_resource_map[reservation_time].remove(r)
+        for t in time_resource_map:
+            # print(f'\t\tFor time: {t}')
+            if reservation_time <= t:
+                # print(f'\t\t\tResources: {time_resource_map[t]}')
+                for r in reserved_resources:
+                    # print(f'\t\t\t\tRemoving: {r}')
+                    time_resource_map[t].remove(r)
 
         # Return the updated time resource map
         return time_resource_map
     
-    def reserve_now(self, time_resource_map, job_id, resources, end) -> dict[int, int]:
-        print(f'\tReserve now, {job_id}:')
+    def reserve_now(self, trm, job_id, resources, end) -> dict[int, int]:
+        print(f'\tReserve now, {job_id} with resources {resources}:')
+        print(f'\t\tUsing TRM:')
+        for t in trm:
+            print(f'\t\t\t{t}: {trm[t]}')
 
-
-        for t in time_resource_map:
+        for t in trm:
 
             if t > end:
                 break
 
-            reserved_resources = random.sample(time_resource_map[t], resources)
+            reserved_resources = random.sample(trm[t], resources)
 
             # Remove those resources from the time resource map
             for r in reserved_resources:
-                time_resource_map[t].remove(r)
+                trm[t].remove(r)
 
 
-        return time_resource_map
+        return trm
         

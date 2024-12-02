@@ -25,6 +25,11 @@ class Job:
     state: JobState = JobState.WAITING
     resource_ids: list[int] = None
 
+    # Result fields
+    res_submit_ts = -1
+    res_run_ts = -1
+    res_end_ts = -1
+
 
 class Scheduler:
 
@@ -42,6 +47,7 @@ class Scheduler:
         """
         Returns list of events that must be processed by the simulator.
         """
+        job.res_submit_ts = self.schedulus.now()
 
         # Add the job to the queue
         self._queue.append(job)
@@ -63,6 +69,7 @@ class Scheduler:
             exit()
 
         # Update the state of the job
+        job.res_run_ts = self.schedulus.now()
         job.state = JobState.RUNNING
 
         # Remove from queue
@@ -85,6 +92,7 @@ class Scheduler:
             exit()
         
         # Update the state of the job
+        job.res_end_ts = self.schedulus.now()
         job.state = JobState.FINISHED
 
         # Deallocate the resources for the job
@@ -132,8 +140,29 @@ class Scheduler:
         pass
 
     def _build_time_resource_map(self):
-        # TODO
-        pass
+        print('Building time resrouce map:')
+
+        # Sort the jobs by their end times
+        running_jobs = sorted(self._running, key=lambda x: x.res_run_ts + x.walltime)
+
+        trm = {}
+        cumulative = [resource.id for resource in self.allocator.get_available()]
+        trm[self.schedulus.now()] = cumulative[:]
+        # print(f'\t\tNow {self.schedulus.now()}, {trm[self.schedulus.now()]}')
+        for j in running_jobs:
+            end_time = j.res_run_ts + j.walltime
+            resource_ids = j.resource_ids
+
+            # print(f'\t\tJob: {j.id}, {end_time}, {resource_ids}')
+
+            cumulative += resource_ids[:]
+
+            if end_time in trm:
+                trm[end_time] += resource_ids[:]
+            else:
+                trm[end_time] = cumulative[:]
+
+        return dict(sorted(trm.items()))
 
     def _backfill_easy(self):
         """
@@ -141,65 +170,61 @@ class Scheduler:
         """
 
         print('#### BACKFILL ####')
-        # Build a map of time to resource ids
-        # This map indicates the resources being freed up 
-        # at each time entry in the map
-        time_resource_map = {}
-        # Add the resources available now to the time resource map
-        cumulative = [resource.id for resource in self.allocator.get_available()]
-        time_resource_map[self.schedulus.sim.now] = cumulative[:]
-        # For each job add resources being freed up at it's end time
-        print(f'Cumulative({len(cumulative)}):', cumulative)
 
-        for j in self._running:
-            end_time = self.schedulus.sim.now + j.walltime
-            print()
-            print(f'End time: {end_time}')
-            resource_ids = j.resource_ids
-            print(f'Freed up({len(resource_ids)}):', resource_ids)
-            cumulative += resource_ids[:]
-            print(f'Cumulative({len(cumulative)}):', cumulative)
-
-            time_resource_map[end_time] = cumulative[:]
-
-
-        print('\tTRM Initial:')
-        for t in time_resource_map:
-            print(f'\t\t{t}, {time_resource_map[t]}')
+        trm = self._build_time_resource_map()
+        # print('\tTRM Initial:')
+        # for t in trm:
+        #     print(f'\t\t{t}, {trm[t]}')
 
         # Now given this map reserve resources for the top job
         top_job = self._queue[0]
-        time_resource_map = self.allocator.reserve_future( time_resource_map, top_job.id, top_job.resources)
+        trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources)
 
-        print('\tTRM After top job:')
-        for t in time_resource_map:
-            print(f'\t\t{t}, {time_resource_map[t]}')
+        # print('\tTRM After top job:')
+        # for t in trm:
+        #     print(f'\t\t{t}, {trm[t]}')
 
         # Check if any job in the queue can be allocated using these resources now
-        backfill_job_ids = []
+        backfill_jobs: list[Job] = []
         for j in self._queue[1:]:
+            # print(f'\t\t Trying job: {j.id} with resource requirement of {j.resources}')
 
             can_backfill = True
 
             # This loop checks if the job can be backfilled
             # If not it sets can_backfill to False
-            for t in time_resource_map:
-                resources = time_resource_map[t]
+            for t in trm:
+                resources = trm[t]
                 # Not enough resources
                 if len(resources) < j.resources:
                     can_backfill = False
                     break
             
-
             if can_backfill:
                 # Add to jobs that can be backfilled
-                backfill_job_ids.append(j.id)
+                backfill_jobs.append(j)
 
                 # Update the time resource map
-                time_resource_map = self.allocator.reserve_now(time_resource_map, j.id, j.resources, self.schedulus.sim.now + j.walltime)
+                trm = self.allocator.reserve_now(trm, j.id, j.resources, self.schedulus.sim.now + j.walltime)
 
-
-        
         print('\tEligible:')
-        print(f'\t\t{backfill_job_ids}')
+        print(f'\t\t{[j.id for j in backfill_jobs]}')
+
+
+        for job in backfill_jobs:
+            # Try allocating resources
+            resources = self.allocator.allocate(job.id, job.resources)
+
+            # If no resources stop
+            # Ensures strict ordering
+            if not resources:
+                print('Backfill Error: Job eligible but no resources!')
+                exit()
+            
+            # Give the job its resources
+            job.resource_ids = resources
+
+            # Run the job
+            self.schedulus.create_run_event(job.id)
+
         print('#############')
