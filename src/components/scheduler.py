@@ -122,16 +122,11 @@ class Scheduler:
             # Run the job
             self.schedulus.create_run_event(job.id)
 
-            # self.schedulus.handle_scheduler_event(
-            #     SchedulerEvent(
-            #         time=self.sim.now,
-            #         type=EventType.Sched.START,
-            #         job_id=job.id
-            #     )
-            # )
 
-        # Attempt to backfill
-        self._backfill_easy()
+        # Attempt to backfill if jobs are still in queue
+        # NOTE: We backfill around the top 1 job, so the queue must have 2 jobs
+        if len(self._queue) > 1:
+            self._backfill_easy()
 
         # print('Leaving scheduling cycle..')
         pass
@@ -140,4 +135,56 @@ class Scheduler:
         """
         Tries to backfill jobs without delaying the 1st job in the queue.
         """
-        pass
+
+        print('#### BACKFILL ####')
+        # Build a map of time to resource ids
+        # This map indicates the resources being freed up 
+        # at each time entry in the map
+        print('\tTRM:')
+        time_resource_map = {}
+        # Add the resources available now to the time resource map
+        time_resource_map[self.schedulus.sim.now] = [resource.id for resource in self.allocator.get_available()]
+        cumulative = time_resource_map[self.schedulus.sim.now]
+        for j in self._running:
+            
+            end_time = self.schedulus.sim.now + j.walltime
+            resource_ids = j.resource_ids
+
+            cumulative += resource_ids
+
+            time_resource_map[end_time] = cumulative
+
+            print(f'\t\t{j.id}, {end_time}, {time_resource_map[end_time]}')
+
+        # Now given this map reserve resources for the top job
+        top_job = self._queue[0]
+        time_resource_map = self.allocator.reserve_future( time_resource_map, top_job.id, top_job.resources)
+
+        # Check if any job in the queue can be allocated using these resources now
+        backfill_job_ids = []
+        for j in self._queue[1:]:
+
+            can_backfill = True
+
+            # This loop checks if the job can be backfilled
+            # If not it sets can_backfill to False
+            for t in time_resource_map:
+                resources = time_resource_map[t]
+                # Not enough resources
+                if len(resources) < j.resources:
+                    can_backfill = False
+                    break
+            
+
+            if can_backfill:
+                # Add to jobs that can be backfilled
+                backfill_job_ids.append(j.id)
+
+                # Update the time resource map
+                time_resource_map = self.allocator.reserve_now(time_resource_map, j.id, j.resources, self.schedulus.sim.now + j.walltime)
+
+
+        
+        print('\tEligible:')
+        print(f'\t\t{backfill_job_ids}')
+        print('#############')

@@ -40,6 +40,14 @@ class Allocator:
             )
             self.nodes.append(n)
 
+    def get_resource(self, resource_id) -> Node:
+        """
+        Returns a node given and id.
+        """
+        for n in self.nodes:
+            if n.id == resource_id:
+                return n
+
     def get_available(self) -> list[Node]:
         """
         Returns the available nodes.
@@ -72,7 +80,7 @@ class Allocator:
         """
 
         avaliable_nodes = self.get_available()
-        
+
         if resources > len(avaliable_nodes):
             return None
         
@@ -95,8 +103,48 @@ class Allocator:
             n.state = NodeState.AVAILABLE
             n.job_id = -1
 
-    def events():
-        """
-        Returns a list of events that must be processed by simulator.
-        """
-        pass
+
+    def reserve_future(self, time_resource_map, job_id, resources) -> dict[int, int]:
+        print(f'\tReserve top job, {job_id}:')
+
+        reservation_time = -1
+        # Iterate over the times when resources are getting freed up
+        for t in time_resource_map:
+
+            # Get the total resources available at this time
+            resource_pool = [self.get_resource(resource_id) for resource_id in time_resource_map[t]]
+        
+            # Once reourrces are available break
+            if len(resource_pool) > resources:
+                reservation_time = t
+                print(f'\t\t{job_id}, {reservation_time}')
+                break
+
+        # For the found reservation time get resources to reserve
+        reserved_resources = random.sample(time_resource_map[reservation_time], resources)
+
+        # Remove those resources from the time resource map
+        for r in reserved_resources:
+            time_resource_map[reservation_time].remove(r)
+
+        # Return the updated time resource map
+        return time_resource_map
+    
+    def reserve_now(self, time_resource_map, job_id, resources, end) -> dict[int, int]:
+        print(f'\tReserve now, {job_id}:')
+
+
+        for t in time_resource_map:
+
+            if t > end:
+                break
+
+            reserved_resources = random.sample(time_resource_map[t], resources)
+
+            # Remove those resources from the time resource map
+            for r in reserved_resources:
+                time_resource_map[t].remove(r)
+
+
+        return time_resource_map
+        
