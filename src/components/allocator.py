@@ -5,14 +5,14 @@ import random
 
 __metaclass__ = type
 
-class NodeState(Enum):
+class ResourceState(Enum):
     BUSY = 1
     OFFLINE = 2
     AVAILABLE = 3
 
 
 @dataclass
-class Node:
+class Resource:
 
     # These stay the same
     id: int
@@ -20,87 +20,87 @@ class Node:
     cpus: int
 
     # These may change
-    state: NodeState
+    state: ResourceState
     job_id: int
 
 
 class Allocator:
-    def __init__(self, schedulus, num_nodes):
-        self.schedulus = schedulus
+    def __init__(self, simulator, num_resources):
+        self.simulator = simulator
 
-        self.nodes: list[Node] = []
+        self.resources: list[Resource] = []
 
-        for i in range(0, num_nodes):
-            n = Node(
+        for i in range(0, num_resources):
+            n = Resource(
                 id = i,
-                name = f'node{i}',
+                name = f'resource_{i}',
                 cpus=1,
-                state = NodeState.AVAILABLE,
+                state = ResourceState.AVAILABLE,
                 job_id=-1
             )
-            self.nodes.append(n)
+            self.resources.append(n)
 
-    def get_resource(self, resource_id) -> Node:
+    def get_resource(self, resource_id) -> Resource:
         """
-        Returns a node given and id.
+        Returns a resource given and id.
         """
-        for n in self.nodes:
+        for n in self.resources:
             if n.id == resource_id:
                 return n
 
-    def get_available(self) -> list[Node]:
+    def get_available(self) -> list[Resource]:
         """
-        Returns the available nodes.
+        Returns the available resource.
         """
-        return [n for n in self.nodes if n.state == NodeState.AVAILABLE]
+        return [n for n in self.resources if n.state == ResourceState.AVAILABLE]
     
-    def get_busy(self) -> list[Node]:
+    def get_busy(self) -> list[Resource]:
         """
-        Returns the available nodes.
+        Returns the available resources.
         """
-        return [n for n in self.nodes if n.state == NodeState.BUSY]
+        return [n for n in self.resources if n.state == ResourceState.BUSY]
     
-    def get_busy(self, job_id) -> list[Node]:
+    def get_busy(self, job_id) -> list[Resource]:
         """
-        Returns the available nodes.
+        Returns the available resources.
         """
-        return [n for n in self.nodes if n.state == NodeState.BUSY and n.job_id == job_id]
+        return [n for n in self.resources if n.state == ResourceState.BUSY and n.job_id == job_id]
     
-    def get_offline(self) -> list[Node]:
+    def get_offline(self) -> list[Resource]:
         """
-        Returns the offline nodes.
+        Returns the offline resources.
         """
-        return [n for n in self.nodes if n.state == NodeState.OFFLINE]
+        return [n for n in self.resources if n.state == ResourceState.OFFLINE]
 
 
     def allocate(self, job_id, resources) -> list[int] | None:
         """
-        Allocates a num_nodes amount of nodes to some job_id.
+        Allocates a num_resources amount of resources to some job_id.
         Returns the ids of the resources allocated.
         """
 
-        avaliable_nodes = self.get_available()
+        avaliable_resources = self.get_available()
 
-        if resources > len(avaliable_nodes):
+        if resources > len(avaliable_resources):
             return None
         
-        alloc_nodes = random.sample(avaliable_nodes, resources)
+        alloc_resources = random.sample(avaliable_resources, resources)
 
-        for n in alloc_nodes:
-            n.state = NodeState.BUSY
+        for n in alloc_resources:
+            n.state = ResourceState.BUSY
             n.job_id = job_id
 
-        return [n.id for n in alloc_nodes]
+        return [n.id for n in alloc_resources]
 
     def deallocate(self, job_id) -> None:
         """
-        Deallocates nodes for some job_id.
+        Deallocates resources for some job_id.
         """
 
-        dealloc_nodes = self.get_busy(job_id)
+        dealloc_resources = self.get_busy(job_id)
 
-        for n in dealloc_nodes:
-            n.state = NodeState.AVAILABLE
+        for n in dealloc_resources:
+            n.state = ResourceState.AVAILABLE
             n.job_id = -1
 
 
@@ -120,7 +120,7 @@ class Allocator:
                 break
 
         # For the found reservation time get resources to reserve
-        # NOTE: Cannot remove randome ones because we want max of the same nodes to be free at all times
+        # NOTE: Cannot remove random ones because we want max of the same resources to be free at all times
         # reserved_resources = random.sample(time_resource_map[reservation_time], resources)
         # NOTE: Instead remove from the end of the list
         reserved_resources = trm[reservation_time][-resources:]

@@ -48,7 +48,7 @@ class SchedulerEvent(Event):
 
 @dataclass
 class AllocatorEvent(Event):
-    node_ids = list[int]
+    resource_id = int
 
 
 class Simulator:
@@ -127,6 +127,32 @@ class Simulator:
             self.handle_scheduler_event,
             e, 
             until=e.time
+        )
+
+    def create_alloc_event(self, resource_id):
+        # print(f'Creating run event for: {job_id}')
+        e = AllocatorEvent(
+            time=self.sim.now,
+            type=EventType.Alloc.ALLOCATE
+        )
+        self.sim.sched(
+            self.handle_allocator_event,
+            e,
+            until=e.time,
+            resource_ids=resource_id
+        )
+
+    def create_dealloc_event(self, resource_id):
+        # print(f'Creating run event for: {job_id}')
+        e = AllocatorEvent(
+            time=self.sim.now,
+            type=EventType.Alloc.DEALLOCATE
+        )
+        self.sim.sched(
+            self.handle_allocator_event,
+            e,
+            until=e.time,
+            resrource_ids=resource_id
         )
         
     def initialize(self):

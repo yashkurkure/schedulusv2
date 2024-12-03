@@ -33,9 +33,9 @@ class Job:
 
 class Scheduler:
 
-    def __init__(self, schedulus):
-        self.schedulus = schedulus
-        self.allocator: Allocator = self.schedulus.allocator
+    def __init__(self, simulator):
+        self.simulator = simulator
+        self.allocator: Allocator = self.simulator.allocator
         self._queue: list[Job] = []
         self._running: list[Job] = []
         self._finished: list[Job] = []
@@ -51,7 +51,7 @@ class Scheduler:
         """
         Returns list of events that must be processed by the simulator.
         """
-        job.res_submit_ts = self.schedulus.now()
+        job.res_submit_ts = self.simulator.now()
 
         # Add the job to the queue
         self._queue.append(job)
@@ -73,7 +73,7 @@ class Scheduler:
             exit()
 
         # Update the state of the job
-        job.res_run_ts = self.schedulus.now()
+        job.res_run_ts = self.simulator.now()
         job.state = JobState.RUNNING
 
         # Remove from queue
@@ -96,7 +96,7 @@ class Scheduler:
             exit()
         
         # Update the state of the job
-        job.res_end_ts = self.schedulus.now()
+        job.res_end_ts = self.simulator.now()
         job.state = JobState.FINISHED
 
         # Deallocate the resources for the job
@@ -137,7 +137,7 @@ class Scheduler:
 
             # Run the job
             self._pending_run.append(job.id)
-            self.schedulus.create_run_event(job.id)
+            self.simulator.create_run_event(job.id)
 
 
         # Attempt to backfill if jobs are still in queue
@@ -156,15 +156,15 @@ class Scheduler:
 
         trm = {}
         cumulative = [resource.id for resource in self.allocator.get_available()]
-        trm[self.schedulus.now()] = cumulative[:]
-        # print(f'\t\tNow {self.schedulus.now()}, {trm[self.schedulus.now()]}')
+        trm[self.simulator.now()] = cumulative[:]
+        # print(f'\t\tNow {self.simulator.now()}, {trm[self.simulator.now()]}')
         for j in running_jobs:
             end_time = j.res_run_ts + j.walltime
             resource_ids = j.resource_ids
 
             # NOTE: If a job is ending now, and its end event hasnt occured, it must 
             # removed from the running jobs list to build the time resource map
-            if end_time == self.schedulus.now():
+            if end_time == self.simulator.now():
                 continue
 
             # print(f'\t\tJob: {j.id}, {end_time}, {resource_ids}')
@@ -216,7 +216,7 @@ class Scheduler:
             for t in trm:
 
                 # Dont check beyond the walltime of the job
-                if t > self.schedulus.now() + j.walltime:
+                if t > self.simulator.now() + j.walltime:
                     break
 
                 resources = trm[t]
@@ -230,7 +230,7 @@ class Scheduler:
                 backfill_jobs.append(j)
 
                 # Update the time resource map
-                trm = self.allocator.reserve_now(trm, j.id, j.resources, self.schedulus.sim.now + j.walltime)
+                trm = self.allocator.reserve_now(trm, j.id, j.resources, self.simulator.sim.now + j.walltime)
 
         # print('\tEligible:')
         # print(f'\t\t{[j.id for j in backfill_jobs]}')
@@ -251,6 +251,6 @@ class Scheduler:
 
             # Run the job
             self._pending_run.append(job.id)
-            self.schedulus.create_run_event(job.id)
+            self.simulator.create_run_event(job.id)
 
         # print('#############')
