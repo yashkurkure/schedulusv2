@@ -59,22 +59,22 @@ cqsim_r.to_csv('parsed_cqsim.csv',  index=False)
 cqsim2_r.to_csv('parsed_cqsim2.csv',  index=False)
 
 # Calcluate the delta between run events w.r.t to pbs1
-pbs2_d = pd.merge(pbs2_r, pbs1_r, on='id')
+pbs2_d = pd.merge(pbs1_r, pbs2_r, on='id')
 pbs2_d['delta'] = pbs2_d['time_x'] - pbs2_d['time_y']
 pbs2_d['delta'] = (pbs2_d['delta']/3600)
 pbs2_d['delta_abs'] = abs(pbs2_d['delta'])
 
-cqsim_d = pd.merge(cqsim_r, pbs1_r, on='id')
+cqsim_d = pd.merge(cqsim_r, pbs2_r, on='id')
 cqsim_d['delta'] = cqsim_d['time_x'] - cqsim_d['time_y']
 cqsim_d['delta'] = (cqsim_d['delta']/3600)
 cqsim_d['delta_abs'] = abs(cqsim_d['delta'])
 
-schedulus_d = pd.merge(schedulus_r, pbs1_r, on='id')
+schedulus_d = pd.merge(schedulus_r, pbs2_r, on='id')
 schedulus_d['delta'] = schedulus_d['time_x'] - schedulus_d['time_y']
 schedulus_d['delta'] = (schedulus_d['delta']/3600)
 schedulus_d['delta_abs'] = abs(schedulus_d['delta'])
 
-cqsim2_d = pd.merge(cqsim2_r, pbs1_r, on='id')
+cqsim2_d = pd.merge(cqsim2_r, pbs2_r, on='id')
 cqsim2_d['delta'] = cqsim2_d['time_x'] - cqsim2_d['time_y']
 cqsim2_d['delta'] = (cqsim2_d['delta']/3600)
 cqsim2_d['delta_abs'] = abs(cqsim2_d['delta'])
