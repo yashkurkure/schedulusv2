@@ -1,6 +1,7 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import csv
 
 from utils import swf_columns
 
@@ -44,12 +45,11 @@ schedulus['time'] = schedulus['time'] - schedulus_t0
 assert pbs1.size == pbs2.size == cqsim.size == schedulus.size == cqsim2.size, "DataFrame sizes are not equal"
 
 # Extract the run events
-pbs1_r = pbs1[pbs1['event'] == 'R'][['id', 'time']].sort_values(by='id')
-pbs2_r = pbs2[pbs2['event'] == 'R'][['id', 'time']].sort_values(by='id')
-cqsim_r = cqsim[cqsim['event'] == 'R'][['id', 'time']].sort_values(by='id')
-schedulus_r = schedulus[schedulus['event'] == 'R'][['id', 'time']].sort_values(by='id')
-cqsim2_r = cqsim2[cqsim2['event'] == 'R'][['id', 'time']].sort_values(by='id')
-
+pbs1_r = pbs1[pbs1['event'] == 'R'][['id', 'time']].sort_values(by='id').copy()
+pbs2_r = pbs2[pbs2['event'] == 'R'][['id', 'time']].sort_values(by='id').copy()
+cqsim_r = cqsim[cqsim['event'] == 'R'][['id', 'time']].sort_values(by='id').copy()
+schedulus_r = schedulus[schedulus['event'] == 'R'][['id', 'time']].sort_values(by='id').copy()
+cqsim2_r = cqsim2[cqsim2['event'] == 'R'][['id', 'time']].sort_values(by='id').copy()
 
 
 # Output the parsed events
@@ -109,3 +109,68 @@ plt.yticks(fontsize=20)
 plt.legend(title=r'$\Delta$ T$_{start}$ = T$_{start}^{x}$ - T$_{start}^{y}$, y = PBS1', title_fontsize=16, fontsize=18, loc='upper left')
 plt.ylim(ymin=-0.1)
 plt.savefig('kde_delta_start.png')
+
+
+# Extract the queue events
+pbs1_q = pbs1[pbs1['event'] == 'Q'][['id', 'time']].sort_values(by='id').copy()
+pbs2_q = pbs2[pbs2['event'] == 'Q'][['id', 'time']].sort_values(by='id').copy()
+cqsim_q = cqsim[cqsim['event'] == 'Q'][['id', 'time']].sort_values(by='id').copy()
+schedulus_q = schedulus[schedulus['event'] == 'Q'][['id', 'time']].sort_values(by='id').copy()
+cqsim2_q = cqsim2[cqsim2['event'] == 'Q'][['id', 'time']].sort_values(by='id').copy()
+
+
+# Calculate the wait times
+pbs1_w = pd.merge(pbs1_q, pbs1_r, on='id', suffixes=('_q', '_r'))
+pbs1_w['wait'] = pbs1_w['time_r'] - pbs1_w['time_q']
+pbs2_w = pd.merge(pbs2_q, pbs2_r, on='id', suffixes=('_q', '_r'))
+pbs2_w['wait'] = pbs2_w['time_r'] - pbs2_w['time_q']
+cqsim_w = pd.merge(cqsim_q, cqsim_r, on='id', suffixes=('_q', '_r'))
+cqsim_w['wait'] = cqsim_w['time_r'] - cqsim_w['time_q']
+schedulus_w = pd.merge(schedulus_q, schedulus_r, on='id', suffixes=('_q', '_r'))
+schedulus_w['wait'] = schedulus_w['time_r'] - schedulus_w['time_q']
+cqsim2_w = pd.merge(cqsim2_q, cqsim2_r, on='id', suffixes=('_q', '_r'))
+cqsim2_w['wait'] = cqsim2_w['time_r'] - cqsim2_w['time_q']
+
+
+# Caluculate the average wait times
+pbs1_aw = pbs1_w['wait'].mean()
+pbs2_aw = pbs2_w['wait'].mean()
+cqsim_aw = cqsim_w['wait'].mean()
+schedulus_aw = schedulus_w['wait'].mean()
+cqsim2_aw = cqsim2_w['wait'].mean()
+
+# Calcluate the deviation in average wait times
+cqsim_aw_delta = 100*abs(cqsim_aw - pbs1_aw)/pbs1_aw
+schedulus_aw_delta = 100*abs(schedulus_aw - pbs1_aw)/pbs1_aw
+cqsim2_aw_delta = 100*abs(cqsim2_aw - pbs1_aw)/pbs1_aw
+
+# Create a list of the delta values
+delta_values = [cqsim2_aw_delta, cqsim_aw_delta, schedulus_aw_delta]
+
+# Create a list of labels
+labels = ['CQSimV2', 'CQSim', 'Schedulus']
+
+# Create the bar plot
+plt.figure(figsize=(10, 8))
+plt.bar(labels, delta_values, color=['red', 'blue', 'green'])
+
+# Add labels and title
+plt.xlabel('Simulator', fontsize=20)
+plt.ylabel(r'% Deviation from real machine: OpenPBS', fontsize=20)
+plt.title(r'% Deviation in average wait time from real machine', fontsize=16)
+
+# Customize ticks and grid
+plt.xticks(fontsize=20)
+plt.yticks(fontsize=20)
+plt.grid(axis='y', alpha=0.3)
+
+# Show the plot
+plt.savefig('average_wait_deviation.png')
+
+with open('average_wait_deviation.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(labels)
+    writer.writerow(delta_values)
+
+
+
