@@ -7,6 +7,7 @@ from input_read import \
 read_event_data, \
 read_job_data, \
 read_system_config, \
+read_event_data_job_log, \
 DfFileds, \
 SystemConfig
 
@@ -52,21 +53,36 @@ class AllocatorEvent(Event):
 
 
 class Simulator:
-    def __init__(self, path_event_log, path_job_log, path_system_config):
+    def __init__(self):
         self.sim = None
         
-        self.df_events: pd.DataFrame = read_event_data(path_event_log)
-        self.df_jobs: pd.DataFrame = read_job_data(path_job_log)
-        self.system_config: SystemConfig = read_system_config(path_system_config)
+        self.df_events: pd.DataFrame = None
+        self.df_jobs: pd.DataFrame = None
+        self.system_config: SystemConfig = None
 
         # Initialize components
-        self.allocator = Allocator(self, self.system_config.nodes)
-        self.scheduler = Scheduler(self)
+        self.allocator = None
+        self.scheduler = None
 
+    def read_data(self, path_job_log, path_system_config, job_log_CSV=False):
+        self.df_jobs: pd.DataFrame = read_job_data(path_job_log, CSV=job_log_CSV)
+        self.system_config: SystemConfig = read_system_config(path_system_config)
+        self.df_events: pd.DataFrame = read_event_data_job_log(self.df_jobs)
+
+    def read_data_swf(self, path_swf):
+        raise NotImplementedError('Need to implement reading swf along with system config')
+        self.df_events: pd.DataFrame = None
+        self.df_jobs: pd.DataFrame = None
+        self.system_config: SystemConfig = None
+
+    def read_data_with_events(self, path_job_log, path_system_config, path_event_log, job_log_CSV=False):
+        self.df_jobs: pd.DataFrame = read_job_data(path_job_log, job_log_CSV=job_log_CSV)
+        self.system_config: SystemConfig = read_system_config(path_system_config)
+        self.df_events: pd.DataFrame = read_event_data(path_event_log)
+        pass
 
     def now(self):
         return self.sim.now
-
 
     def handle_scheduler_event(self, e: SchedulerEvent):
         print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
@@ -106,7 +122,6 @@ class Simulator:
         else:
             raise NotImplementedError(f'Event {e.type} not implemented!')
 
-
     def handle_allocator_event(self, e: AllocatorEvent):
         # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
         if e.type == EventType.Alloc.ALLOCATE:
@@ -115,7 +130,7 @@ class Simulator:
             pass
         else:
             raise NotImplementedError(f'Event {e.type} not implemented!')
-    
+
     def create_run_event(self, job_id):
         # print(f'Creating run event for: {job_id}')
         e = SchedulerEvent(
@@ -156,6 +171,16 @@ class Simulator:
         )
         
     def initialize(self):
+
+        # Make sure data was read
+        if self.df_jobs is None or self.system_config is None or self.df_events is None:
+            raise EnvironmentError('No data was passed to simulator!')
+        
+
+        # Initialize components
+        self.allocator = Allocator(self, self.system_config.nodes)
+        self.scheduler = Scheduler(self)
+            
         start_time: int = -1
         submit_events: list[SchedulerEvent] = []
 
@@ -173,7 +198,6 @@ class Simulator:
                 start_time = e.time
 
             submit_events.append(e)
-            
 
         # Define the simulator
         # Init the time to the first submit event
@@ -184,8 +208,6 @@ class Simulator:
         for e in submit_events:
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
 
-
-
     def simulate(self):
         
         # Initialize
@@ -195,6 +217,7 @@ class Simulator:
         self.sim.run()
 
     def step(self):
+
         if not self.sim:
             self.initialize()
         self.sim.step()

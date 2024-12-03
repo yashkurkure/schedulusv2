@@ -6,6 +6,8 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class DfFileds:
 
+    # Add the fileds as they start getting used
+    # Not all SWF fields are usually populated
     @dataclass(frozen=True)
     class Job:
         ID: str = "id"
@@ -55,34 +57,48 @@ event_data_columns = [
     "location"
 ]
 
-def read_job_data(path, SWF = False) -> pd.DataFrame:
+def read_job_data(path, CSV = False) -> pd.DataFrame:
     """
     Reads job data
     """
 
-    if SWF:
-        data = []
-        with open(f'{path}', 'r') as file:
-            for line in file:
-            
-                # TODO: For now ignoring the header of the swf file
-                if line[0] == ';':
-                    continue
+    if CSV:
+        return pd.read_csv(path, names=swf_columns).sort_values(by=DfFileds.Job.ID)
+    
+    data = []
+    with open(f'{path}', 'r') as file:
+        for line in file:
+        
+            # TODO: For now ignoring the header of the swf file
+            if line[0] == ';':
+                continue
 
-                # Split the line into elements, convert non-empty elements to integers
-                row = [int(x) for x in line.split() if x]
-                data.append(row)
-        df = pd.DataFrame(data, columns=swf_columns)
-        return df
-    # TODO: validate the job data
-    return pd.read_csv(path, names=swf_columns)
+            # Split the line into elements, convert non-empty elements to integers
+            row = [int(x) for x in line.split() if x]
+            data.append(row)
+    df = pd.DataFrame(data, columns=swf_columns)
+    return df
 
 def read_event_data(path, start_zero = False) -> pd.DataFrame:
     """
     Reads event data
     """
-    # TODO: validate the event data
     df = pd.read_csv(path, names=event_data_columns)
+    if start_zero:
+        df_t0 = df['timestamp'].iloc[0]
+        df['timestamp'] = df['timestamp'] - df_t0
+    return df
+
+def read_event_data_job_log(df_jobs: pd.DataFrame, start_zero = False) -> pd.DataFrame:
+    """
+    Reads event data
+    """
+    df = df_jobs[[DfFileds.Job.ID, DfFileds.Job.SUBMIT_TS]].copy()
+    df[DfFileds.Event.TYPE] = 'Q'
+    df[DfFileds.Event.LOCATION] = -1
+
+    df = df.rename(columns={DfFileds.Job.ID: DfFileds.Event.JOB_ID, DfFileds.Job.SUBMIT_TS: DfFileds.Event.TIME})
+
     if start_zero:
         df_t0 = df['timestamp'].iloc[0]
         df['timestamp'] = df['timestamp'] - df_t0

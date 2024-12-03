@@ -1,8 +1,7 @@
 from simulator import Simulator
 
-s = Simulator(
-    '../data/input/event_log.csv',
-    '../data/input/job_log.csv',
-    '../data/input/system.json')
+s = Simulator()
+
+s.read_data('../data/input/job_log.swf', '../data/input/system.json')
 
 s.simulate()
