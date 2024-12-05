@@ -16,6 +16,10 @@ setuptools.setup(
     install_requires=[
         'pandas',
         'simulus',
+        'pandas',
+        'tqdm',
+        'matplotlib',
+        'pillow'  # Add Pillow for Tkinter
     ],
     entry_points='''
         [console_scripts]
