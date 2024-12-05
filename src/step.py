@@ -11,3 +11,5 @@ try:
 except Exception as e:
     print(e)
     s.cleanup()
+
+# s.simulate()

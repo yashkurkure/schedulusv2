@@ -93,7 +93,7 @@ class Simulator:
         return self.sim.now
 
     def handle_scheduler_event(self, e: SchedulerEvent):
-        # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
+        print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
         
         # Get the job data related to the event
         job_data = self.df_jobs[self.df_jobs[DfFileds.Job.ID] == e.job_id]
@@ -155,6 +155,7 @@ class Simulator:
             until=e.time
         )
         self.log(f'Scheduled: Run event at {e.time} for job {job_id}.')
+        return e.time
 
     def create_alloc_event(self, resource_id):
         # print(f'Creating run event for: {job_id}')

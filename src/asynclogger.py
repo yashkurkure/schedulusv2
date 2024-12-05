@@ -20,9 +20,12 @@ class AsyncLogger:
         self.worker_thread.start()
 
         # Create the log file if it doesn't exist
-        if not os.path.exists(self.log_file):
-            with open(self.log_file, "w") as _:
-                pass
+        # if not os.path.exists(self.log_file):
+        #     with open(self.log_file, "w") as f:
+        #         f.write('Initialized logger.')
+        #         pass
+        with open(self.log_file, "w") as f:
+            f.write('Initialized logger.\n')
 
     def _worker(self):
         """
