@@ -3,8 +3,6 @@ from enum import Enum
 import random
 
 from components.allocator import Allocator
-from asynclogger import AsyncLogger
-import time
 __metaclass__ = type
 
 
@@ -22,7 +20,6 @@ class Job:
     name: str
     resources: int
     walltime: int
-    runtime: int
 
     # These may change
     state: JobState = JobState.WAITING
@@ -36,10 +33,7 @@ class Job:
 
 class Scheduler:
 
-    def __init__(self, simulator, log_dir):
-        self.logger = AsyncLogger(f'{log_dir}/scheduler.log')
-        self.logger.write_log(f'Initialized Scheduler')
-        
+    def __init__(self, simulator):
         self.simulator = simulator
         self.allocator: Allocator = self.simulator.allocator
         self._queue: list[Job] = []
@@ -50,16 +44,13 @@ class Scheduler:
         self._pending_run: list[int] = []
 
         pass
-
-    def log(self, s):
-        self.logger.write_log(f'{self.simulator.now()} {s}')
     
+
+
     def queue(self, job: Job):
         """
         Returns list of events that must be processed by the simulator.
         """
-        self.log(f'Queue: {job.id} with resource requirement of {job.resources} for time {job.walltime}')
-
         job.res_submit_ts = self.simulator.now()
 
         # Add the job to the queue
@@ -70,6 +61,7 @@ class Scheduler:
 
     
     def start(self, job_id):
+
         # Look for the job in queued jobs
         job = None
         for j in self._queue:
@@ -89,8 +81,6 @@ class Scheduler:
 
         # Add to list of running jobs
         self._running.append(job)
-
-        self.log(f'Start: {job.id} with resource requirement of {job.resources} for time {job.walltime}')
 
 
     def end(self, job_id):
@@ -118,23 +108,17 @@ class Scheduler:
         # Add to list of finished jobs
         self._finished.append(job)
 
-        self.log(f'End: {job.id} with resource requirement of {job.resources} for time {job.walltime}')
-
         # Run a scheduling cycle
         self._schedule()
-
 
 
     def _schedule(self):
         """
         Goes over the queue and tries to schedule jobs.
         """
-        t = time.time()
-        self.log(f'Entered scheduling cycle...')
+        # print('Running scheduling cycle..')
         # Try and schedule jobs in the head of the queue
         for job in self._queue:
-
-            self.log(f'Considering job {job.id} with resources {job.resources} for {job.walltime}.')
 
             # If a job has a pending run event, dont consider it for sched cycle
             if job.id in self._pending_run:
@@ -161,9 +145,7 @@ class Scheduler:
         if len(self._queue) > 0:
             self._backfill_easy()
 
-        self.log(f'Leaving scheduling cycle...')
-        t_cycle = time.time() - t
-        self.log(f'Cycle took {t_cycle} seconds.')
+        # print('Leaving scheduling cycle..')
         pass
 
     def _build_time_resource_map(self):
@@ -176,16 +158,9 @@ class Scheduler:
         cumulative = [resource.id for resource in self.allocator.get_available()]
         trm[self.simulator.now()] = cumulative[:]
         # print(f'\t\tNow {self.simulator.now()}, {trm[self.simulator.now()]}')
-        self.log(f'TRM: At {self.simulator.now()} Available {len(cumulative[:])}.')
         for j in running_jobs:
             end_time = j.res_run_ts + j.walltime
             resource_ids = j.resource_ids
-
-
-            # NOTE: If any running jobs are exceeding their walltime, the scheduler does not know
-            # when it ends, exclude it from the map
-            if end_time < self.simulator.now():
-                continue
 
             # NOTE: If a job is ending now, and its end event hasnt occured, it must 
             # removed from the running jobs list to build the time resource map
@@ -200,8 +175,6 @@ class Scheduler:
                 trm[end_time] += resource_ids[:]
             else:
                 trm[end_time] = cumulative[:]
-            
-            self.log(f'TRM: Job {j.id} ends at {end_time}. Available {len(trm[end_time])}.')
 
         return dict(sorted(trm.items()))
 
@@ -209,26 +182,32 @@ class Scheduler:
         """
         Tries to backfill jobs without delaying the 1st job in the queue.
         """
-        self.log(f'Entered backfill..')
-        
-        top_job = self._queue[0]
-        
-        self.log(f'Top job: {top_job.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
 
+        # print('#### BACKFILL ####')
         trm = self._build_time_resource_map()
-
+        # print('\tTRM Initial:')
+        # for t in trm:
+        #     print(f'\t\t{t}, {trm[t]}')
 
         # Now given this map reserve resources for the top job
+        top_job = self._queue[0]
+        # print(f'\tTop job: {top_job.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
         trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources, top_job.walltime)
+
+        # print('\tTRM After top job:')
+        # for t in trm:
+        #     print(f'\t\t{t}, {trm[t]}')
         
 
         # Check if any job in the queue can be allocated using these resources now
         backfill_jobs: list[Job] = []
         for j in self._queue[1:]:
+            # print(f'\t\t Trying job: {j.id} with resource requirement of {j.resources} for time {j.walltime}')
 
             # If a job has a pending run event, dont consider it for backfill
             if j.id in self._pending_run:
                 continue
+
 
             can_backfill = True
 
@@ -251,7 +230,7 @@ class Scheduler:
                 backfill_jobs.append(j)
 
                 # Update the time resource map
-                trm = self.allocator.reserve_now(trm, j.id, j.resources, j.walltime)
+                trm = self.allocator.reserve_now(trm, j.id, j.resources, self.simulator.sim.now + j.walltime)
 
         # print('\tEligible:')
         # print(f'\t\t{[j.id for j in backfill_jobs]}')

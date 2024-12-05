@@ -4,25 +4,18 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="schedulus",
+    name="schedulusv2",
     version="0.0.1",
-    author="Dan Rauch & Nicholas Velcich",
-    author_email="drauch@hawk.iit.edu & nvelcich@hawk.iit.edu",
-    description="HPC Scheduling Simulator",
-    long_description=long_description,
+    author="",
+    author_email="",
+    description="",
+    long_description="long_description",
     long_description_content_type="text/markdown",
-    url="https://github.com/danjrauch/schedulus",
+    url="",
     packages=setuptools.find_packages(),
     install_requires=[
-        'Click',
-        'numpy',
-        'ttictoc',
-        'plotly',
         'pandas',
         'simulus',
-        'psutil',
-        'requests',
-        'loguru'
     ],
     entry_points='''
         [console_scripts]

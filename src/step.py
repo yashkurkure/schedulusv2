@@ -1,11 +1,13 @@
 from simulator import Simulator
 
-s = Simulator(
-    '../data/input/event_log.csv',
-    '../data/input/job_log.csv',
-    '../data/input/system.json')
+s = Simulator()
 
-while True:
-    input('Press a key to step')
-    s.step()
+s.read_data('../data/pbs/input/job_log.swf', '../data/pbs/input/system.json')
 
+s.initialize('../data/pbs/output')
+
+try:
+    s.simulate()
+except Exception as e:
+    print(e)
+    s.cleanup()

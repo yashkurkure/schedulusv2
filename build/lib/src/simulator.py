@@ -64,14 +64,6 @@ class Simulator:
         self.allocator = None
         self.scheduler = None
 
-        self.output_dir = None
-        self.logger: AsyncLogger = None
-
-
-    def log(self, s):
-        self.logger.write_log(f'{self.now()} {s}')
-
-
     def read_data(self, path_job_log, path_system_config, job_log_CSV=False):
         self.df_jobs: pd.DataFrame = read_job_data(path_job_log, CSV=job_log_CSV)
         self.system_config: SystemConfig = read_system_config(path_system_config)
@@ -93,7 +85,7 @@ class Simulator:
         return self.sim.now
 
     def handle_scheduler_event(self, e: SchedulerEvent):
-        # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
+        print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
         
         # Get the job data related to the event
         job_data = self.df_jobs[self.df_jobs[DfFileds.Job.ID] == e.job_id]
@@ -107,8 +99,7 @@ class Simulator:
                     id=e.job_id,
                     name=f'job.{e.job_id}',
                     resources=job_data[DfFileds.Job.REQ_PROC].item(),
-                    walltime=job_data[DfFileds.Job.REQ_T].item(),
-                    runtime=job_data[DfFileds.Job.RUN_T].item()
+                    walltime=job_data[DfFileds.Job.REQ_T].item()
                 )
             )
 
@@ -123,9 +114,7 @@ class Simulator:
                 type=EventType.Sched.END,
                 job_id=e.job_id
             )
-            
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
-            self.log(f'Scheduled: End event at {e.time} for job {e.job_id}. Expected to end at {self.sim.now + job_data[DfFileds.Job.REQ_T].item()}')
 
         elif e.type == EventType.Sched.END:
             self.scheduler.end(e.job_id)
@@ -154,7 +143,6 @@ class Simulator:
             e, 
             until=e.time
         )
-        self.log(f'Scheduled: Run event at {e.time} for job {job_id}.')
 
     def create_alloc_event(self, resource_id):
         # print(f'Creating run event for: {job_id}')
@@ -182,25 +170,16 @@ class Simulator:
             resrource_ids=resource_id
         )
         
-    def initialize(self, output_dir):
+    def initialize(self):
 
         # Make sure data was read
-        if self.df_jobs is None:
-            raise EnvironmentError('Jobs Df was None')
-        
-        if self.system_config is None:
-            raise EnvironmentError('Sys Config was None')
-        
-        if self.df_events is None:
-            raise EnvironmentError('Event Df was None')
-        
-        self.output_dir = output_dir
-        self.logger = AsyncLogger(f'{self.output_dir}/simulator.log')
+        if self.df_jobs is None or self.system_config is None or self.df_events is None:
+            raise EnvironmentError('No data was passed to simulator!')
         
 
         # Initialize components
-        self.allocator = Allocator(self, self.system_config.nodes, self.output_dir)
-        self.scheduler = Scheduler(self, self.output_dir)
+        self.allocator = Allocator(self, self.system_config.nodes)
+        self.scheduler = Scheduler(self)
             
         start_time: int = -1
         submit_events: list[SchedulerEvent] = []
@@ -230,12 +209,15 @@ class Simulator:
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
 
     def simulate(self):
+        
+        # Initialize
+        self.initialize()
+
         # Run the simulation
         self.sim.run()
 
     def step(self):
-        self.sim.step()
 
-    def cleanup(self):
-        self.allocator.logger.stop()
-        self.scheduler.logger.stop()
+        if not self.sim:
+            self.initialize()
+        self.sim.step()

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from enum import Enum
 import random
-from asynclogger import AsyncLogger
+
 
 __metaclass__ = type
 
@@ -25,10 +25,7 @@ class Resource:
 
 
 class Allocator:
-    def __init__(self, simulator, num_resources, log_dir):
-        self.logger = AsyncLogger(f'{log_dir}/allocator.log')
-        self.logger.write_log(f'Initialized Allocator')
-
+    def __init__(self, simulator, num_resources):
         self.simulator = simulator
 
         self.resources: list[Resource] = []
@@ -42,11 +39,6 @@ class Allocator:
                 job_id=-1
             )
             self.resources.append(n)
-
-    
-    def log(self, s):
-        self.logger.write_log(f'{self.simulator.now()} {s}')
-
 
     def get_resource(self, resource_id) -> Resource:
         """
@@ -98,7 +90,6 @@ class Allocator:
             n.state = ResourceState.BUSY
             n.job_id = job_id
 
-        self.log(f'Job {job_id}: Allocated with {resources} resources.')
         return [n.id for n in alloc_resources]
 
     def deallocate(self, job_id) -> None:
@@ -111,13 +102,10 @@ class Allocator:
         for n in dealloc_resources:
             n.state = ResourceState.AVAILABLE
             n.job_id = -1
-        
-        self.log(f'Job {job_id}: Deallocated {len(dealloc_resources)} resources.')
 
 
     def reserve_future(self, trm, job_id, resources, walltime) -> dict[int, int]:
         # print(f'\tReserve top job, {job_id}:')
-        self.log(f'Job {job_id}: Trying to reserve {resources} resources for {walltime} in future.')
 
         reservation_time = -1
         # Iterate over the times when resources are getting freed up
@@ -131,14 +119,13 @@ class Allocator:
                 reservation_time = t
                 break
 
-        self.log(f'Job {job_id}: Found reservation time of {reservation_time}.')
-
         # For the found reservation time get resources to reserve
         # NOTE: Cannot remove random ones because we want max of the same resources to be free at all times
         # reserved_resources = random.sample(time_resource_map[reservation_time], resources)
         # NOTE: Instead remove from the end of the list
         reserved_resources = trm[reservation_time][-resources:]
         end_time = reservation_time + walltime
+
 
 
         # print(f'\t\tReservation time: {reservation_time}')
@@ -148,7 +135,7 @@ class Allocator:
         for t in trm:
             # print(f'\t\tFor time: {t}')
             if reservation_time <= t and end_time >= t:
-                self.log(f'Job {job_id}: Attempting to reserve at {t}. Avialable: {len(trm[t])}')
+                # print(f'\t\t\tResources: {time_resource_map[t]}')
                 for r in reserved_resources:
                     # print(f'\t\t\t\tRemoving: {r}')
                     trm[t].remove(r)
@@ -156,16 +143,15 @@ class Allocator:
         # Return the updated time resource map
         return trm
     
-    def reserve_now(self, trm, job_id, resources, walltime) -> dict[int, int]:
-        self.log(f'Job {job_id}: Trying to reserve {resources} resources for {walltime} starting now.')
+    def reserve_now(self, trm, job_id, resources, end) -> dict[int, int]:
         # print(f'\tReserve now, {job_id} with resources {resources}:')
         # print(f'\t\tUsing TRM:')
         # for t in trm:
         #     print(f'\t\t\t{t}: {trm[t]}')
 
         for t in trm:
-            self.log(f'Job {job_id}: Attempting to reserve {resources} resources for {walltime} starting now.')
-            if t > self.simulator.now() + walltime:
+
+            if t > end:
                 break
 
             reserved_resources = random.sample(trm[t], resources)
@@ -173,6 +159,7 @@ class Allocator:
             # Remove those resources from the time resource map
             for r in reserved_resources:
                 trm[t].remove(r)
+
 
         return trm
         
