@@ -241,3 +241,9 @@ class Simulator:
     def cleanup(self):
         self.allocator.logger.stop()
         self.scheduler.logger.stop()
+
+    def observe(self):
+        return {
+            "timestamp": self.now(),
+            "utilization": self.allocator.resource_utilization(),
+        }

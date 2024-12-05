@@ -62,15 +62,15 @@ class Allocator:
         """
         return [n for n in self.resources if n.state == ResourceState.AVAILABLE]
     
-    def get_busy(self) -> list[Resource]:
+    def get_all_busy(self) -> list[Resource]:
         """
-        Returns the available resources.
+        Returns all busy resources.
         """
         return [n for n in self.resources if n.state == ResourceState.BUSY]
     
     def get_busy(self, job_id) -> list[Resource]:
         """
-        Returns the available resources.
+        Returns busy resources for some job.
         """
         return [n for n in self.resources if n.state == ResourceState.BUSY and n.job_id == job_id]
     
@@ -178,3 +178,12 @@ class Allocator:
 
         return trm
         
+    
+    def resource_utilization(self):
+
+        busy = len(self.get_all_busy())
+        total = len(self.resources)
+
+        utilization = busy/total
+
+        return utilization

@@ -14,3 +14,102 @@ Initialized Allocator
 1641033350 Job 8: Allocated with 256 resources.
 1641035126 Job 2: Deallocated 640 resources.
 1641054959 Job 6: Deallocated 256 resources.
+1641054993 Job 7: Deallocated 256 resources.
+1641055005 Job 8: Deallocated 256 resources.
+1641064097 Job 9: Allocated with 128 resources.
+1641064102 Job 10: Allocated with 128 resources.
+1641064115 Job 11: Allocated with 128 resources.
+1641065888 Job 12: Allocated with 256 resources.
+1641066449 Job 9: Deallocated 128 resources.
+1641066456 Job 10: Deallocated 128 resources.
+1641071253 Job 11: Deallocated 128 resources.
+1641075091 Job 13: Allocated with 128 resources.
+1641076284 Job 13: Deallocated 128 resources.
+1641078987 Job 14: Allocated with 640 resources.
+1641083152 Job 15: Allocated with 256 resources.
+1641083155 Job 16: Allocated with 128 resources.
+1641083169 Job 17: Allocated with 256 resources.
+1641083672 Job 18: Allocated with 128 resources.
+1641083674 Job 19: Allocated with 128 resources.
+1641083678 Job 20: Allocated with 128 resources.
+1641085489 Job 15: Deallocated 256 resources.
+1641085519 Job 17: Deallocated 256 resources.
+1641085983 Job 18: Deallocated 128 resources.
+1641086019 Job 19: Deallocated 128 resources.
+1641086149 Job 21: Allocated with 512 resources.
+1641086182 Job 22: Allocated with 256 resources.
+1641086184 Job 23: Allocated with 128 resources.
+1641086186 Job 24: Allocated with 256 resources.
+1641087484 Job 12: Deallocated 256 resources.
+1641088519 Job 24: Deallocated 256 resources.
+1641089751 Job 22: Deallocated 256 resources.
+1641090090 Job 25: Allocated with 256 resources.
+1641090304 Job 16: Deallocated 128 resources.
+1641090312 Job 26: Allocated with 256 resources.
+1641090410 Job 27: Allocated with 256 resources.
+1641090441 Job 28: Allocated with 256 resources.
+1641090469 Job 27: Deallocated 256 resources.
+1641090642 Job 29: Allocated with 256 resources.
+1641090693 Job 30: Allocated with 256 resources.
+1641090718 Job 29: Deallocated 256 resources.
+1641090750 Job 30: Deallocated 256 resources.
+1641090770 Job 31: Allocated with 256 resources.
+1641090844 Job 20: Deallocated 128 resources.
+1641091484 Job 32: Allocated with 128 resources.
+1641091602 Job 14: Deallocated 640 resources.
+1641091618 Job 32: Deallocated 128 resources.
+1641092635 Job 33: Allocated with 128 resources.
+1641092715 Job 34: Allocated with 256 resources.
+1641092717 Job 35: Allocated with 128 resources.
+1641092719 Job 36: Allocated with 256 resources.
+1641092950 Job 37: Allocated with 256 resources.
+1641093361 Job 23: Deallocated 128 resources.
+1641093433 Job 38: Allocated with 256 resources.
+1641093575 Job 39: Allocated with 256 resources.
+1641094022 Job 33: Deallocated 128 resources.
+1641094362 Job 26: Deallocated 256 resources.
+1641094511 Job 40: Allocated with 640 resources.
+1641095079 Job 34: Deallocated 256 resources.
+1641096243 Job 35: Deallocated 128 resources.
+1641096290 Job 36: Deallocated 256 resources.
+1641097744 Job 41: Allocated with 256 resources.
+1641099744 Job 38: Deallocated 256 resources.
+1641100511 Job 39: Deallocated 256 resources.
+1641100743 Job 42: Allocated with 128 resources.
+1641100757 Job 43: Allocated with 128 resources.
+1641100765 Job 44: Allocated with 128 resources.
+1641101173 Job 28: Deallocated 256 resources.
+1641101794 Job 45: Allocated with 128 resources.
+1641101807 Job 46: Allocated with 128 resources.
+1641101810 Job 47: Allocated with 128 resources.
+1641101916 Job 47: Deallocated 128 resources.
+1641102085 Job 48: Allocated with 128 resources.
+1641102088 Job 49: Allocated with 128 resources.
+1641102102 Job 50: Allocated with 128 resources.
+1641102210 Job 50: Deallocated 128 resources.
+1641103091 Job 44: Deallocated 128 resources.
+1641103176 Job 25: Deallocated 256 resources.
+1641104293 Job 42: Deallocated 128 resources.
+1641104750 Job 41: Deallocated 256 resources.
+1641104809 Job 51: Allocated with 512 resources.
+1641104812 Job 52: Allocated with 256 resources.
+1641104815 Job 53: Allocated with 512 resources.
+1641105834 Job 54: Allocated with 192 resources.
+1641105946 Job 37: Deallocated 256 resources.
+1641106850 Job 40: Deallocated 640 resources.
+1641107161 Job 52: Deallocated 256 resources.
+1641107270 Job 31: Deallocated 256 resources.
+1641107907 Job 43: Deallocated 128 resources.
+1641108343 Job 51: Deallocated 512 resources.
+1641108368 Job 53: Deallocated 512 resources.
+1641108431 Job 21: Deallocated 512 resources.
+1641108853 Job 55: Allocated with 256 resources.
+1641108856 Job 56: Allocated with 128 resources.
+1641108859 Job 57: Allocated with 512 resources.
+1641108972 Job 57: Deallocated 512 resources.
+1641109284 Job 49: Deallocated 128 resources.
+1641110868 Job 46: Deallocated 128 resources.
+1641111194 Job 56: Deallocated 128 resources.
+1641112184 Job 45: Deallocated 128 resources.
+1641112372 Job 58: Allocated with 128 resources.
+1641112374 Job 59: Allocated with 128 resources.
