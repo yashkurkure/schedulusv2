@@ -24,7 +24,7 @@ class JobSchedulerGUI:
         self.graph_frame = tk.Frame(root)
         self.graph_frame.pack(pady=20)
 
-        self.fig, self.axs = plt.subplots(1, 2, figsize=(10, 4))
+        self.fig, self.axs = plt.subplots(1, 1, figsize=(10, 4))
         self.fig.suptitle("Cluster Utilization", fontsize=14)
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.graph_frame)
         self.canvas_widget = self.canvas.get_tk_widget()

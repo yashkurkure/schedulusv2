@@ -15,25 +15,26 @@ __metaclass__ = type
 
 class EventType(Enum):
 
-    class Sched(Enum):
-        SUBMIT = 1
-        START = 2
-        END = 3
-        SUCCESS = 4
-        FAIL = 5
+    # Scheduler Events
+    SUBMIT = 1
+    START = 2
+    END = 3
+    SUCCESS = 4
+    FAIL = 5
 
-    class Alloc(Enum):
-        ALLOCATE = 7
-        DEALLOCATE = 8
-        OFFLINE = 9
-        ONLINE = 10
+
+    # Allocator Events
+    ALLOCATE = 7
+    DEALLOCATE = 8
+    OFFLINE = 9
+    ONLINE = 10
 
 def ET2CHAR(i):
-    if i == EventType.Sched.SUBMIT:
+    if i == EventType.SUBMIT:
         return 'Q'
-    elif i == EventType.Sched.START:
+    elif i == EventType.START:
         return 'R'
-    elif i == EventType.Sched.END:
+    elif i == EventType.END:
         return 'E'
     else:
         return 'X'
@@ -99,7 +100,7 @@ class Simulator:
         job_data = self.df_jobs[self.df_jobs[DfFileds.Job.ID] == e.job_id]
 
         # Handle the event
-        if e.type == EventType.Sched.SUBMIT:
+        if e.type == EventType.SUBMIT:
 
             # Queue the job 
             self.scheduler.queue(
@@ -112,7 +113,7 @@ class Simulator:
                 )
             )
 
-        elif e.type == EventType.Sched.START:
+        elif e.type == EventType.START:
 
             # Start the job
             self.scheduler.start(e.job_id)
@@ -120,14 +121,14 @@ class Simulator:
             # Schedule the job end event
             e = SchedulerEvent(
                 time=self.sim.now + job_data[DfFileds.Job.RUN_T].item(),
-                type=EventType.Sched.END,
+                type=EventType.END,
                 job_id=e.job_id
             )
             
             self.sim.sched(self.handle_scheduler_event, e, until=e.time)
             self.log(f'Scheduled: End event at {e.time} for job {e.job_id}. Expected to end at {self.sim.now + job_data[DfFileds.Job.REQ_T].item()}')
 
-        elif e.type == EventType.Sched.END:
+        elif e.type == EventType.END:
             self.scheduler.end(e.job_id)
             pass
         else:
@@ -135,9 +136,9 @@ class Simulator:
 
     def handle_allocator_event(self, e: AllocatorEvent):
         # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
-        if e.type == EventType.Alloc.ALLOCATE:
+        if e.type == EventType.ALLOCATE:
             pass
-        elif e.type == EventType.Alloc.DEALLOCATE:
+        elif e.type == EventType.DEALLOCATE:
             pass
         else:
             raise NotImplementedError(f'Event {e.type} not implemented!')
@@ -146,7 +147,7 @@ class Simulator:
         # print(f'Creating run event for: {job_id}')
         e = SchedulerEvent(
             time=self.sim.now,
-            type=EventType.Sched.START,
+            type=EventType.START,
             job_id=job_id
         )
         self.sim.sched(
@@ -161,7 +162,7 @@ class Simulator:
         # print(f'Creating run event for: {job_id}')
         e = AllocatorEvent(
             time=self.sim.now,
-            type=EventType.Alloc.ALLOCATE
+            type=EventType.ALLOCATE
         )
         self.sim.sched(
             self.handle_allocator_event,
@@ -174,7 +175,7 @@ class Simulator:
         # print(f'Creating run event for: {job_id}')
         e = AllocatorEvent(
             time=self.sim.now,
-            type=EventType.Alloc.DEALLOCATE
+            type=EventType.DEALLOCATE
         )
         self.sim.sched(
             self.handle_allocator_event,
@@ -212,7 +213,7 @@ class Simulator:
             
             e = SchedulerEvent(
                 time=row[DfFileds.Event.TIME],
-                type=EventType.Sched.SUBMIT,
+                type=EventType.SUBMIT,
                 job_id=row[DfFileds.Event.JOB_ID]
             )
             

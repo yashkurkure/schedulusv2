@@ -5,6 +5,9 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import pandas as pd
+from simulator import Simulator
+
+
 
 # GUI Class
 class JobSchedulerGUI:
@@ -30,7 +33,19 @@ class JobSchedulerGUI:
         self.canvas_widget = self.canvas.get_tk_widget()
         self.canvas_widget.pack()
 
+        self.s = Simulator()
+        self.s.read_data('../data/theta22/input/theta22.swf', '../data/theta22/input/system.json')
+        self.s.initialize('../data/theta22/output')
+
     def _step(self):
+
+        try:
+            self.s.simulate()
+        except Exception as e:
+            print(e)
+            self.s.cleanup()
+        self.s.cleanup()
+
         try:
             print('Pressed step!')
         except Exception as e:
@@ -82,16 +97,10 @@ class JobSchedulerGUI:
         # Redraw the plot
         self.canvas.draw()
 
-    def assign_job_to_cluster(self, cluster_name):
+    def assign_job_to_cluster(self):
 
         # Simulate the selected job
         messagebox.showinfo("Assigned to cluster")
-
-        # Reset buttons and UI for the next job
-        self.polaris_button.config(state=tk.DISABLED)
-        self.theta_button.config(state=tk.DISABLED)
-        self.turnaround_label.config(text="Turnaround Times")
-        self.next_button.config(state=tk.NORMAL)
 
 
 # Main Script
