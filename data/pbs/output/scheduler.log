@@ -2,3 +2,1836 @@ Initialized logger.
 Initialized Scheduler
 1732981055 Queue: 1 with resource requirement of 2 for time 180
 1732981055 Entered scheduling cycle...
+1732981055 Considering job 1 with resources 2 for 180.
+1732981055 Can schedule
+1732981055 Leaving scheduling cycle...
+1732981055 Cycle took 0.00011539459228515625 seconds.
+1732981055 Start: 1 with resource requirement of 2 for time 180
+1732981060 Queue: 2 with resource requirement of 8 for time 420
+1732981060 Entered scheduling cycle...
+1732981060 Considering job 2 with resources 8 for 420.
+1732981060 Can schedule
+1732981060 Leaving scheduling cycle...
+1732981060 Cycle took 7.939338684082031e-05 seconds.
+1732981060 Start: 2 with resource requirement of 8 for time 420
+1732981065 Queue: 3 with resource requirement of 2 for time 180
+1732981065 Entered scheduling cycle...
+1732981065 Considering job 3 with resources 2 for 180.
+1732981065 Can schedule
+1732981065 Leaving scheduling cycle...
+1732981065 Cycle took 6.818771362304688e-05 seconds.
+1732981065 Start: 3 with resource requirement of 2 for time 180
+1732981070 Queue: 4 with resource requirement of 1 for time 900
+1732981070 Entered scheduling cycle...
+1732981070 Considering job 4 with resources 1 for 900.
+1732981070 Can schedule
+1732981070 Leaving scheduling cycle...
+1732981070 Cycle took 7.367134094238281e-05 seconds.
+1732981070 Start: 4 with resource requirement of 1 for time 900
+1732981075 Queue: 5 with resource requirement of 1 for time 900
+1732981075 Entered scheduling cycle...
+1732981075 Considering job 5 with resources 1 for 900.
+1732981075 Can schedule
+1732981075 Leaving scheduling cycle...
+1732981075 Cycle took 7.176399230957031e-05 seconds.
+1732981075 Start: 5 with resource requirement of 1 for time 900
+1732981080 Queue: 6 with resource requirement of 2 for time 180
+1732981080 Entered scheduling cycle...
+1732981080 Considering job 6 with resources 2 for 180.
+1732981080 Can schedule
+1732981080 Leaving scheduling cycle...
+1732981080 Cycle took 5.3882598876953125e-05 seconds.
+1732981080 Start: 6 with resource requirement of 2 for time 180
+1732981085 Queue: 7 with resource requirement of 8 for time 600
+1732981085 Entered scheduling cycle...
+1732981085 Considering job 7 with resources 8 for 600.
+1732981085 Can schedule
+1732981085 Leaving scheduling cycle...
+1732981085 Cycle took 5.698204040527344e-05 seconds.
+1732981085 Start: 7 with resource requirement of 8 for time 600
+1732981090 Queue: 8 with resource requirement of 2 for time 600
+1732981090 Entered scheduling cycle...
+1732981090 Considering job 8 with resources 2 for 600.
+1732981090 Can schedule
+1732981090 Leaving scheduling cycle...
+1732981090 Cycle took 5.91278076171875e-05 seconds.
+1732981090 Start: 8 with resource requirement of 2 for time 600
+1732981095 Queue: 9 with resource requirement of 4 for time 60
+1732981095 Entered scheduling cycle...
+1732981095 Considering job 9 with resources 4 for 60.
+1732981095 Can schedule
+1732981095 Leaving scheduling cycle...
+1732981095 Cycle took 5.793571472167969e-05 seconds.
+1732981095 Start: 9 with resource requirement of 4 for time 60
+1732981100 Queue: 10 with resource requirement of 4 for time 600
+1732981100 Entered scheduling cycle...
+1732981100 Considering job 10 with resources 4 for 600.
+1732981100 Can not schedule
+1732981100 Entered backfill..
+1732981100 Top Job: 10 with resource requirement of 4 for time 600
+1732981100 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981100 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981100 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981100 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981100 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981100 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981100 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981100 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981100 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981100 Buil TRM: At 1732981100 Available 2.
+1732981100 Build TRM: Job 9 ends at 1732981155. Available 6.
+1732981100 Build TRM: Job 1 ends at 1732981235. Available 8.
+1732981100 Build TRM: Job 3 ends at 1732981245. Available 10.
+1732981100 Build TRM: Job 6 ends at 1732981260. Available 12.
+1732981100 Build TRM: Job 2 ends at 1732981480. Available 20.
+1732981100 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981100 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981100 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981100 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981100 Leaving scheduling cycle...
+1732981100 Cycle took 0.0001418590545654297 seconds.
+1732981105 Queue: 11 with resource requirement of 8 for time 900
+1732981105 Entered scheduling cycle...
+1732981105 Considering job 10 with resources 4 for 600.
+1732981105 Can not schedule
+1732981105 Entered backfill..
+1732981105 Top Job: 10 with resource requirement of 4 for time 600
+1732981105 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981105 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981105 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981105 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981105 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981105 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981105 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981105 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981105 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981105 Buil TRM: At 1732981105 Available 2.
+1732981105 Build TRM: Job 9 ends at 1732981155. Available 6.
+1732981105 Build TRM: Job 1 ends at 1732981235. Available 8.
+1732981105 Build TRM: Job 3 ends at 1732981245. Available 10.
+1732981105 Build TRM: Job 6 ends at 1732981260. Available 12.
+1732981105 Build TRM: Job 2 ends at 1732981480. Available 20.
+1732981105 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981105 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981105 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981105 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981105 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981105 Backfill Job: Resources Available 2; Resources Required 8
+1732981105 Backfill Job: 11; Cannot backfill
+1732981105 Leaving scheduling cycle...
+1732981105 Cycle took 0.00015401840209960938 seconds.
+1732981110 Queue: 12 with resource requirement of 2 for time 420
+1732981110 Entered scheduling cycle...
+1732981110 Considering job 10 with resources 4 for 600.
+1732981110 Can not schedule
+1732981110 Entered backfill..
+1732981110 Top Job: 10 with resource requirement of 4 for time 600
+1732981110 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981110 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981110 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981110 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981110 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981110 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981110 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981110 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981110 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981110 Buil TRM: At 1732981110 Available 2.
+1732981110 Build TRM: Job 9 ends at 1732981155. Available 6.
+1732981110 Build TRM: Job 1 ends at 1732981235. Available 8.
+1732981110 Build TRM: Job 3 ends at 1732981245. Available 10.
+1732981110 Build TRM: Job 6 ends at 1732981260. Available 12.
+1732981110 Build TRM: Job 2 ends at 1732981480. Available 20.
+1732981110 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981110 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981110 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981110 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981110 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981110 Backfill Job: Resources Available 2; Resources Required 8
+1732981110 Backfill Job: 11; Cannot backfill
+1732981110 Backfill Job: 12 with resource requirement of 4 for time 600
+1732981110 Backfill Job: Resources Available 2; Resources Required 2
+1732981110 Backfill Job: Resources Available 2; Resources Required 2
+1732981110 Backfill Job: Resources Available 4; Resources Required 2
+1732981110 Backfill Job: Resources Available 6; Resources Required 2
+1732981110 Backfill Job: Resources Available 8; Resources Required 2
+1732981110 Backfill Job: Resources Available 16; Resources Required 2
+1732981110 Backfill Job: Resources Available 24; Resources Required 2
+1732981110 Backfill Job: 12; Backfill Eligible, reserving resources.
+1732981110 Backfill Job Allocate: 12 with resource requirement of 4 for time 600
+1732981110 Leaving scheduling cycle...
+1732981110 Cycle took 0.00021648406982421875 seconds.
+1732981110 Start: 12 with resource requirement of 2 for time 420
+1732981115 Queue: 13 with resource requirement of 2 for time 300
+1732981115 Entered scheduling cycle...
+1732981115 Considering job 10 with resources 4 for 600.
+1732981115 Can not schedule
+1732981115 Entered backfill..
+1732981115 Top Job: 10 with resource requirement of 4 for time 600
+1732981115 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981115 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981115 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981115 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981115 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981115 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981115 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981115 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981115 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981115 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981115 Buil TRM: At 1732981115 Available 0.
+1732981115 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981115 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981115 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981115 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981115 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981115 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981115 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981115 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981115 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981115 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981115 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981115 Backfill Job: Resources Available 0; Resources Required 8
+1732981115 Backfill Job: 11; Cannot backfill
+1732981115 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981115 Backfill Job: Resources Available 0; Resources Required 2
+1732981115 Backfill Job: 13; Cannot backfill
+1732981115 Leaving scheduling cycle...
+1732981115 Cycle took 0.00012421607971191406 seconds.
+1732981120 Queue: 14 with resource requirement of 2 for time 600
+1732981120 Entered scheduling cycle...
+1732981120 Considering job 10 with resources 4 for 600.
+1732981120 Can not schedule
+1732981120 Entered backfill..
+1732981120 Top Job: 10 with resource requirement of 4 for time 600
+1732981120 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981120 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981120 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981120 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981120 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981120 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981120 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981120 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981120 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981120 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981120 Buil TRM: At 1732981120 Available 0.
+1732981120 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981120 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981120 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981120 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981120 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981120 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981120 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981120 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981120 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981120 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981120 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981120 Backfill Job: Resources Available 0; Resources Required 8
+1732981120 Backfill Job: 11; Cannot backfill
+1732981120 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981120 Backfill Job: Resources Available 0; Resources Required 2
+1732981120 Backfill Job: 13; Cannot backfill
+1732981120 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981120 Backfill Job: Resources Available 0; Resources Required 2
+1732981120 Backfill Job: 14; Cannot backfill
+1732981120 Leaving scheduling cycle...
+1732981120 Cycle took 0.00012683868408203125 seconds.
+1732981125 Queue: 15 with resource requirement of 2 for time 900
+1732981125 Entered scheduling cycle...
+1732981125 Considering job 10 with resources 4 for 600.
+1732981125 Can not schedule
+1732981125 Entered backfill..
+1732981125 Top Job: 10 with resource requirement of 4 for time 600
+1732981125 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981125 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981125 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981125 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981125 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981125 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981125 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981125 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981125 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981125 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981125 Buil TRM: At 1732981125 Available 0.
+1732981125 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981125 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981125 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981125 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981125 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981125 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981125 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981125 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981125 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981125 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981125 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981125 Backfill Job: Resources Available 0; Resources Required 8
+1732981125 Backfill Job: 11; Cannot backfill
+1732981125 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981125 Backfill Job: Resources Available 0; Resources Required 2
+1732981125 Backfill Job: 13; Cannot backfill
+1732981125 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981125 Backfill Job: Resources Available 0; Resources Required 2
+1732981125 Backfill Job: 14; Cannot backfill
+1732981125 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981125 Backfill Job: Resources Available 0; Resources Required 2
+1732981125 Backfill Job: 15; Cannot backfill
+1732981125 Leaving scheduling cycle...
+1732981125 Cycle took 0.00013327598571777344 seconds.
+1732981130 Queue: 16 with resource requirement of 4 for time 60
+1732981130 Entered scheduling cycle...
+1732981130 Considering job 10 with resources 4 for 600.
+1732981130 Can not schedule
+1732981130 Entered backfill..
+1732981130 Top Job: 10 with resource requirement of 4 for time 600
+1732981130 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981130 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981130 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981130 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981130 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981130 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981130 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981130 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981130 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981130 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981130 Buil TRM: At 1732981130 Available 0.
+1732981130 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981130 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981130 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981130 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981130 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981130 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981130 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981130 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981130 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981130 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981130 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981130 Backfill Job: Resources Available 0; Resources Required 8
+1732981130 Backfill Job: 11; Cannot backfill
+1732981130 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981130 Backfill Job: Resources Available 0; Resources Required 2
+1732981130 Backfill Job: 13; Cannot backfill
+1732981130 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981130 Backfill Job: Resources Available 0; Resources Required 2
+1732981130 Backfill Job: 14; Cannot backfill
+1732981130 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981130 Backfill Job: Resources Available 0; Resources Required 2
+1732981130 Backfill Job: 15; Cannot backfill
+1732981130 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981130 Backfill Job: Resources Available 0; Resources Required 4
+1732981130 Backfill Job: 16; Cannot backfill
+1732981130 Leaving scheduling cycle...
+1732981130 Cycle took 0.0001399517059326172 seconds.
+1732981135 Queue: 17 with resource requirement of 16 for time 60
+1732981135 Entered scheduling cycle...
+1732981135 Considering job 10 with resources 4 for 600.
+1732981135 Can not schedule
+1732981135 Entered backfill..
+1732981135 Top Job: 10 with resource requirement of 4 for time 600
+1732981135 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981135 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981135 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981135 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981135 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981135 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981135 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981135 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981135 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981135 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981135 Buil TRM: At 1732981135 Available 0.
+1732981135 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981135 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981135 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981135 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981135 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981135 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981135 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981135 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981135 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981135 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981135 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 8
+1732981135 Backfill Job: 11; Cannot backfill
+1732981135 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 2
+1732981135 Backfill Job: 13; Cannot backfill
+1732981135 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 2
+1732981135 Backfill Job: 14; Cannot backfill
+1732981135 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 2
+1732981135 Backfill Job: 15; Cannot backfill
+1732981135 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 4
+1732981135 Backfill Job: 16; Cannot backfill
+1732981135 Backfill Job: 17 with resource requirement of 4 for time 600
+1732981135 Backfill Job: Resources Available 0; Resources Required 16
+1732981135 Backfill Job: 17; Cannot backfill
+1732981135 Leaving scheduling cycle...
+1732981135 Cycle took 0.00013971328735351562 seconds.
+1732981140 Queue: 18 with resource requirement of 16 for time 900
+1732981140 Entered scheduling cycle...
+1732981140 Considering job 10 with resources 4 for 600.
+1732981140 Can not schedule
+1732981140 Entered backfill..
+1732981140 Top Job: 10 with resource requirement of 4 for time 600
+1732981140 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981140 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981140 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981140 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981140 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981140 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981140 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981140 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981140 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981140 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981140 Buil TRM: At 1732981140 Available 0.
+1732981140 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981140 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981140 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981140 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981140 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981140 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981140 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981140 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981140 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981140 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981140 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 8
+1732981140 Backfill Job: 11; Cannot backfill
+1732981140 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 2
+1732981140 Backfill Job: 13; Cannot backfill
+1732981140 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 2
+1732981140 Backfill Job: 14; Cannot backfill
+1732981140 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 2
+1732981140 Backfill Job: 15; Cannot backfill
+1732981140 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 4
+1732981140 Backfill Job: 16; Cannot backfill
+1732981140 Backfill Job: 17 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 16
+1732981140 Backfill Job: 17; Cannot backfill
+1732981140 Backfill Job: 18 with resource requirement of 4 for time 600
+1732981140 Backfill Job: Resources Available 0; Resources Required 16
+1732981140 Backfill Job: 18; Cannot backfill
+1732981140 Leaving scheduling cycle...
+1732981140 Cycle took 0.00014209747314453125 seconds.
+1732981145 Queue: 19 with resource requirement of 4 for time 300
+1732981145 Entered scheduling cycle...
+1732981145 Considering job 10 with resources 4 for 600.
+1732981145 Can not schedule
+1732981145 Entered backfill..
+1732981145 Top Job: 10 with resource requirement of 4 for time 600
+1732981145 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981145 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981145 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981145 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981145 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981145 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981145 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981145 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981145 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981145 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981145 Buil TRM: At 1732981145 Available 0.
+1732981145 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981145 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981145 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981145 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981145 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981145 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981145 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981145 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981145 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981145 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981145 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 8
+1732981145 Backfill Job: 11; Cannot backfill
+1732981145 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 2
+1732981145 Backfill Job: 13; Cannot backfill
+1732981145 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 2
+1732981145 Backfill Job: 14; Cannot backfill
+1732981145 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 2
+1732981145 Backfill Job: 15; Cannot backfill
+1732981145 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 4
+1732981145 Backfill Job: 16; Cannot backfill
+1732981145 Backfill Job: 17 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 16
+1732981145 Backfill Job: 17; Cannot backfill
+1732981145 Backfill Job: 18 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 16
+1732981145 Backfill Job: 18; Cannot backfill
+1732981145 Backfill Job: 19 with resource requirement of 4 for time 600
+1732981145 Backfill Job: Resources Available 0; Resources Required 4
+1732981145 Backfill Job: 19; Cannot backfill
+1732981145 Leaving scheduling cycle...
+1732981145 Cycle took 0.00013899803161621094 seconds.
+1732981150 Queue: 20 with resource requirement of 4 for time 900
+1732981150 Entered scheduling cycle...
+1732981150 Considering job 10 with resources 4 for 600.
+1732981150 Can not schedule
+1732981150 Entered backfill..
+1732981150 Top Job: 10 with resource requirement of 4 for time 600
+1732981150 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981150 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981150 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981150 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981150 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981150 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981150 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981150 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981150 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981150 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981150 Buil TRM: At 1732981150 Available 0.
+1732981150 Build TRM: Job 9 ends at 1732981155. Available 4.
+1732981150 Build TRM: Job 1 ends at 1732981235. Available 6.
+1732981150 Build TRM: Job 3 ends at 1732981245. Available 8.
+1732981150 Build TRM: Job 6 ends at 1732981260. Available 10.
+1732981150 Build TRM: Job 2 ends at 1732981480. Available 18.
+1732981150 Build TRM: Job 12 ends at 1732981530. Available 20.
+1732981150 Build TRM: Job 7 ends at 1732981685. Available 28.
+1732981150 Build TRM: Job 8 ends at 1732981690. Available 30.
+1732981150 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981150 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981150 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 8
+1732981150 Backfill Job: 11; Cannot backfill
+1732981150 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 2
+1732981150 Backfill Job: 13; Cannot backfill
+1732981150 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 2
+1732981150 Backfill Job: 14; Cannot backfill
+1732981150 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 2
+1732981150 Backfill Job: 15; Cannot backfill
+1732981150 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 4
+1732981150 Backfill Job: 16; Cannot backfill
+1732981150 Backfill Job: 17 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 16
+1732981150 Backfill Job: 17; Cannot backfill
+1732981150 Backfill Job: 18 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 16
+1732981150 Backfill Job: 18; Cannot backfill
+1732981150 Backfill Job: 19 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 4
+1732981150 Backfill Job: 19; Cannot backfill
+1732981150 Backfill Job: 20 with resource requirement of 4 for time 600
+1732981150 Backfill Job: Resources Available 0; Resources Required 4
+1732981150 Backfill Job: 20; Cannot backfill
+1732981150 Leaving scheduling cycle...
+1732981150 Cycle took 0.0001437664031982422 seconds.
+1732981155 Queue: 21 with resource requirement of 2 for time 180
+1732981155 Entered scheduling cycle...
+1732981155 Considering job 10 with resources 4 for 600.
+1732981155 Can not schedule
+1732981155 Entered backfill..
+1732981155 Top Job: 10 with resource requirement of 4 for time 600
+1732981155 Build TRM: Running jobs: Job(id=9, name='job.9', resources=4, walltime=60, runtime=63, state=<JobState.RUNNING: 2>, resource_ids=[3, 24, 25, 2])
+1732981155 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981155 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981155 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981155 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981155 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981155 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981155 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981155 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981155 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981155 Buil TRM: At 1732981155 Available 0.
+1732981155 Build TRM: Job 9 ends at 1732981155. End event has not been processed!
+1732981155 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981155 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981155 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981155 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981155 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981155 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981155 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981155 Build TRM: Job 4 ends at 1732981970. Available 27.
+1732981155 Build TRM: Job 5 ends at 1732981975. Available 28.
+1732981155 Backfill Job: 11 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 8
+1732981155 Backfill Job: 11; Cannot backfill
+1732981155 Backfill Job: 13 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 2
+1732981155 Backfill Job: 13; Cannot backfill
+1732981155 Backfill Job: 14 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 2
+1732981155 Backfill Job: 14; Cannot backfill
+1732981155 Backfill Job: 15 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 2
+1732981155 Backfill Job: 15; Cannot backfill
+1732981155 Backfill Job: 16 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 4
+1732981155 Backfill Job: 16; Cannot backfill
+1732981155 Backfill Job: 17 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 16
+1732981155 Backfill Job: 17; Cannot backfill
+1732981155 Backfill Job: 18 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 16
+1732981155 Backfill Job: 18; Cannot backfill
+1732981155 Backfill Job: 19 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 4
+1732981155 Backfill Job: 19; Cannot backfill
+1732981155 Backfill Job: 20 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 4
+1732981155 Backfill Job: 20; Cannot backfill
+1732981155 Backfill Job: 21 with resource requirement of 4 for time 600
+1732981155 Backfill Job: Resources Available 0; Resources Required 2
+1732981155 Backfill Job: 21; Cannot backfill
+1732981155 Leaving scheduling cycle...
+1732981155 Cycle took 0.00015044212341308594 seconds.
+1732981158 End: 9 with resource requirement of 4 for time 60
+1732981158 Entered scheduling cycle...
+1732981158 Considering job 10 with resources 4 for 600.
+1732981158 Can schedule
+1732981158 Considering job 11 with resources 8 for 900.
+1732981158 Can not schedule
+1732981158 Entered backfill..
+1732981158 Top Job: 11 with resource requirement of 8 for time 900
+1732981158 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981158 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981158 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981158 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981158 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981158 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981158 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981158 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981158 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981158 Buil TRM: At 1732981158 Available 0.
+1732981158 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981158 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981158 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981158 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981158 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981158 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981158 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981158 Build TRM: Job 4 ends at 1732981970. Available 27.
+1732981158 Build TRM: Job 5 ends at 1732981975. Available 28.
+1732981158 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 2
+1732981158 Backfill Job: 13; Cannot backfill
+1732981158 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 2
+1732981158 Backfill Job: 14; Cannot backfill
+1732981158 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 2
+1732981158 Backfill Job: 15; Cannot backfill
+1732981158 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 4
+1732981158 Backfill Job: 16; Cannot backfill
+1732981158 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 16
+1732981158 Backfill Job: 17; Cannot backfill
+1732981158 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 16
+1732981158 Backfill Job: 18; Cannot backfill
+1732981158 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 4
+1732981158 Backfill Job: 19; Cannot backfill
+1732981158 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 4
+1732981158 Backfill Job: 20; Cannot backfill
+1732981158 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981158 Backfill Job: Resources Available 0; Resources Required 2
+1732981158 Backfill Job: 21; Cannot backfill
+1732981158 Leaving scheduling cycle...
+1732981158 Cycle took 0.00019741058349609375 seconds.
+1732981158 Start: 10 with resource requirement of 4 for time 600
+1732981160 Queue: 22 with resource requirement of 2 for time 900
+1732981160 Entered scheduling cycle...
+1732981160 Considering job 11 with resources 8 for 900.
+1732981160 Can not schedule
+1732981160 Entered backfill..
+1732981160 Top Job: 11 with resource requirement of 8 for time 900
+1732981160 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981160 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981160 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981160 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981160 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981160 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981160 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981160 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981160 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981160 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981160 Buil TRM: At 1732981160 Available 0.
+1732981160 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981160 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981160 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981160 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981160 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981160 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981160 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981160 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981160 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981160 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981160 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 2
+1732981160 Backfill Job: 13; Cannot backfill
+1732981160 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 2
+1732981160 Backfill Job: 14; Cannot backfill
+1732981160 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 2
+1732981160 Backfill Job: 15; Cannot backfill
+1732981160 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 4
+1732981160 Backfill Job: 16; Cannot backfill
+1732981160 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 16
+1732981160 Backfill Job: 17; Cannot backfill
+1732981160 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 16
+1732981160 Backfill Job: 18; Cannot backfill
+1732981160 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 4
+1732981160 Backfill Job: 19; Cannot backfill
+1732981160 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 4
+1732981160 Backfill Job: 20; Cannot backfill
+1732981160 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 2
+1732981160 Backfill Job: 21; Cannot backfill
+1732981160 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981160 Backfill Job: Resources Available 0; Resources Required 2
+1732981160 Backfill Job: 22; Cannot backfill
+1732981160 Leaving scheduling cycle...
+1732981160 Cycle took 0.00018358230590820312 seconds.
+1732981165 Queue: 23 with resource requirement of 1 for time 180
+1732981165 Entered scheduling cycle...
+1732981165 Considering job 11 with resources 8 for 900.
+1732981165 Can not schedule
+1732981165 Entered backfill..
+1732981165 Top Job: 11 with resource requirement of 8 for time 900
+1732981165 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981165 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981165 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981165 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981165 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981165 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981165 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981165 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981165 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981165 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981165 Buil TRM: At 1732981165 Available 0.
+1732981165 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981165 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981165 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981165 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981165 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981165 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981165 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981165 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981165 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981165 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981165 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 2
+1732981165 Backfill Job: 13; Cannot backfill
+1732981165 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 2
+1732981165 Backfill Job: 14; Cannot backfill
+1732981165 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 2
+1732981165 Backfill Job: 15; Cannot backfill
+1732981165 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 4
+1732981165 Backfill Job: 16; Cannot backfill
+1732981165 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 16
+1732981165 Backfill Job: 17; Cannot backfill
+1732981165 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 16
+1732981165 Backfill Job: 18; Cannot backfill
+1732981165 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 4
+1732981165 Backfill Job: 19; Cannot backfill
+1732981165 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 4
+1732981165 Backfill Job: 20; Cannot backfill
+1732981165 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 2
+1732981165 Backfill Job: 21; Cannot backfill
+1732981165 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 2
+1732981165 Backfill Job: 22; Cannot backfill
+1732981165 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981165 Backfill Job: Resources Available 0; Resources Required 1
+1732981165 Backfill Job: 23; Cannot backfill
+1732981165 Leaving scheduling cycle...
+1732981165 Cycle took 0.0001652240753173828 seconds.
+1732981170 Queue: 24 with resource requirement of 4 for time 420
+1732981170 Entered scheduling cycle...
+1732981170 Considering job 11 with resources 8 for 900.
+1732981170 Can not schedule
+1732981170 Entered backfill..
+1732981170 Top Job: 11 with resource requirement of 8 for time 900
+1732981170 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981170 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981170 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981170 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981170 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981170 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981170 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981170 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981170 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981170 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981170 Buil TRM: At 1732981170 Available 0.
+1732981170 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981170 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981170 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981170 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981170 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981170 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981170 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981170 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981170 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981170 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981170 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 2
+1732981170 Backfill Job: 13; Cannot backfill
+1732981170 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 2
+1732981170 Backfill Job: 14; Cannot backfill
+1732981170 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 2
+1732981170 Backfill Job: 15; Cannot backfill
+1732981170 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 4
+1732981170 Backfill Job: 16; Cannot backfill
+1732981170 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 16
+1732981170 Backfill Job: 17; Cannot backfill
+1732981170 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 16
+1732981170 Backfill Job: 18; Cannot backfill
+1732981170 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 4
+1732981170 Backfill Job: 19; Cannot backfill
+1732981170 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 4
+1732981170 Backfill Job: 20; Cannot backfill
+1732981170 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 2
+1732981170 Backfill Job: 21; Cannot backfill
+1732981170 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 2
+1732981170 Backfill Job: 22; Cannot backfill
+1732981170 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 1
+1732981170 Backfill Job: 23; Cannot backfill
+1732981170 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981170 Backfill Job: Resources Available 0; Resources Required 4
+1732981170 Backfill Job: 24; Cannot backfill
+1732981170 Leaving scheduling cycle...
+1732981170 Cycle took 0.0001800060272216797 seconds.
+1732981175 Queue: 25 with resource requirement of 8 for time 600
+1732981175 Entered scheduling cycle...
+1732981175 Considering job 11 with resources 8 for 900.
+1732981175 Can not schedule
+1732981175 Entered backfill..
+1732981175 Top Job: 11 with resource requirement of 8 for time 900
+1732981175 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981175 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981175 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981175 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981175 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981175 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981175 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981175 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981175 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981175 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981175 Buil TRM: At 1732981175 Available 0.
+1732981175 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981175 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981175 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981175 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981175 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981175 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981175 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981175 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981175 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981175 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981175 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 2
+1732981175 Backfill Job: 13; Cannot backfill
+1732981175 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 2
+1732981175 Backfill Job: 14; Cannot backfill
+1732981175 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 2
+1732981175 Backfill Job: 15; Cannot backfill
+1732981175 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 4
+1732981175 Backfill Job: 16; Cannot backfill
+1732981175 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 16
+1732981175 Backfill Job: 17; Cannot backfill
+1732981175 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 16
+1732981175 Backfill Job: 18; Cannot backfill
+1732981175 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 4
+1732981175 Backfill Job: 19; Cannot backfill
+1732981175 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 4
+1732981175 Backfill Job: 20; Cannot backfill
+1732981175 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 2
+1732981175 Backfill Job: 21; Cannot backfill
+1732981175 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 2
+1732981175 Backfill Job: 22; Cannot backfill
+1732981175 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 1
+1732981175 Backfill Job: 23; Cannot backfill
+1732981175 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 4
+1732981175 Backfill Job: 24; Cannot backfill
+1732981175 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981175 Backfill Job: Resources Available 0; Resources Required 8
+1732981175 Backfill Job: 25; Cannot backfill
+1732981175 Leaving scheduling cycle...
+1732981175 Cycle took 0.0001804828643798828 seconds.
+1732981180 Queue: 26 with resource requirement of 8 for time 300
+1732981180 Entered scheduling cycle...
+1732981180 Considering job 11 with resources 8 for 900.
+1732981180 Can not schedule
+1732981180 Entered backfill..
+1732981180 Top Job: 11 with resource requirement of 8 for time 900
+1732981180 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981180 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981180 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981180 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981180 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981180 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981180 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981180 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981180 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981180 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981180 Buil TRM: At 1732981180 Available 0.
+1732981180 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981180 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981180 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981180 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981180 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981180 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981180 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981180 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981180 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981180 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981180 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 2
+1732981180 Backfill Job: 13; Cannot backfill
+1732981180 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 2
+1732981180 Backfill Job: 14; Cannot backfill
+1732981180 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 2
+1732981180 Backfill Job: 15; Cannot backfill
+1732981180 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 4
+1732981180 Backfill Job: 16; Cannot backfill
+1732981180 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 16
+1732981180 Backfill Job: 17; Cannot backfill
+1732981180 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 16
+1732981180 Backfill Job: 18; Cannot backfill
+1732981180 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 4
+1732981180 Backfill Job: 19; Cannot backfill
+1732981180 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 4
+1732981180 Backfill Job: 20; Cannot backfill
+1732981180 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 2
+1732981180 Backfill Job: 21; Cannot backfill
+1732981180 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 2
+1732981180 Backfill Job: 22; Cannot backfill
+1732981180 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 1
+1732981180 Backfill Job: 23; Cannot backfill
+1732981180 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 4
+1732981180 Backfill Job: 24; Cannot backfill
+1732981180 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 8
+1732981180 Backfill Job: 25; Cannot backfill
+1732981180 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981180 Backfill Job: Resources Available 0; Resources Required 8
+1732981180 Backfill Job: 26; Cannot backfill
+1732981180 Leaving scheduling cycle...
+1732981180 Cycle took 0.00019788742065429688 seconds.
+1732981185 Queue: 27 with resource requirement of 4 for time 300
+1732981185 Entered scheduling cycle...
+1732981185 Considering job 11 with resources 8 for 900.
+1732981185 Can not schedule
+1732981185 Entered backfill..
+1732981185 Top Job: 11 with resource requirement of 8 for time 900
+1732981185 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981185 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981185 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981185 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981185 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981185 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981185 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981185 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981185 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981185 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981185 Buil TRM: At 1732981185 Available 0.
+1732981185 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981185 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981185 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981185 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981185 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981185 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981185 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981185 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981185 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981185 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981185 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 2
+1732981185 Backfill Job: 13; Cannot backfill
+1732981185 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 2
+1732981185 Backfill Job: 14; Cannot backfill
+1732981185 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 2
+1732981185 Backfill Job: 15; Cannot backfill
+1732981185 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 4
+1732981185 Backfill Job: 16; Cannot backfill
+1732981185 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 16
+1732981185 Backfill Job: 17; Cannot backfill
+1732981185 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 16
+1732981185 Backfill Job: 18; Cannot backfill
+1732981185 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 4
+1732981185 Backfill Job: 19; Cannot backfill
+1732981185 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 4
+1732981185 Backfill Job: 20; Cannot backfill
+1732981185 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 2
+1732981185 Backfill Job: 21; Cannot backfill
+1732981185 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 2
+1732981185 Backfill Job: 22; Cannot backfill
+1732981185 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 1
+1732981185 Backfill Job: 23; Cannot backfill
+1732981185 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 4
+1732981185 Backfill Job: 24; Cannot backfill
+1732981185 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 8
+1732981185 Backfill Job: 25; Cannot backfill
+1732981185 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 8
+1732981185 Backfill Job: 26; Cannot backfill
+1732981185 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981185 Backfill Job: Resources Available 0; Resources Required 4
+1732981185 Backfill Job: 27; Cannot backfill
+1732981185 Leaving scheduling cycle...
+1732981185 Cycle took 0.000194549560546875 seconds.
+1732981190 Queue: 28 with resource requirement of 8 for time 600
+1732981190 Entered scheduling cycle...
+1732981190 Considering job 11 with resources 8 for 900.
+1732981190 Can not schedule
+1732981190 Entered backfill..
+1732981190 Top Job: 11 with resource requirement of 8 for time 900
+1732981190 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981190 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981190 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981190 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981190 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981190 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981190 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981190 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981190 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981190 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981190 Buil TRM: At 1732981190 Available 0.
+1732981190 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981190 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981190 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981190 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981190 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981190 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981190 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981190 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981190 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981190 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981190 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 2
+1732981190 Backfill Job: 13; Cannot backfill
+1732981190 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 2
+1732981190 Backfill Job: 14; Cannot backfill
+1732981190 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 2
+1732981190 Backfill Job: 15; Cannot backfill
+1732981190 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 4
+1732981190 Backfill Job: 16; Cannot backfill
+1732981190 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 16
+1732981190 Backfill Job: 17; Cannot backfill
+1732981190 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 16
+1732981190 Backfill Job: 18; Cannot backfill
+1732981190 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 4
+1732981190 Backfill Job: 19; Cannot backfill
+1732981190 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 4
+1732981190 Backfill Job: 20; Cannot backfill
+1732981190 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 2
+1732981190 Backfill Job: 21; Cannot backfill
+1732981190 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 2
+1732981190 Backfill Job: 22; Cannot backfill
+1732981190 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 1
+1732981190 Backfill Job: 23; Cannot backfill
+1732981190 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 4
+1732981190 Backfill Job: 24; Cannot backfill
+1732981190 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 8
+1732981190 Backfill Job: 25; Cannot backfill
+1732981190 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 8
+1732981190 Backfill Job: 26; Cannot backfill
+1732981190 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 4
+1732981190 Backfill Job: 27; Cannot backfill
+1732981190 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981190 Backfill Job: Resources Available 0; Resources Required 8
+1732981190 Backfill Job: 28; Cannot backfill
+1732981190 Leaving scheduling cycle...
+1732981190 Cycle took 0.0001888275146484375 seconds.
+1732981195 Queue: 29 with resource requirement of 8 for time 420
+1732981195 Entered scheduling cycle...
+1732981195 Considering job 11 with resources 8 for 900.
+1732981195 Can not schedule
+1732981195 Entered backfill..
+1732981195 Top Job: 11 with resource requirement of 8 for time 900
+1732981195 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981195 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981195 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981195 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981195 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981195 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981195 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981195 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981195 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981195 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981195 Buil TRM: At 1732981195 Available 0.
+1732981195 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981195 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981195 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981195 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981195 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981195 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981195 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981195 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981195 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981195 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981195 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 2
+1732981195 Backfill Job: 13; Cannot backfill
+1732981195 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 2
+1732981195 Backfill Job: 14; Cannot backfill
+1732981195 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 2
+1732981195 Backfill Job: 15; Cannot backfill
+1732981195 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 4
+1732981195 Backfill Job: 16; Cannot backfill
+1732981195 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 16
+1732981195 Backfill Job: 17; Cannot backfill
+1732981195 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 16
+1732981195 Backfill Job: 18; Cannot backfill
+1732981195 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 4
+1732981195 Backfill Job: 19; Cannot backfill
+1732981195 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 4
+1732981195 Backfill Job: 20; Cannot backfill
+1732981195 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 2
+1732981195 Backfill Job: 21; Cannot backfill
+1732981195 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 2
+1732981195 Backfill Job: 22; Cannot backfill
+1732981195 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 1
+1732981195 Backfill Job: 23; Cannot backfill
+1732981195 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 4
+1732981195 Backfill Job: 24; Cannot backfill
+1732981195 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 8
+1732981195 Backfill Job: 25; Cannot backfill
+1732981195 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 8
+1732981195 Backfill Job: 26; Cannot backfill
+1732981195 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 4
+1732981195 Backfill Job: 27; Cannot backfill
+1732981195 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 8
+1732981195 Backfill Job: 28; Cannot backfill
+1732981195 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981195 Backfill Job: Resources Available 0; Resources Required 8
+1732981195 Backfill Job: 29; Cannot backfill
+1732981195 Leaving scheduling cycle...
+1732981195 Cycle took 0.00021457672119140625 seconds.
+1732981200 Queue: 30 with resource requirement of 8 for time 900
+1732981200 Entered scheduling cycle...
+1732981200 Considering job 11 with resources 8 for 900.
+1732981200 Can not schedule
+1732981200 Entered backfill..
+1732981200 Top Job: 11 with resource requirement of 8 for time 900
+1732981200 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981200 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981200 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981200 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981200 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981200 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981200 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981200 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981200 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981200 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981200 Buil TRM: At 1732981200 Available 0.
+1732981200 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981200 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981200 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981200 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981200 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981200 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981200 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981200 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981200 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981200 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981200 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 2
+1732981200 Backfill Job: 13; Cannot backfill
+1732981200 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 2
+1732981200 Backfill Job: 14; Cannot backfill
+1732981200 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 2
+1732981200 Backfill Job: 15; Cannot backfill
+1732981200 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 4
+1732981200 Backfill Job: 16; Cannot backfill
+1732981200 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 16
+1732981200 Backfill Job: 17; Cannot backfill
+1732981200 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 16
+1732981200 Backfill Job: 18; Cannot backfill
+1732981200 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 4
+1732981200 Backfill Job: 19; Cannot backfill
+1732981200 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 4
+1732981200 Backfill Job: 20; Cannot backfill
+1732981200 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 2
+1732981200 Backfill Job: 21; Cannot backfill
+1732981200 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 2
+1732981200 Backfill Job: 22; Cannot backfill
+1732981200 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 1
+1732981200 Backfill Job: 23; Cannot backfill
+1732981200 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 4
+1732981200 Backfill Job: 24; Cannot backfill
+1732981200 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 8
+1732981200 Backfill Job: 25; Cannot backfill
+1732981200 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 8
+1732981200 Backfill Job: 26; Cannot backfill
+1732981200 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 4
+1732981200 Backfill Job: 27; Cannot backfill
+1732981200 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 8
+1732981200 Backfill Job: 28; Cannot backfill
+1732981200 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 8
+1732981200 Backfill Job: 29; Cannot backfill
+1732981200 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981200 Backfill Job: Resources Available 0; Resources Required 8
+1732981200 Backfill Job: 30; Cannot backfill
+1732981200 Leaving scheduling cycle...
+1732981200 Cycle took 0.00020241737365722656 seconds.
+1732981205 Queue: 31 with resource requirement of 16 for time 60
+1732981205 Entered scheduling cycle...
+1732981205 Considering job 11 with resources 8 for 900.
+1732981205 Can not schedule
+1732981205 Entered backfill..
+1732981205 Top Job: 11 with resource requirement of 8 for time 900
+1732981205 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981205 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981205 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981205 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981205 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981205 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981205 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981205 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981205 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981205 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981205 Buil TRM: At 1732981205 Available 0.
+1732981205 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981205 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981205 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981205 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981205 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981205 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981205 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981205 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981205 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981205 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981205 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 2
+1732981205 Backfill Job: 13; Cannot backfill
+1732981205 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 2
+1732981205 Backfill Job: 14; Cannot backfill
+1732981205 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 2
+1732981205 Backfill Job: 15; Cannot backfill
+1732981205 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 4
+1732981205 Backfill Job: 16; Cannot backfill
+1732981205 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 16
+1732981205 Backfill Job: 17; Cannot backfill
+1732981205 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 16
+1732981205 Backfill Job: 18; Cannot backfill
+1732981205 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 4
+1732981205 Backfill Job: 19; Cannot backfill
+1732981205 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 4
+1732981205 Backfill Job: 20; Cannot backfill
+1732981205 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 2
+1732981205 Backfill Job: 21; Cannot backfill
+1732981205 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 2
+1732981205 Backfill Job: 22; Cannot backfill
+1732981205 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 1
+1732981205 Backfill Job: 23; Cannot backfill
+1732981205 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 4
+1732981205 Backfill Job: 24; Cannot backfill
+1732981205 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 8
+1732981205 Backfill Job: 25; Cannot backfill
+1732981205 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 8
+1732981205 Backfill Job: 26; Cannot backfill
+1732981205 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 4
+1732981205 Backfill Job: 27; Cannot backfill
+1732981205 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 8
+1732981205 Backfill Job: 28; Cannot backfill
+1732981205 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 8
+1732981205 Backfill Job: 29; Cannot backfill
+1732981205 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 8
+1732981205 Backfill Job: 30; Cannot backfill
+1732981205 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981205 Backfill Job: Resources Available 0; Resources Required 16
+1732981205 Backfill Job: 31; Cannot backfill
+1732981205 Leaving scheduling cycle...
+1732981205 Cycle took 0.000194549560546875 seconds.
+1732981210 Queue: 32 with resource requirement of 16 for time 300
+1732981210 Entered scheduling cycle...
+1732981210 Considering job 11 with resources 8 for 900.
+1732981210 Can not schedule
+1732981210 Entered backfill..
+1732981210 Top Job: 11 with resource requirement of 8 for time 900
+1732981210 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981210 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981210 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981210 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981210 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981210 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981210 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981210 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981210 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981210 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981210 Buil TRM: At 1732981210 Available 0.
+1732981210 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981210 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981210 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981210 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981210 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981210 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981210 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981210 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981210 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981210 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981210 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 2
+1732981210 Backfill Job: 13; Cannot backfill
+1732981210 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 2
+1732981210 Backfill Job: 14; Cannot backfill
+1732981210 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 2
+1732981210 Backfill Job: 15; Cannot backfill
+1732981210 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 4
+1732981210 Backfill Job: 16; Cannot backfill
+1732981210 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 16
+1732981210 Backfill Job: 17; Cannot backfill
+1732981210 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 16
+1732981210 Backfill Job: 18; Cannot backfill
+1732981210 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 4
+1732981210 Backfill Job: 19; Cannot backfill
+1732981210 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 4
+1732981210 Backfill Job: 20; Cannot backfill
+1732981210 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 2
+1732981210 Backfill Job: 21; Cannot backfill
+1732981210 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 2
+1732981210 Backfill Job: 22; Cannot backfill
+1732981210 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 1
+1732981210 Backfill Job: 23; Cannot backfill
+1732981210 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 4
+1732981210 Backfill Job: 24; Cannot backfill
+1732981210 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 8
+1732981210 Backfill Job: 25; Cannot backfill
+1732981210 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 8
+1732981210 Backfill Job: 26; Cannot backfill
+1732981210 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 4
+1732981210 Backfill Job: 27; Cannot backfill
+1732981210 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 8
+1732981210 Backfill Job: 28; Cannot backfill
+1732981210 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 8
+1732981210 Backfill Job: 29; Cannot backfill
+1732981210 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 8
+1732981210 Backfill Job: 30; Cannot backfill
+1732981210 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 16
+1732981210 Backfill Job: 31; Cannot backfill
+1732981210 Backfill Job: 32 with resource requirement of 8 for time 900
+1732981210 Backfill Job: Resources Available 0; Resources Required 16
+1732981210 Backfill Job: 32; Cannot backfill
+1732981210 Leaving scheduling cycle...
+1732981210 Cycle took 0.00019931793212890625 seconds.
+1732981215 Queue: 33 with resource requirement of 16 for time 180
+1732981215 Entered scheduling cycle...
+1732981215 Considering job 11 with resources 8 for 900.
+1732981215 Can not schedule
+1732981215 Entered backfill..
+1732981215 Top Job: 11 with resource requirement of 8 for time 900
+1732981215 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981215 Build TRM: Running jobs: Job(id=3, name='job.3', resources=2, walltime=180, runtime=152, state=<JobState.RUNNING: 2>, resource_ids=[5, 6])
+1732981215 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981215 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981215 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981215 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981215 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981215 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981215 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981215 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981215 Buil TRM: At 1732981215 Available 0.
+1732981215 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981215 Build TRM: Job 3 ends at 1732981245. Available 4.
+1732981215 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981215 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981215 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981215 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981215 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981215 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981215 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981215 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981215 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 2
+1732981215 Backfill Job: 13; Cannot backfill
+1732981215 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 2
+1732981215 Backfill Job: 14; Cannot backfill
+1732981215 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 2
+1732981215 Backfill Job: 15; Cannot backfill
+1732981215 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 4
+1732981215 Backfill Job: 16; Cannot backfill
+1732981215 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 16
+1732981215 Backfill Job: 17; Cannot backfill
+1732981215 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 16
+1732981215 Backfill Job: 18; Cannot backfill
+1732981215 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 4
+1732981215 Backfill Job: 19; Cannot backfill
+1732981215 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 4
+1732981215 Backfill Job: 20; Cannot backfill
+1732981215 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 2
+1732981215 Backfill Job: 21; Cannot backfill
+1732981215 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 2
+1732981215 Backfill Job: 22; Cannot backfill
+1732981215 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 1
+1732981215 Backfill Job: 23; Cannot backfill
+1732981215 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 4
+1732981215 Backfill Job: 24; Cannot backfill
+1732981215 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 8
+1732981215 Backfill Job: 25; Cannot backfill
+1732981215 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 8
+1732981215 Backfill Job: 26; Cannot backfill
+1732981215 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 4
+1732981215 Backfill Job: 27; Cannot backfill
+1732981215 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 8
+1732981215 Backfill Job: 28; Cannot backfill
+1732981215 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 8
+1732981215 Backfill Job: 29; Cannot backfill
+1732981215 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 8
+1732981215 Backfill Job: 30; Cannot backfill
+1732981215 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 16
+1732981215 Backfill Job: 31; Cannot backfill
+1732981215 Backfill Job: 32 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 16
+1732981215 Backfill Job: 32; Cannot backfill
+1732981215 Backfill Job: 33 with resource requirement of 8 for time 900
+1732981215 Backfill Job: Resources Available 0; Resources Required 16
+1732981215 Backfill Job: 33; Cannot backfill
+1732981215 Leaving scheduling cycle...
+1732981215 Cycle took 0.0002155303955078125 seconds.
+1732981217 End: 3 with resource requirement of 2 for time 180
+1732981217 Entered scheduling cycle...
+1732981217 Considering job 11 with resources 8 for 900.
+1732981217 Can not schedule
+1732981217 Entered backfill..
+1732981217 Top Job: 11 with resource requirement of 8 for time 900
+1732981217 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981217 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981217 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981217 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981217 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981217 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981217 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981217 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981217 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981217 Buil TRM: At 1732981217 Available 2.
+1732981217 Build TRM: Job 1 ends at 1732981235. Available 4.
+1732981217 Build TRM: Job 6 ends at 1732981260. Available 6.
+1732981217 Build TRM: Job 2 ends at 1732981480. Available 14.
+1732981217 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981217 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981217 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981217 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981217 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981217 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981217 Backfill Job: 13 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 2; Resources Required 2
+1732981217 Backfill Job: Resources Available 4; Resources Required 2
+1732981217 Backfill Job: Resources Available 6; Resources Required 2
+1732981217 Backfill Job: Resources Available 6; Resources Required 2
+1732981217 Backfill Job: Resources Available 8; Resources Required 2
+1732981217 Backfill Job: 13; Backfill Eligible, reserving resources.
+1732981217 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 2
+1732981217 Backfill Job: 14; Cannot backfill
+1732981217 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 2
+1732981217 Backfill Job: 15; Cannot backfill
+1732981217 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 4
+1732981217 Backfill Job: 16; Cannot backfill
+1732981217 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 16
+1732981217 Backfill Job: 17; Cannot backfill
+1732981217 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 16
+1732981217 Backfill Job: 18; Cannot backfill
+1732981217 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 4
+1732981217 Backfill Job: 19; Cannot backfill
+1732981217 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 4
+1732981217 Backfill Job: 20; Cannot backfill
+1732981217 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 2
+1732981217 Backfill Job: 21; Cannot backfill
+1732981217 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 2
+1732981217 Backfill Job: 22; Cannot backfill
+1732981217 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 1
+1732981217 Backfill Job: 23; Cannot backfill
+1732981217 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 4
+1732981217 Backfill Job: 24; Cannot backfill
+1732981217 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 8
+1732981217 Backfill Job: 25; Cannot backfill
+1732981217 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 8
+1732981217 Backfill Job: 26; Cannot backfill
+1732981217 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 4
+1732981217 Backfill Job: 27; Cannot backfill
+1732981217 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 8
+1732981217 Backfill Job: 28; Cannot backfill
+1732981217 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 8
+1732981217 Backfill Job: 29; Cannot backfill
+1732981217 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 8
+1732981217 Backfill Job: 30; Cannot backfill
+1732981217 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 16
+1732981217 Backfill Job: 31; Cannot backfill
+1732981217 Backfill Job: 32 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 16
+1732981217 Backfill Job: 32; Cannot backfill
+1732981217 Backfill Job: 33 with resource requirement of 8 for time 900
+1732981217 Backfill Job: Resources Available 0; Resources Required 16
+1732981217 Backfill Job: 33; Cannot backfill
+1732981217 Backfill Job Allocate: 33 with resource requirement of 8 for time 900
+1732981217 Leaving scheduling cycle...
+1732981217 Cycle took 0.0002627372741699219 seconds.
+1732981217 Start: 13 with resource requirement of 2 for time 300
+1732981220 Queue: 34 with resource requirement of 4 for time 420
+1732981220 Entered scheduling cycle...
+1732981220 Considering job 11 with resources 8 for 900.
+1732981220 Can not schedule
+1732981220 Entered backfill..
+1732981220 Top Job: 11 with resource requirement of 8 for time 900
+1732981220 Build TRM: Running jobs: Job(id=1, name='job.1', resources=2, walltime=180, runtime=166, state=<JobState.RUNNING: 2>, resource_ids=[17, 18])
+1732981220 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981220 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981220 Build TRM: Running jobs: Job(id=13, name='job.13', resources=2, walltime=300, runtime=273, state=<JobState.RUNNING: 2>, resource_ids=[6, 5])
+1732981220 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981220 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981220 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981220 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981220 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981220 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981220 Buil TRM: At 1732981220 Available 0.
+1732981220 Build TRM: Job 1 ends at 1732981235. Available 2.
+1732981220 Build TRM: Job 6 ends at 1732981260. Available 4.
+1732981220 Build TRM: Job 2 ends at 1732981480. Available 12.
+1732981220 Build TRM: Job 13 ends at 1732981517. Available 14.
+1732981220 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981220 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981220 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981220 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981220 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981220 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981220 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 2
+1732981220 Backfill Job: 14; Cannot backfill
+1732981220 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 2
+1732981220 Backfill Job: 15; Cannot backfill
+1732981220 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 16; Cannot backfill
+1732981220 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 16
+1732981220 Backfill Job: 17; Cannot backfill
+1732981220 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 16
+1732981220 Backfill Job: 18; Cannot backfill
+1732981220 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 19; Cannot backfill
+1732981220 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 20; Cannot backfill
+1732981220 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 2
+1732981220 Backfill Job: 21; Cannot backfill
+1732981220 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 2
+1732981220 Backfill Job: 22; Cannot backfill
+1732981220 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 1
+1732981220 Backfill Job: 23; Cannot backfill
+1732981220 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 24; Cannot backfill
+1732981220 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 8
+1732981220 Backfill Job: 25; Cannot backfill
+1732981220 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 8
+1732981220 Backfill Job: 26; Cannot backfill
+1732981220 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 27; Cannot backfill
+1732981220 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 8
+1732981220 Backfill Job: 28; Cannot backfill
+1732981220 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 8
+1732981220 Backfill Job: 29; Cannot backfill
+1732981220 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 8
+1732981220 Backfill Job: 30; Cannot backfill
+1732981220 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 16
+1732981220 Backfill Job: 31; Cannot backfill
+1732981220 Backfill Job: 32 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 16
+1732981220 Backfill Job: 32; Cannot backfill
+1732981220 Backfill Job: 33 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 16
+1732981220 Backfill Job: 33; Cannot backfill
+1732981220 Backfill Job: 34 with resource requirement of 8 for time 900
+1732981220 Backfill Job: Resources Available 0; Resources Required 4
+1732981220 Backfill Job: 34; Cannot backfill
+1732981220 Leaving scheduling cycle...
+1732981220 Cycle took 0.00019931793212890625 seconds.
+1732981221 End: 1 with resource requirement of 2 for time 180
+1732981221 Entered scheduling cycle...
+1732981221 Considering job 11 with resources 8 for 900.
+1732981221 Can not schedule
+1732981221 Entered backfill..
+1732981221 Top Job: 11 with resource requirement of 8 for time 900
+1732981221 Build TRM: Running jobs: Job(id=6, name='job.6', resources=2, walltime=180, runtime=158, state=<JobState.RUNNING: 2>, resource_ids=[7, 29])
+1732981221 Build TRM: Running jobs: Job(id=2, name='job.2', resources=8, walltime=420, runtime=377, state=<JobState.RUNNING: 2>, resource_ids=[15, 13, 9, 14, 30, 28, 26, 1])
+1732981221 Build TRM: Running jobs: Job(id=13, name='job.13', resources=2, walltime=300, runtime=273, state=<JobState.RUNNING: 2>, resource_ids=[6, 5])
+1732981221 Build TRM: Running jobs: Job(id=12, name='job.12', resources=2, walltime=420, runtime=375, state=<JobState.RUNNING: 2>, resource_ids=[11, 23])
+1732981221 Build TRM: Running jobs: Job(id=7, name='job.7', resources=8, walltime=600, runtime=548, state=<JobState.RUNNING: 2>, resource_ids=[20, 10, 8, 19, 27, 31, 0, 4])
+1732981221 Build TRM: Running jobs: Job(id=8, name='job.8', resources=2, walltime=600, runtime=532, state=<JobState.RUNNING: 2>, resource_ids=[12, 22])
+1732981221 Build TRM: Running jobs: Job(id=10, name='job.10', resources=4, walltime=600, runtime=521, state=<JobState.RUNNING: 2>, resource_ids=[3, 2, 25, 24])
+1732981221 Build TRM: Running jobs: Job(id=4, name='job.4', resources=1, walltime=900, runtime=729, state=<JobState.RUNNING: 2>, resource_ids=[16])
+1732981221 Build TRM: Running jobs: Job(id=5, name='job.5', resources=1, walltime=900, runtime=792, state=<JobState.RUNNING: 2>, resource_ids=[21])
+1732981221 Buil TRM: At 1732981221 Available 2.
+1732981221 Build TRM: Job 6 ends at 1732981260. Available 4.
+1732981221 Build TRM: Job 2 ends at 1732981480. Available 12.
+1732981221 Build TRM: Job 13 ends at 1732981517. Available 14.
+1732981221 Build TRM: Job 12 ends at 1732981530. Available 16.
+1732981221 Build TRM: Job 7 ends at 1732981685. Available 24.
+1732981221 Build TRM: Job 8 ends at 1732981690. Available 26.
+1732981221 Build TRM: Job 10 ends at 1732981758. Available 30.
+1732981221 Build TRM: Job 4 ends at 1732981970. Available 31.
+1732981221 Build TRM: Job 5 ends at 1732981975. Available 32.
+1732981221 Backfill Job: 14 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 2; Resources Required 2
+1732981221 Backfill Job: Resources Available 4; Resources Required 2
+1732981221 Backfill Job: Resources Available 4; Resources Required 2
+1732981221 Backfill Job: Resources Available 6; Resources Required 2
+1732981221 Backfill Job: Resources Available 8; Resources Required 2
+1732981221 Backfill Job: Resources Available 16; Resources Required 2
+1732981221 Backfill Job: Resources Available 18; Resources Required 2
+1732981221 Backfill Job: Resources Available 22; Resources Required 2
+1732981221 Backfill Job: Resources Available 23; Resources Required 2
+1732981221 Backfill Job: 14; Backfill Eligible, reserving resources.
+1732981221 Backfill Job: 15 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 2
+1732981221 Backfill Job: 15; Cannot backfill
+1732981221 Backfill Job: 16 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 16; Cannot backfill
+1732981221 Backfill Job: 17 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 16
+1732981221 Backfill Job: 17; Cannot backfill
+1732981221 Backfill Job: 18 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 16
+1732981221 Backfill Job: 18; Cannot backfill
+1732981221 Backfill Job: 19 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 19; Cannot backfill
+1732981221 Backfill Job: 20 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 20; Cannot backfill
+1732981221 Backfill Job: 21 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 2
+1732981221 Backfill Job: 21; Cannot backfill
+1732981221 Backfill Job: 22 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 2
+1732981221 Backfill Job: 22; Cannot backfill
+1732981221 Backfill Job: 23 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 1
+1732981221 Backfill Job: 23; Cannot backfill
+1732981221 Backfill Job: 24 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 24; Cannot backfill
+1732981221 Backfill Job: 25 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 8
+1732981221 Backfill Job: 25; Cannot backfill
+1732981221 Backfill Job: 26 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 8
+1732981221 Backfill Job: 26; Cannot backfill
+1732981221 Backfill Job: 27 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 27; Cannot backfill
+1732981221 Backfill Job: 28 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 8
+1732981221 Backfill Job: 28; Cannot backfill
+1732981221 Backfill Job: 29 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 8
+1732981221 Backfill Job: 29; Cannot backfill
+1732981221 Backfill Job: 30 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 8
+1732981221 Backfill Job: 30; Cannot backfill
+1732981221 Backfill Job: 31 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 16
+1732981221 Backfill Job: 31; Cannot backfill
+1732981221 Backfill Job: 32 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 16
+1732981221 Backfill Job: 32; Cannot backfill
+1732981221 Backfill Job: 33 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 16
+1732981221 Backfill Job: 33; Cannot backfill
+1732981221 Backfill Job: 34 with resource requirement of 8 for time 900
+1732981221 Backfill Job: Resources Available 0; Resources Required 4
+1732981221 Backfill Job: 34; Cannot backfill
+1732981221 Backfill Job Allocate: 34 with resource requirement of 8 for time 900
+1732981221 Leaving scheduling cycle...
+1732981221 Cycle took 0.0003120899200439453 seconds.
+1732981221 Start: 14 with resource requirement of 2 for time 600

@@ -1,3 +1,442 @@
 Initialized logger.
 Initialized Allocator
 1732981055 Job 1: Allocated with 2 resources.
+1732981060 Job 2: Allocated with 8 resources.
+1732981065 Job 3: Allocated with 2 resources.
+1732981070 Job 4: Allocated with 1 resources.
+1732981075 Job 5: Allocated with 1 resources.
+1732981080 Job 6: Allocated with 2 resources.
+1732981085 Job 7: Allocated with 8 resources.
+1732981090 Job 8: Allocated with 2 resources.
+1732981095 Job 9: Allocated with 4 resources.
+1732981100 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981100 TRM: Time 1732981100; Available 2
+1732981100 TRM: Time 1732981155; Available 6
+1732981100 Job 10: Found reservation time of 1732981155.
+1732981100 Job 10: Attempting to reserve at 1732981155. Avialable: 6
+1732981100 Job 10: Attempting to reserve at 1732981235. Avialable: 8
+1732981100 Job 10: Attempting to reserve at 1732981245. Avialable: 10
+1732981100 Job 10: Attempting to reserve at 1732981260. Avialable: 12
+1732981100 Job 10: Attempting to reserve at 1732981480. Avialable: 20
+1732981100 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981100 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981105 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981105 TRM: Time 1732981105; Available 2
+1732981105 TRM: Time 1732981155; Available 6
+1732981105 Job 10: Found reservation time of 1732981155.
+1732981105 Job 10: Attempting to reserve at 1732981155. Avialable: 6
+1732981105 Job 10: Attempting to reserve at 1732981235. Avialable: 8
+1732981105 Job 10: Attempting to reserve at 1732981245. Avialable: 10
+1732981105 Job 10: Attempting to reserve at 1732981260. Avialable: 12
+1732981105 Job 10: Attempting to reserve at 1732981480. Avialable: 20
+1732981105 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981105 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981110 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981110 TRM: Time 1732981110; Available 2
+1732981110 TRM: Time 1732981155; Available 6
+1732981110 Job 10: Found reservation time of 1732981155.
+1732981110 Job 10: Attempting to reserve at 1732981155. Avialable: 6
+1732981110 Job 10: Attempting to reserve at 1732981235. Avialable: 8
+1732981110 Job 10: Attempting to reserve at 1732981245. Avialable: 10
+1732981110 Job 10: Attempting to reserve at 1732981260. Avialable: 12
+1732981110 Job 10: Attempting to reserve at 1732981480. Avialable: 20
+1732981110 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981110 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981110 Reserve Now: Job 12: Trying to reserve 2 resources for 420 starting now.
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981110
+1732981110 Reserve Now: Reserved 2 at 1732981110
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981155
+1732981110 Reserve Now: Reserved 2 at 1732981155
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981235
+1732981110 Reserve Now: Reserved 2 at 1732981235
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981245
+1732981110 Reserve Now: Reserved 2 at 1732981245
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981260
+1732981110 Reserve Now: Reserved 2 at 1732981260
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Reserved 2 at 1732981480
+1732981110 Reserve Now: Reserved 2 at 1732981480
+1732981110 Resernve Now: Job 12: Attempting to reserve 2 resources for 420 starting now.
+1732981110 Reserve Now: Could not reserve
+1732981110 Job 12: Allocated with 2 resources.
+1732981115 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981115 TRM: Time 1732981115; Available 0
+1732981115 TRM: Time 1732981155; Available 4
+1732981115 Job 10: Found reservation time of 1732981155.
+1732981115 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981115 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981115 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981115 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981115 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981115 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981115 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981115 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981120 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981120 TRM: Time 1732981120; Available 0
+1732981120 TRM: Time 1732981155; Available 4
+1732981120 Job 10: Found reservation time of 1732981155.
+1732981120 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981120 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981120 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981120 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981120 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981120 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981120 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981120 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981125 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981125 TRM: Time 1732981125; Available 0
+1732981125 TRM: Time 1732981155; Available 4
+1732981125 Job 10: Found reservation time of 1732981155.
+1732981125 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981125 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981125 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981125 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981125 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981125 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981125 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981125 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981130 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981130 TRM: Time 1732981130; Available 0
+1732981130 TRM: Time 1732981155; Available 4
+1732981130 Job 10: Found reservation time of 1732981155.
+1732981130 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981130 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981130 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981130 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981130 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981130 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981130 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981130 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981135 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981135 TRM: Time 1732981135; Available 0
+1732981135 TRM: Time 1732981155; Available 4
+1732981135 Job 10: Found reservation time of 1732981155.
+1732981135 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981135 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981135 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981135 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981135 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981135 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981135 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981135 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981140 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981140 TRM: Time 1732981140; Available 0
+1732981140 TRM: Time 1732981155; Available 4
+1732981140 Job 10: Found reservation time of 1732981155.
+1732981140 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981140 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981140 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981140 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981140 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981140 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981140 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981140 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981145 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981145 TRM: Time 1732981145; Available 0
+1732981145 TRM: Time 1732981155; Available 4
+1732981145 Job 10: Found reservation time of 1732981155.
+1732981145 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981145 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981145 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981145 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981145 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981145 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981145 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981145 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981150 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981150 TRM: Time 1732981150; Available 0
+1732981150 TRM: Time 1732981155; Available 4
+1732981150 Job 10: Found reservation time of 1732981155.
+1732981150 Job 10: Attempting to reserve at 1732981155. Avialable: 4
+1732981150 Job 10: Attempting to reserve at 1732981235. Avialable: 6
+1732981150 Job 10: Attempting to reserve at 1732981245. Avialable: 8
+1732981150 Job 10: Attempting to reserve at 1732981260. Avialable: 10
+1732981150 Job 10: Attempting to reserve at 1732981480. Avialable: 18
+1732981150 Job 10: Attempting to reserve at 1732981530. Avialable: 20
+1732981150 Job 10: Attempting to reserve at 1732981685. Avialable: 28
+1732981150 Job 10: Attempting to reserve at 1732981690. Avialable: 30
+1732981155 Job 10: Trying to reserve 4 resources for 600 in future.
+1732981155 TRM: Time 1732981155; Available 0
+1732981155 TRM: Time 1732981235; Available 2
+1732981155 TRM: Time 1732981245; Available 4
+1732981155 Job 10: Found reservation time of 1732981245.
+1732981155 Job 10: Attempting to reserve at 1732981245. Avialable: 4
+1732981155 Job 10: Attempting to reserve at 1732981260. Avialable: 6
+1732981155 Job 10: Attempting to reserve at 1732981480. Avialable: 14
+1732981155 Job 10: Attempting to reserve at 1732981530. Avialable: 16
+1732981155 Job 10: Attempting to reserve at 1732981685. Avialable: 24
+1732981155 Job 10: Attempting to reserve at 1732981690. Avialable: 26
+1732981158 Job 9: Deallocated 4 resources.
+1732981158 Job 10: Allocated with 4 resources.
+1732981158 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981158 TRM: Time 1732981158; Available 0
+1732981158 TRM: Time 1732981235; Available 2
+1732981158 TRM: Time 1732981245; Available 4
+1732981158 TRM: Time 1732981260; Available 6
+1732981158 TRM: Time 1732981480; Available 14
+1732981158 Job 11: Found reservation time of 1732981480.
+1732981158 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981158 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981158 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981158 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981158 Job 11: Attempting to reserve at 1732981970. Avialable: 27
+1732981158 Job 11: Attempting to reserve at 1732981975. Avialable: 28
+1732981160 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981160 TRM: Time 1732981160; Available 0
+1732981160 TRM: Time 1732981235; Available 2
+1732981160 TRM: Time 1732981245; Available 4
+1732981160 TRM: Time 1732981260; Available 6
+1732981160 TRM: Time 1732981480; Available 14
+1732981160 Job 11: Found reservation time of 1732981480.
+1732981160 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981160 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981160 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981160 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981160 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981160 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981160 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981165 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981165 TRM: Time 1732981165; Available 0
+1732981165 TRM: Time 1732981235; Available 2
+1732981165 TRM: Time 1732981245; Available 4
+1732981165 TRM: Time 1732981260; Available 6
+1732981165 TRM: Time 1732981480; Available 14
+1732981165 Job 11: Found reservation time of 1732981480.
+1732981165 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981165 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981165 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981165 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981165 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981165 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981165 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981170 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981170 TRM: Time 1732981170; Available 0
+1732981170 TRM: Time 1732981235; Available 2
+1732981170 TRM: Time 1732981245; Available 4
+1732981170 TRM: Time 1732981260; Available 6
+1732981170 TRM: Time 1732981480; Available 14
+1732981170 Job 11: Found reservation time of 1732981480.
+1732981170 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981170 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981170 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981170 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981170 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981170 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981170 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981175 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981175 TRM: Time 1732981175; Available 0
+1732981175 TRM: Time 1732981235; Available 2
+1732981175 TRM: Time 1732981245; Available 4
+1732981175 TRM: Time 1732981260; Available 6
+1732981175 TRM: Time 1732981480; Available 14
+1732981175 Job 11: Found reservation time of 1732981480.
+1732981175 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981175 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981175 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981175 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981175 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981175 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981175 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981180 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981180 TRM: Time 1732981180; Available 0
+1732981180 TRM: Time 1732981235; Available 2
+1732981180 TRM: Time 1732981245; Available 4
+1732981180 TRM: Time 1732981260; Available 6
+1732981180 TRM: Time 1732981480; Available 14
+1732981180 Job 11: Found reservation time of 1732981480.
+1732981180 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981180 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981180 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981180 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981180 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981180 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981180 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981185 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981185 TRM: Time 1732981185; Available 0
+1732981185 TRM: Time 1732981235; Available 2
+1732981185 TRM: Time 1732981245; Available 4
+1732981185 TRM: Time 1732981260; Available 6
+1732981185 TRM: Time 1732981480; Available 14
+1732981185 Job 11: Found reservation time of 1732981480.
+1732981185 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981185 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981185 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981185 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981185 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981185 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981185 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981190 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981190 TRM: Time 1732981190; Available 0
+1732981190 TRM: Time 1732981235; Available 2
+1732981190 TRM: Time 1732981245; Available 4
+1732981190 TRM: Time 1732981260; Available 6
+1732981190 TRM: Time 1732981480; Available 14
+1732981190 Job 11: Found reservation time of 1732981480.
+1732981190 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981190 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981190 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981190 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981190 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981190 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981190 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981195 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981195 TRM: Time 1732981195; Available 0
+1732981195 TRM: Time 1732981235; Available 2
+1732981195 TRM: Time 1732981245; Available 4
+1732981195 TRM: Time 1732981260; Available 6
+1732981195 TRM: Time 1732981480; Available 14
+1732981195 Job 11: Found reservation time of 1732981480.
+1732981195 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981195 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981195 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981195 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981195 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981195 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981195 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981200 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981200 TRM: Time 1732981200; Available 0
+1732981200 TRM: Time 1732981235; Available 2
+1732981200 TRM: Time 1732981245; Available 4
+1732981200 TRM: Time 1732981260; Available 6
+1732981200 TRM: Time 1732981480; Available 14
+1732981200 Job 11: Found reservation time of 1732981480.
+1732981200 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981200 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981200 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981200 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981200 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981200 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981200 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981205 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981205 TRM: Time 1732981205; Available 0
+1732981205 TRM: Time 1732981235; Available 2
+1732981205 TRM: Time 1732981245; Available 4
+1732981205 TRM: Time 1732981260; Available 6
+1732981205 TRM: Time 1732981480; Available 14
+1732981205 Job 11: Found reservation time of 1732981480.
+1732981205 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981205 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981205 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981205 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981205 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981205 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981205 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981210 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981210 TRM: Time 1732981210; Available 0
+1732981210 TRM: Time 1732981235; Available 2
+1732981210 TRM: Time 1732981245; Available 4
+1732981210 TRM: Time 1732981260; Available 6
+1732981210 TRM: Time 1732981480; Available 14
+1732981210 Job 11: Found reservation time of 1732981480.
+1732981210 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981210 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981210 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981210 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981210 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981210 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981210 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981215 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981215 TRM: Time 1732981215; Available 0
+1732981215 TRM: Time 1732981235; Available 2
+1732981215 TRM: Time 1732981245; Available 4
+1732981215 TRM: Time 1732981260; Available 6
+1732981215 TRM: Time 1732981480; Available 14
+1732981215 Job 11: Found reservation time of 1732981480.
+1732981215 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981215 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981215 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981215 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981215 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981215 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981215 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981217 Job 3: Deallocated 2 resources.
+1732981217 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981217 TRM: Time 1732981217; Available 2
+1732981217 TRM: Time 1732981235; Available 4
+1732981217 TRM: Time 1732981260; Available 6
+1732981217 TRM: Time 1732981480; Available 14
+1732981217 Job 11: Found reservation time of 1732981480.
+1732981217 Job 11: Attempting to reserve at 1732981480. Avialable: 14
+1732981217 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981217 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981217 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981217 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981217 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981217 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981217 Reserve Now: Job 13: Trying to reserve 2 resources for 300 starting now.
+1732981217 Resernve Now: Job 13: Attempting to reserve 2 resources for 300 starting now.
+1732981217 Reserve Now: Reserved 2 at 1732981217
+1732981217 Reserve Now: Reserved 2 at 1732981217
+1732981217 Resernve Now: Job 13: Attempting to reserve 2 resources for 300 starting now.
+1732981217 Reserve Now: Reserved 2 at 1732981235
+1732981217 Reserve Now: Reserved 2 at 1732981235
+1732981217 Resernve Now: Job 13: Attempting to reserve 2 resources for 300 starting now.
+1732981217 Reserve Now: Reserved 2 at 1732981260
+1732981217 Reserve Now: Reserved 2 at 1732981260
+1732981217 Resernve Now: Job 13: Attempting to reserve 2 resources for 300 starting now.
+1732981217 Reserve Now: Reserved 2 at 1732981480
+1732981217 Reserve Now: Reserved 2 at 1732981480
+1732981217 Resernve Now: Job 13: Attempting to reserve 2 resources for 300 starting now.
+1732981217 Reserve Now: Could not reserve
+1732981217 Job 13: Allocated with 2 resources.
+1732981220 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981220 TRM: Time 1732981220; Available 0
+1732981220 TRM: Time 1732981235; Available 2
+1732981220 TRM: Time 1732981260; Available 4
+1732981220 TRM: Time 1732981480; Available 12
+1732981220 Job 11: Found reservation time of 1732981480.
+1732981220 Job 11: Attempting to reserve at 1732981480. Avialable: 12
+1732981220 Job 11: Attempting to reserve at 1732981517. Avialable: 14
+1732981220 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981220 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981220 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981220 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981220 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981220 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981221 Job 1: Deallocated 2 resources.
+1732981221 Job 11: Trying to reserve 8 resources for 900 in future.
+1732981221 TRM: Time 1732981221; Available 2
+1732981221 TRM: Time 1732981260; Available 4
+1732981221 TRM: Time 1732981480; Available 12
+1732981221 Job 11: Found reservation time of 1732981480.
+1732981221 Job 11: Attempting to reserve at 1732981480. Avialable: 12
+1732981221 Job 11: Attempting to reserve at 1732981517. Avialable: 14
+1732981221 Job 11: Attempting to reserve at 1732981530. Avialable: 16
+1732981221 Job 11: Attempting to reserve at 1732981685. Avialable: 24
+1732981221 Job 11: Attempting to reserve at 1732981690. Avialable: 26
+1732981221 Job 11: Attempting to reserve at 1732981758. Avialable: 30
+1732981221 Job 11: Attempting to reserve at 1732981970. Avialable: 31
+1732981221 Job 11: Attempting to reserve at 1732981975. Avialable: 32
+1732981221 Reserve Now: Job 14: Trying to reserve 2 resources for 600 starting now.
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981221
+1732981221 Reserve Now: Reserved 2 at 1732981221
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981260
+1732981221 Reserve Now: Reserved 2 at 1732981260
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981480
+1732981221 Reserve Now: Reserved 2 at 1732981480
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981517
+1732981221 Reserve Now: Reserved 2 at 1732981517
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981530
+1732981221 Reserve Now: Reserved 2 at 1732981530
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981685
+1732981221 Reserve Now: Reserved 2 at 1732981685
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981690
+1732981221 Reserve Now: Reserved 2 at 1732981690
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Reserved 2 at 1732981758
+1732981221 Reserve Now: Reserved 2 at 1732981758
+1732981221 Resernve Now: Job 14: Attempting to reserve 2 resources for 600 starting now.
+1732981221 Reserve Now: Could not reserve
+1732981221 Job 14: Allocated with 2 resources.

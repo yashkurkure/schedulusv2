@@ -300,3 +300,26 @@ class Scheduler:
             # Schedule the run event
             job.res_run_ts = self.simulator.create_run_event(job.id)
             self._scheduled.append(job)
+
+
+    def average_wait_time(self):
+
+        total_wait = 0
+        job_count = 0
+        for job in self._finished:
+            wait = job.res_run_ts - job.res_submit_ts
+            total_wait += wait
+            job_count += 1
+
+        for job in self._running:
+            wait = job.res_run_ts - job.res_submit_ts
+            total_wait += wait
+            job_count += 1
+
+        if job_count == 0:
+            return 0
+        
+
+        avg_wait = total_wait/job_count
+
+        return avg_wait

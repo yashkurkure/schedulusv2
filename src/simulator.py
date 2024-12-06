@@ -246,4 +246,5 @@ class Simulator:
         return {
             "timestamp": self.now(),
             "utilization": self.allocator.resource_utilization(),
+            "avg_wait": self.scheduler.average_wait_time()
         }

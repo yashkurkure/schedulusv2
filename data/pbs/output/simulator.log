@@ -1,2 +1,27 @@
 Initialized logger.
 1732981055 Scheduled: Run event at 1732981055 for job 1.
+1732981055 Scheduled: End event at 1732981221 for job 1. Expected to end at 1732981235
+1732981060 Scheduled: Run event at 1732981060 for job 2.
+1732981060 Scheduled: End event at 1732981437 for job 2. Expected to end at 1732981480
+1732981065 Scheduled: Run event at 1732981065 for job 3.
+1732981065 Scheduled: End event at 1732981217 for job 3. Expected to end at 1732981245
+1732981070 Scheduled: Run event at 1732981070 for job 4.
+1732981070 Scheduled: End event at 1732981799 for job 4. Expected to end at 1732981970
+1732981075 Scheduled: Run event at 1732981075 for job 5.
+1732981075 Scheduled: End event at 1732981867 for job 5. Expected to end at 1732981975
+1732981080 Scheduled: Run event at 1732981080 for job 6.
+1732981080 Scheduled: End event at 1732981238 for job 6. Expected to end at 1732981260
+1732981085 Scheduled: Run event at 1732981085 for job 7.
+1732981085 Scheduled: End event at 1732981633 for job 7. Expected to end at 1732981685
+1732981090 Scheduled: Run event at 1732981090 for job 8.
+1732981090 Scheduled: End event at 1732981622 for job 8. Expected to end at 1732981690
+1732981095 Scheduled: Run event at 1732981095 for job 9.
+1732981095 Scheduled: End event at 1732981158 for job 9. Expected to end at 1732981155
+1732981110 Scheduled: Run event at 1732981110 for job 12.
+1732981110 Scheduled: End event at 1732981485 for job 12. Expected to end at 1732981530
+1732981158 Scheduled: Run event at 1732981158 for job 10.
+1732981158 Scheduled: End event at 1732981679 for job 10. Expected to end at 1732981758
+1732981217 Scheduled: Run event at 1732981217 for job 13.
+1732981217 Scheduled: End event at 1732981490 for job 13. Expected to end at 1732981517
+1732981221 Scheduled: Run event at 1732981221 for job 14.
+1732981221 Scheduled: End event at 1732981728 for job 14. Expected to end at 1732981821
