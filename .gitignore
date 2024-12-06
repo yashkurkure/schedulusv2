@@ -9,3 +9,4 @@ credentials.cfg
 .venv
 build
 *.log
+/preprocessing/data
