@@ -135,7 +135,6 @@ class Scheduler:
         # TODO: Build a new queue evertime
         # This would get rid of _pending_run list
 
-
         t = time.time()
         self.log(f'Entered scheduling cycle...')
         # Try and schedule jobs in the head of the queue
@@ -199,11 +198,13 @@ class Scheduler:
             # NOTE: If any running jobs are exceeding their walltime, the scheduler does not know
             # when it ends, exclude it from the map
             if end_time < self.simulator.now():
+                self.log(f'Build TRM: Job {j.id} was supposed to end at {end_time}. It is exceeding walltime!')
                 continue
 
             # NOTE: If a job is ending now, and its end event hasnt occured, it must 
             # removed from the running jobs list to build the time resource map
             if end_time == self.simulator.now():
+                self.log(f'Build TRM: Job {j.id} ends at {end_time}. End event has not been processed!')
                 continue
 
             # print(f'\t\tJob: {j.id}, {end_time}, {resource_ids}')
@@ -228,19 +229,23 @@ class Scheduler:
         # Get the top job
         top_job = self._queue[0]
         
-        self.log(f'Top job: {top_job.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
+        self.log(f'Top Job: {top_job.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
 
         trm = self._build_time_resource_map()
 
 
         # Now given this map reserve resources for the top job
         trm = self.allocator.reserve_future(trm, top_job.id, top_job.resources, top_job.walltime)
+
+        if trm is None:
+            self.log(f'Skipped backfilling because TRM was None')
+            return
         
 
         # Check if any job in the queue can be allocated using these resources now
         backfill_jobs: list[Job] = []
         for j in self._queue[1:]:
-
+            self.log(f'Backfill Job: {j.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
             # # If a job has a pending run event, dont consider it for backfill
             # if j.id in self._pending_run:
             #     continue
@@ -250,19 +255,22 @@ class Scheduler:
             # This loop checks if the job can be backfilled
             # If not it sets can_backfill to False
             for t in trm:
+                resources = trm[t]
+                self.log(f'Backfill Job: Resources Available {len(resources)}; Resources Required {j.resources}')
 
                 # Dont check beyond the walltime of the job
                 if t > self.simulator.now() + j.walltime:
                     break
 
-                resources = trm[t]
                 # Not enough resources
                 if len(resources) < j.resources:
                     can_backfill = False
+                    self.log(f'Backfill Job: {j.id}; Cannot backfill')
                     break
             
             if can_backfill:
                 # Add to jobs that can be backfilled
+                self.log(f'Backfill Job: {j.id}; Backfill Eligible, reserving resources.')
                 backfill_jobs.append(j)
 
                 # Update the time resource map
@@ -273,6 +281,7 @@ class Scheduler:
 
         # print('Backfill:', [j.id for j in backfill_jobs])
         for job in backfill_jobs:
+            self.log(f'Backfill Job Allocate: {j.id} with resource requirement of {top_job.resources} for time {top_job.walltime}')
             # Try allocating resources
             resources = self.allocator.allocate(job.id, job.resources)
 
@@ -280,7 +289,7 @@ class Scheduler:
             # Ensures strict ordering
             if not resources:
                 print('Backfill Error: Job eligible but no resources!')
-                exit()
+                raise LookupError
             
             # Remove from job from queued jobs
             self._queue.remove(job)

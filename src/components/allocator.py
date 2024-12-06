@@ -135,8 +135,13 @@ class Allocator:
 
         self.log(f'Job {job_id}: Found reservation time of {reservation_time}.')
 
+
+        # Only happens when a jobs are exceeding their walltime, or their end event has not occured
+        if reservation_time == -1:
+            return None
+
         # For the found reservation time get resources to reserve
-        # NOTE: Cannot remove random ones because we want max of the same resources to be free at all times
+        # NOTE: Cannot remove random ones because we want max of the same resource ids to be free at all times
         # reserved_resources = random.sample(time_resource_map[reservation_time], resources)
         # NOTE: Instead remove from the end of the list
         reserved_resources = trm[reservation_time][-resources:]
@@ -159,21 +164,18 @@ class Allocator:
         return trm
     
     def reserve_now(self, trm, job_id, resources, walltime) -> dict[int, int]:
-        self.log(f'Job {job_id}: Trying to reserve {resources} resources for {walltime} starting now.')
-        # print(f'\tReserve now, {job_id} with resources {resources}:')
-        # print(f'\t\tUsing TRM:')
-        # for t in trm:
-        #     print(f'\t\t\t{t}: {trm[t]}')
+        self.log(f'Reserve Now: Job {job_id}: Trying to reserve {resources} resources for {walltime} starting now.')
 
         for t in trm:
-            self.log(f'Job {job_id}: Attempting to reserve {resources} resources for {walltime} starting now.')
+            self.log(f'Resernve Now: Job {job_id}: Attempting to reserve {resources} resources for {walltime} starting now.')
             if t > self.simulator.now() + walltime:
+                self.log(f'Reserve Now: Could not reserve')
                 break
 
             reserved_resources = random.sample(trm[t], resources)
-
             # Remove those resources from the time resource map
             for r in reserved_resources:
+                self.log(f'Reserve Now: Reserved {len(reserved_resources)} at {t}')
                 trm[t].remove(r)
 
         return trm
