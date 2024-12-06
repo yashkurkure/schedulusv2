@@ -7,6 +7,6 @@ __pycache__
 *.pyc
 credentials.cfg
 .venv
-build
+build/*
 *.log
 /preprocessing/data
