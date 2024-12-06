@@ -36,6 +36,10 @@ def ET2CHAR(i):
         return 'R'
     elif i == EventType.END:
         return 'E'
+    elif i == EventType.ALLOCATE:
+        return 'A'
+    elif i == EventType.DEALLOCATE:
+        return 'D'
     else:
         return 'X'
 
@@ -50,7 +54,7 @@ class SchedulerEvent(Event):
 
 @dataclass
 class AllocatorEvent(Event):
-    resource_id = int
+    resource_id: int
 
 
 class Simulator:
@@ -67,10 +71,14 @@ class Simulator:
 
         self.output_dir = None
         self.logger: AsyncLogger = None
+        self.event_logger: AsyncLogger = None
 
 
     def log(self, s):
         self.logger.write_log(f'{self.now()} {s}')
+
+    def log_event(self, s):
+        self.event_logger.write_log(f'{self.now()},{s}')
 
 
     def read_data(self, path_job_log, path_system_config, job_log_CSV=False):
@@ -94,7 +102,8 @@ class Simulator:
         return self.sim.now
 
     def handle_scheduler_event(self, e: SchedulerEvent):
-        print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
+        # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
+        self.log_event(f'{ET2CHAR(e.type)},{e.job_id}')
         
         # Get the job data related to the event
         job_data = self.df_jobs[self.df_jobs[DfFileds.Job.ID] == e.job_id]
@@ -136,6 +145,7 @@ class Simulator:
 
     def handle_allocator_event(self, e: AllocatorEvent):
         # print(f"{self.sim.now},{ET2CHAR(e.type)},{e.job_id}")
+        self.log_event(f'{ET2CHAR(e.type)},{e.resource_id}')
         if e.type == EventType.ALLOCATE:
             pass
         elif e.type == EventType.DEALLOCATE:
@@ -162,26 +172,26 @@ class Simulator:
         # print(f'Creating run event for: {job_id}')
         e = AllocatorEvent(
             time=self.sim.now,
-            type=EventType.ALLOCATE
+            type=EventType.ALLOCATE,
+            resource_id=resource_id
         )
         self.sim.sched(
             self.handle_allocator_event,
             e,
             until=e.time,
-            resource_ids=resource_id
         )
 
     def create_dealloc_event(self, resource_id):
         # print(f'Creating run event for: {job_id}')
         e = AllocatorEvent(
             time=self.sim.now,
-            type=EventType.DEALLOCATE
+            type=EventType.DEALLOCATE,
+            resource_id=resource_id
         )
         self.sim.sched(
             self.handle_allocator_event,
             e,
-            until=e.time,
-            resrource_ids=resource_id
+            until=e.time
         )
         
     def initialize(self, output_dir):
@@ -198,6 +208,7 @@ class Simulator:
         
         self.output_dir = output_dir
         self.logger = AsyncLogger(f'{self.output_dir}/simulator.log')
+        self.event_logger = AsyncLogger(f'{self.output_dir}/events.log')
         
 
         # Initialize components

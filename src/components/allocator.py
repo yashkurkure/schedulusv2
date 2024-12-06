@@ -97,6 +97,7 @@ class Allocator:
         for n in alloc_resources:
             n.state = ResourceState.BUSY
             n.job_id = job_id
+            self.simulator.create_alloc_event(n.id)
 
         self.log(f'Job {job_id}: Allocated with {resources} resources.')
         return [n.id for n in alloc_resources]
@@ -111,6 +112,7 @@ class Allocator:
         for n in dealloc_resources:
             n.state = ResourceState.AVAILABLE
             n.job_id = -1
+            self.simulator.create_dealloc_event(n.id)
         
         self.log(f'Job {job_id}: Deallocated {len(dealloc_resources)} resources.')
 
